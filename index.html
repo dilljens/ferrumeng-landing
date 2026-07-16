@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrum Engineering – Embedded. AI. Blockchain.</title>
+  <meta name="description" content="Ferrum Engineering is a Wyoming-based consulting firm specializing in embedded systems, AI product development, blockchain engineering, and PCB design.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ── Reset & Base ──────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0c0c0e;
+      color: #d4d4d8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── Utility ──────────────────────────────────────── */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #a1a1aa;
+      margin-bottom: 12px;
+    }
+
+    /* ── Navigation ────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(12, 12, 14, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 1.125rem;
+      color: #e4e4e7;
+      letter-spacing: -0.02em;
+    }
+    .logo em {
+      font-style: normal;
+      color: #b45309; /* warm copper */
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .nav-links a {
+      color: #a1a1aa;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #e4e4e7; }
+
+    /* ── Hero ──────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 64px;
+    }
+    /* subtle grid pattern */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+    /* warm glow */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(180,83,9,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      padding: 6px 14px;
+      border: 1px solid rgba(180,83,9,0.3);
+      border-radius: 100px;
+      color: #b45309;
+      margin-bottom: 24px;
+    }
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #b45309;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: #fafafa;
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, #b45309, #d97706);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      color: #a1a1aa;
+      max-width: 560px;
+      margin-bottom: 36px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 12px 28px;
+      border-radius: 8px;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #b45309;
+      color: #fafafa;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #d97706;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #d4d4d8;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-outline:hover {
+      border-color: rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.04);
+    }
+    .hero-clients {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .hero-clients p {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #52525b;
+      margin-bottom: 12px;
+    }
+    .client-logos {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8125rem;
+      color: #71717a;
+    }
+    .client-logos span {
+      padding: 4px 12px;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 4px;
+    }
+
+    /* ── Services ──────────────────────────────────────── */
+    .services {
+      padding: 100px 0;
+      background: #111113;
+    }
+    .services h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fafafa;
+      margin-bottom: 48px;
+      letter-spacing: -0.02em;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 32px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .service-card:hover {
+      border-color: rgba(180,83,9,0.3);
+      background: rgba(180,83,9,0.04);
+    }
+    .service-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: rgba(180,83,9,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+    }
+    .service-card h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #fafafa;
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      font-size: 0.875rem;
+      color: #a1a1aa;
+      line-height: 1.7;
+    }
+
+    /* ── About ─────────────────────────────────────────── */
+    .about {
+      padding: 100px 0;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+    .about h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fafafa;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .about p {
+      color: #a1a1aa;
+      margin-bottom: 16px;
+    }
+    .about-tagline {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8125rem;
+      color: #b45309;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .stack-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .stack-item {
+      padding: 12px 16px;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 8px;
+      font-size: 0.8125rem;
+    }
+    .stack-item strong {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #71717a;
+      margin-bottom: 4px;
+    }
+    .stack-item span {
+      color: #d4d4d8;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8125rem;
+    }
+
+    /* ── Projects ──────────────────────────────────────── */
+    .projects {
+      padding: 100px 0;
+      background: #111113;
+    }
+    .projects h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fafafa;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .projects > .container > p {
+      color: #a1a1aa;
+      margin-bottom: 48px;
+    }
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .project-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .project-row:hover {
+      border-color: rgba(180,83,9,0.2);
+      background: rgba(255,255,255,0.02);
+    }
+    .project-row .name {
+      font-weight: 600;
+      color: #e4e4e7;
+    }
+    .project-row .desc {
+      font-size: 0.8125rem;
+      color: #a1a1aa;
+    }
+    .project-row.live-link { text-decoration: none; display: flex; }
+    .project-row.live-link:hover { border-color: rgba(180,83,9,0.4); background: rgba(180,83,9,0.04); }
+    .project-row.live-link:hover .name { color: #b45309; }
+    .live-indicator {
+      font-size: 0.75rem;
+      color: #b45309;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .project-row.live-link:hover .live-indicator { opacity: 1; }
+    .project-row .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6875rem;
+      padding: 4px 10px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.06);
+      color: #71717a;
+    }
+    .project-row .tag.ai { background: rgba(180,83,9,0.15); color: #b45309; }
+    .project-row .tag.hw { background: rgba(59,130,246,0.15); color: #60a5fa; }
+    .project-row .tag.bc { background: rgba(34,197,94,0.15); color: #4ade80; }
+    .project-row .tag.eda { background: rgba(168,85,247,0.15); color: #c084fc; }
+
+    /* ── Contact ───────────────────────────────────────── */
+    .contact {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fafafa;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .contact p {
+      color: #a1a1aa;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .contact-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.125rem;
+      color: #b45309;
+      padding: 12px 32px;
+      border: 1px solid rgba(180,83,9,0.25);
+      border-radius: 8px;
+      transition: border-color 0.2s;
+    }
+    .contact-email:hover {
+      border-color: rgba(180,83,9,0.5);
+    }
+    .contact-location {
+      margin-top: 24px;
+      font-size: 0.8125rem;
+      color: #52525b;
+    }
+
+    /* ── Footer ────────────────────────────────────────── */
+    footer {
+      padding: 32px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.75rem;
+      color: #52525b;
+      text-align: center;
+    }
+
+    /* ── Responsive ────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .service-card { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">ferrum<em>//</em>eng</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-badge">Based in Wyoming</div>
+      <h1>
+        Engineering at the<br>
+        <em>intersection</em> of hardware<br>
+        and intelligence.
+      </h1>
+      <p>
+        Embedded firmware. AI products. Blockchain protocols. PCB design.
+        We build the systems that bridge the physical and the digital.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a project →</a>
+        <a href="#services" class="btn btn-outline">See capabilities</a>
+      </div>
+      <div class="hero-clients">
+        <p>Trusted by engineering teams at</p>
+        <div class="client-logos">
+          <span>Mechtro</span>
+          <span>AMZ-G2</span>
+          <span>Inst-Sys</span>
+          <span>X1-PTL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Services ═══ -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-label">Capabilities</p>
+      <h2>Full-stack engineering<br>from silicon to ship.</h2>
+      <div class="grid-2">
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Embedded Systems &amp; Firmware</h3>
+          <p>
+            STM32, RP2040, Teensy, GHI SOM. Real-time control, sensor
+            integration, wireless (Bluetooth, PPP cellular), and
+            bootloader development. From prototype to production.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3>AI Product Development &amp; Consulting</h3>
+          <p>
+            We help businesses design and build custom AI tools — RAG search
+            over internal knowledge, LLM-powered automation, AI-assisted design
+            workflows. From strategy through implementation to shipped product.
+            Also building our own: Whisper video editing, 3D Gaussian splatting,
+            and enterprise knowledge engines.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⛓️</div>
+          <h3>Blockchain &amp; Cryptography</h3>
+          <p>
+            Trustless escrow, atomic swaps, time-locked vaults, and
+            covenant development on Kaspa BlockDAG. Smart contract
+            architecture and decentralized application delivery.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔌</div>
+          <h3>PCB Design &amp; EDA Tooling</h3>
+          <p>
+            KiCad schematic capture and layout, AI-assisted design
+            collaboration (CoKicad), BOM management, pick-and-place
+            setup, and hardware test fixture development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ About ═══ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>One engineer,<br>multiple disciplines.</h2>
+          <p>
+            Ferrum Engineering is a single-member Wyoming consulting LLC
+            that delivers across the full hardware-software stack.
+            We work with product teams, engineering consultancies, and
+            startups to build things that don't exist yet.
+          </p>
+          <p>
+            Every engagement comes with the same standard: production-quality
+            code, airtight documentation, and AI-native development workflows
+            that deliver faster without cutting corners.
+          </p>
+          <div class="about-tagline">
+            ferrum (n.) — Latin for iron. Strong, conductive, essential.
+          </div>
+        </div>
+        <div>
+          <p class="section-label">Toolchain</p>
+          <div class="stack-grid">
+            <div class="stack-item"><strong>Languages</strong><span>Rust · Python · C/C++ · TypeScript · Go</span></div>
+            <div class="stack-item"><strong>Firmware</strong><span>STM32 · RP2040 · Pico SDK · Teensy · CMSIS</span></div>
+            <div class="stack-item"><strong>AI/ML</strong><span>FastAPI · Whisper · Sentence Transformers · Qdrant</span></div>
+            <div class="stack-item"><strong>Blockchain</strong><span>SilverScript · Kaspa · Covenant Dev · Web3</span></div>
+            <div class="stack-item"><strong>EDA</strong><span>KiCad · CoKicad · EAGLE · Spice · DXF</span></div>
+            <div class="stack-item"><strong>Infra</strong><span>Docker · Gitea · Cloudflare · Railway · SQLite</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Projects ═══ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <p class="section-label">Selected Work</p>
+      <h2>Shipping products,<br>not just code.</h2>
+      <p>From firmware to full-stack apps — here's what we've built.</p>
+        <div class="project-list">
+        <a href="https://daglock.com" target="_blank" class="project-row live-link">
+          <div>
+            <div class="name">DagLock <span class="live-indicator">↗</span></div>
+            <div class="desc">Trustless escrow &amp; vaults on Kaspa BlockDAG</div>
+          </div>
+          <span class="tag bc">Blockchain</span>
+        </a>
+        <a href="https://talk-edit.com" target="_blank" class="project-row live-link">
+          <div>
+            <div class="name">TalkEdit <span class="live-indicator">↗</span></div>
+            <div class="desc">Desktop video editor — edit video by editing text</div>
+          </div>
+          <span class="tag ai">AI</span>
+        </a>
+        <div class="project-row">
+          <div>
+            <div class="name">CoKicad</div>
+            <div class="desc">AI-assisted schematic &amp; PCB collaborator for KiCad</div>
+          </div>
+          <span class="tag eda">EDA</span>
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="name">PoolSplat</div>
+            <div class="desc">3D pool design from a phone video — Gaussian splatting</div>
+          </div>
+          <span class="tag ai">AI</span>
+        </div>
+        <a href="https://scriptureengine.org" target="_blank" class="project-row live-link">
+          <div>
+            <div class="name">ScriptureEngine <span class="live-indicator">↗</span></div>
+            <div class="desc">70K+ verse knowledge graph with 1.77M typed connections</div>
+          </div>
+          <span class="tag ai">AI</span>
+        </a>
+        <div class="project-row">
+          <div>
+            <div class="name">AgTerra ActionMapper</div>
+            <div class="desc">GPS field-data collection firmware (GHI SOM, cellular)</div>
+          </div>
+          <span class="tag hw">Firmware</span>
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="name">X1-PTL</div>
+            <div class="desc">Pick-to-light controller — Pico SDK + RPLidar + MCP</div>
+          </div>
+          <span class="tag hw">Firmware</span>
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="name">Tau Viewer</div>
+            <div class="desc">Desktop workspace viewer — Tauri app with PDF/Code/Data plugins</div>
+          </div>
+          <span class="tag ai">AI</span>
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="name">oh-my-agent</div>
+            <div class="desc">Portable agent/skill/plugin framework for opencode &amp; Claude Code</div>
+          </div>
+          <span class="tag ai">AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Contact ═══ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2>Let's build something.</h2>
+      <p>
+        Whether you need firmware for a prototype, an AI feature for your
+        product, or a full-stack blockchain application — reach out.
+      </p>
+      <a href="mailto:dillon@ferrumengineeringllc.com" class="contact-email">
+        dillon@ferrumengineeringllc.com →
+      </a>
+      <div class="contact-location">
+        Ferrum Engineering LLC · Cheyenne, Wyoming
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer>
+    <div class="container">
+      &copy; 2026 Ferrum Engineering LLC. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
