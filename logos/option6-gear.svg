@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: GEAR F
+       A precision gear/cog with 8 teeth and a central "F" cutout.
+       The gear is the universal symbol of mechanical/industrial engineering.
+       The F is formed by removing material from the gear face — negative space.
+       The chamfered inner ring adds depth (manufacturing precision).
+       B&W safe. Distinctive at favicon size. -->
+
+  <defs>
+    <linearGradient id="g6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Gear outer ring (thick) -->
+  <circle cx="100" cy="100" r="72" fill="none" stroke="url(#g6)" stroke-width="12"/>
+
+  <!-- 8 gear teeth around the outside -->
+  <!-- Top -->
+  <rect x="92" y="16" width="16" height="16" rx="3" fill="url(#g6)"/>
+  <!-- Top-right -->
+  <rect x="157" y="41" width="16" height="16" rx="3" fill="url(#g6)" transform="rotate(45, 165, 49)"/>
+  <!-- Right -->
+  <rect x="168" y="92" width="16" height="16" rx="3" fill="url(#g6)"/>
+  <!-- Bottom-right -->
+  <rect x="157" y="143" width="16" height="16" rx="3" fill="url(#g6)" transform="rotate(45, 165, 151)"/>
+  <!-- Bottom -->
+  <rect x="92" y="168" width="16" height="16" rx="3" fill="url(#g6)"/>
+  <!-- Bottom-left -->
+  <rect x="27" y="143" width="16" height="16" rx="3" fill="url(#g6)" transform="rotate(45, 35, 151)"/>
+  <!-- Left -->
+  <rect x="16" y="92" width="16" height="16" rx="3" fill="url(#g6)"/>
+  <!-- Top-left -->
+  <rect x="27" y="41" width="16" height="16" rx="3" fill="url(#g6)" transform="rotate(45, 35, 49)"/>
+
+  <!-- Inner ring — chamfered appearance -->
+  <circle cx="100" cy="100" r="56" fill="none" stroke="url(#g6)" stroke-width="3" opacity="0.5"/>
+
+  <!-- Center hub circle -->
+  <circle cx="100" cy="100" r="38" fill="url(#g6)" opacity="0.15"/>
+
+  <!-- F cutout — three bars removed from the gear face -->
+  <!-- Vertical stem -->
+  <path d="M88 74 L88 126" stroke="#0c0c0e" stroke-width="12" stroke-linecap="round"/>
+  <!-- Top arm -->
+  <path d="M88 74 L126 74" stroke="#0c0c0e" stroke-width="12" stroke-linecap="round"/>
+  <!-- Middle arm (shorter) -->
+  <path d="M88 104 L116 104" stroke="#0c0c0e" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Center axle hole -->
+  <circle cx="100" cy="100" r="7" fill="#0c0c0e" stroke="url(#g6)" stroke-width="2"/>
+</svg>

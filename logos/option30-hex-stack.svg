@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- HEX STACK — overlapping solid hexagons like shingles along the F
+       Hexagons are scaled up 120% so they overlap each other.
+       Each hex is SOLID (filled). The overlap creates a textured,
+       almost scaly/armored F shape.
+       Like a honeycomb viewed from an angle where cells pile up. -->
+
+  <defs>
+    <linearGradient id="hs30" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Larger hexagons (radius ~12 instead of ~9) so they overlap -->
+  <!-- Vertical stem — hexes stacked like shingles, each overlapping the one below -->
+  <g fill="url(#hs30)" stroke="url(#hs30)" stroke-width="0.8">
+
+    <!-- Column 1 — main vertical spine -->
+    <polygon points="40,10 55,19 55,40 40,49 25,40 25,19" opacity="0.95"/>
+    <polygon points="40,40 55,49 55,70 40,79 25,70 25,40" opacity="0.95"/>
+    <polygon points="40,70 55,79 55,100 40,109 25,100 25,70" opacity="0.95"/>
+    <polygon points="40,100 55,109 55,130 40,139 25,130 25,100" opacity="0.95"/>
+    <polygon points="40,130 55,139 55,160 40,169 25,160 25,130" opacity="0.95"/>
+    <polygon points="40,160 55,169 55,190 40,199 25,190 25,160" opacity="0.95"/>
+
+    <!-- Column 2 — offset column, overlapping with column 1 (creates width) -->
+    <polygon points="55,25 70,34 70,55 55,64 40,55 40,34" opacity="0.85"/>
+    <polygon points="55,55 70,64 70,85 55,94 40,85 40,55" opacity="0.85"/>
+    <polygon points="55,85 70,94 70,115 55,124 40,115 40,85" opacity="0.85"/>
+    <polygon points="55,115 70,124 70,145 55,154 40,145 40,115" opacity="0.85"/>
+    <polygon points="55,145 70,154 70,175 55,184 40,175 40,145" opacity="0.85"/>
+    <polygon points="55,175 70,184 70,205 55,214 40,205 40,175" opacity="0.7"/>
+
+  </g>
+
+  <!-- Top arm — overlapping hexes going right -->
+  <g fill="url(#hs30)" stroke="url(#hs30)" stroke-width="0.8">
+
+    <!-- Row 1 overlapping rightward -->
+    <polygon points="65,0 80,9 80,30 65,39 50,30 50,0" opacity="0.95"/>
+    <polygon points="80,0 95,9 95,30 80,39 65,30 65,0" opacity="0.9"/>
+    <polygon points="95,0 110,9 110,30 95,39 80,30 80,0" opacity="0.85"/>
+    <polygon points="110,0 125,9 125,30 110,39 95,30 95,0" opacity="0.9"/>
+    <polygon points="125,0 140,9 140,30 125,39 110,30 110,0" opacity="0.85"/>
+    <polygon points="140,0 155,9 155,30 140,39 125,30 125,0" opacity="0.8"/>
+    <polygon points="155,5 170,14 170,35 155,44 140,35 140,14" opacity="0.75"/>
+
+    <!-- Overlap row 2 — slightly below for extra width -->
+    <polygon points="80,15 95,24 95,45 80,54 65,45 65,24" opacity="0.6"/>
+    <polygon points="110,15 125,24 125,45 110,54 95,45 95,24" opacity="0.55"/>
+    <polygon points="140,20 155,29 155,50 140,59 125,50 125,29" opacity="0.5"/>
+
+  </g>
+
+  <!-- Middle arm — overlapping hexes going right from mid-stem -->
+  <g fill="url(#hs30)" stroke="url(#hs30)" stroke-width="0.8">
+
+    <polygon points="65,95 80,104 80,125 65,134 50,125 50,104" opacity="0.95"/>
+    <polygon points="80,95 95,104 95,125 80,134 65,125 65,95" opacity="0.9"/>
+    <polygon points="95,95 110,104 110,125 95,134 80,125 80,95" opacity="0.85"/>
+    <polygon points="110,95 125,104 125,125 110,134 95,125 95,95" opacity="0.8"/>
+    <polygon points="125,100 140,109 140,130 125,139 110,130 110,100" opacity="0.7"/>
+
+    <!-- Slight underlap row -->
+    <polygon points="80,110 95,119 95,140 80,149 65,140 65,119" opacity="0.45"/>
+    <polygon points="110,110 125,119 125,140 110,149 95,140 95,119" opacity="0.4"/>
+
+  </g>
+</svg>

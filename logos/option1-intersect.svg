@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: INTERSECT
+       Three balanced geometric bars forming an "F".
+       Vertical = hardware foundation. Horizontal bars = intelligence crossing over.
+       Pill shapes keep it friendly. Asymmetry keeps it distinctive.
+       Works at 16px favicon. Works in B&W. -->
+
+  <defs>
+    <linearGradient id="gi1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- vertical stem -->
+  <rect x="62" y="35" width="24" height="130" rx="12" fill="url(#gi1)"/>
+
+  <!-- top arm -->
+  <rect x="62" y="35" width="96" height="24" rx="12" fill="url(#gi1)"/>
+
+  <!-- middle arm — shorter, creating asymmetry that says "precision, not generic" -->
+  <rect x="62" y="85" width="70" height="20" rx="10" fill="url(#gi1)"/>
+
+  <!-- A single-pixel copper accent dot at the intersection — almost invisible
+       but gives the eye a resting point -->
+  <circle cx="74" cy="95" r="3" fill="#f59e0b"/>
+</svg>

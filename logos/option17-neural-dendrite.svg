@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL F — Dendrite
+       A single branching neuron structure where the dendrites (inputs)
+       naturally form an F shape.
+       Inspired by actual pyramidal neuron morphology:
+       - A single apical dendrite runs vertically (the F stem)
+       - Two basal dendrite tufts branch horizontally (the F arms)
+       - The axon descends from the bottom
+       No circles. Pure branching lines that taper at each fork.
+       The branches resemble tree limbs or river deltas. -->
+
+  <defs>
+    <linearGradient id="d17" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Soma (cell body) — the only circle, and it's essential (the neuron's nucleus) -->
+  <circle cx="60" cy="110" r="8" fill="url(#d17)"/>
+
+  <!-- Axon (output) — descending from soma, forming lower vertical -->
+  <path d="M60 118 L60 172" stroke="url(#d17)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 150 L48 170" stroke="url(#d17)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M60 160 L74 175" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Apical dendrite (vertical stem of F) — ascending from soma -->
+  <path d="M60 102 L60 40" stroke="url(#d17)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Apical tuft branches (top of the vertical) -->
+  <path d="M60 40 Q60 30 80 28 Q100 26 130 32" stroke="url(#d17)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M80 28 L92 18" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M105 30 L118 20" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M60 40 Q50 28 36 32" stroke="url(#d17)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M130 32 L140 26 L148 32" stroke="url(#d17)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Basal dendrite 1 (top arm of F) — branching right from soma area -->
+  <path d="M68 104 Q90 90 110 92 Q130 94 150 90" stroke="url(#d17)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M90 91 L98 78" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M110 92 L120 82" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M130 93 L138 80 L145 86" stroke="url(#d17)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M150 90 L158 86 L165 90" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.35"/>
+
+  <!-- Basal dendrite 2 (middle arm of F) — branching right, slightly lower -->
+  <path d="M68 118 Q85 130 105 126 Q120 122 130 118" stroke="url(#d17)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M105 126 L112 136" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M120 122 L128 112" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <path d="M130 118 L138 122 L142 116" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Secondary oblique dendrites — small branches off the main vertical -->
+  <path d="M60 60 Q72 68 84 62" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M60 75 Q74 80 82 74" stroke="url(#d17)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.25"/>
+
+  <!-- A few tiny spines (dendritic spines — real neurons have these) -->
+  <path d="M130 32 L135 30" stroke="url(#d17)" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  <path d="M110 126 L115 130" stroke="url(#d17)" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+  <path d="M90 91 L95 87" stroke="url(#d17)" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+</svg>

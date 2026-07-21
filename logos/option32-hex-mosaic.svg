@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- HEX MOSAIC — dense overlapping solid hexagons like a mosaic F
+       Hexagons of varying sizes overlap chaotically but distinctly form the F.
+       Like a mosaic artwork where each tile is a hexagon pressed into place.
+       Some tiles are larger (core), some smaller (edges), all overlapping.
+       The overlap creates a rich, textured surface — like forged iron scales. -->
+
+  <defs>
+    <linearGradient id="hm32" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <radialGradient id="hm32b" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- ── Core F hexes (large, bright, solid) ── -->
+  <g fill="url(#hm32b)" stroke="url(#hm32)" stroke-width="1">
+
+    <!-- Vertical stem — big overlapping hexes -->
+    <polygon points="38,5 56,16 56,42 38,53 20,42 20,16"/>
+    <polygon points="38,42 56,53 56,79 38,90 20,79 20,53"/>
+    <polygon points="38,79 56,90 56,116 38,127 20,116 20,90"/>
+    <polygon points="38,116 56,127 56,153 38,164 20,153 20,127"/>
+    <polygon points="38,153 56,164 56,190 38,201 20,190 20,164"/>
+
+    <!-- Top arm — big hexes -->
+    <polygon points="65,-5 83,6 83,32 65,43 47,32 47,6"/>
+    <polygon points="92,-5 110,6 110,32 92,43 74,32 74,6"/>
+    <polygon points="119,-5 137,6 137,32 119,43 101,32 101,6"/>
+    <polygon points="146,-5 164,6 164,32 146,43 128,32 128,6"/>
+
+    <!-- Middle arm — big hexes -->
+    <polygon points="65,95 83,106 83,132 65,143 47,132 47,106"/>
+    <polygon points="92,95 110,106 110,132 92,143 74,132 74,106"/>
+    <polygon points="119,95 137,106 137,132 119,143 101,132 101,106"/>
+
+  </g>
+
+  <!-- ── Secondary overlapping hexes (slightly offset, darker, fills gaps) ── -->
+  <g fill="url(#hm32)" opacity="0.7" stroke="url(#hm32)" stroke-width="0.5">
+
+    <!-- Vertical offsets -->
+    <polygon points="50,24 64,33 64,52 50,61 36,52 36,33"/>
+    <polygon points="50,61 64,70 64,89 50,98 36,89 36,70"/>
+    <polygon points="50,98 64,107 64,126 50,135 36,126 36,107"/>
+    <polygon points="50,135 64,144 64,163 50,172 36,163 36,144"/>
+    <polygon points="50,172 64,181 64,200 50,209 36,200 36,181"/>
+
+    <!-- Top arm offsets -->
+    <polygon points="79,12 93,21 93,40 79,49 65,40 65,21"/>
+    <polygon points="106,12 120,21 120,40 106,49 92,40 92,21"/>
+    <polygon points="133,12 147,21 147,40 133,49 119,40 119,21"/>
+
+    <!-- Middle arm offsets -->
+    <polygon points="79,108 93,117 93,136 79,145 65,136 65,117"/>
+    <polygon points="106,108 120,117 120,136 106,145 92,136 92,117"/>
+
+  </g>
+
+  <!-- ── Small filler hexes (perimeter details, overlapping the edges) ── -->
+  <g fill="url(#hm32)" opacity="0.4" stroke="url(#hm32)" stroke-width="0.5">
+
+    <!-- Small edge hexes along vertical -->
+    <polygon points="24,24 34,30 34,44 24,50 14,44 14,30"/>
+    <polygon points="24,61 34,67 34,81 24,87 14,81 14,67"/>
+    <polygon points="24,98 34,104 34,118 24,124 14,118 14,104"/>
+    <polygon points="24,135 34,141 34,155 24,161 14,155 14,141"/>
+
+    <!-- Small edge hexes along top arm -->
+    <polygon points="63,-10 73,-4 73,10 63,16 53,10 53,-4"/>
+    <polygon points="117,-10 127,-4 127,10 117,16 107,10 107,-4"/>
+
+    <!-- Small edge hexes along middle arm -->
+    <polygon points="63,88 73,94 73,108 63,114 53,108 53,94"/>
+
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ISOMETRIC F — A 3D isometric letter F built from blocks
+       Like an architectural massing model or a voxel structure.
+       Three visible faces per block create depth.
+       Suggests architecture, CAD, structural engineering, precision.
+       The isometric projection gives it a blueprint/3D-model feel. -->
+
+  <defs>
+    <linearGradient id="i37a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="i37b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="i37c" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Isometric grid: each cube is ~20x20x20 in iso projection.
+       Left face = (x, y) to (x+17, y-10) to (x+17, y-10+20) to (x, y+20)
+       Right face = (x+17, y-10) to (x+34, y) to (x+34, y+20) to (x+17, y-10+20)
+       Top face = (x, y) to (x+17, y-10) to (x+34, y) to (x+17, y+10)  -->
+
+  <!-- ── Vertical column (F stem) ── stacked upward -->
+
+  <!-- Base block -->
+  <polygon points="40,170 57,160 74,170 57,180" fill="url(#i37c)" opacity="0.6"/>
+  <polygon points="74,170 57,180 57,160" fill="url(#i37b)" opacity="0.5"/>
+  <polygon points="40,170 57,160 57,140 40,150" fill="url(#i37a)" opacity="0.5"/>
+
+  <!-- Row 1 -->
+  <polygon points="40,150 57,140 74,150 57,160" fill="url(#i37c)" opacity="0.7"/>
+  <polygon points="74,150 57,160 57,140" fill="url(#i37b)" opacity="0.6"/>
+  <polygon points="40,150 57,140 57,120 40,130" fill="url(#i37a)" opacity="0.6"/>
+
+  <!-- Row 2 -->
+  <polygon points="40,130 57,120 74,130 57,140" fill="url(#i37c)" opacity="0.8"/>
+  <polygon points="74,130 57,140 57,120" fill="url(#i37b)" opacity="0.7"/>
+  <polygon points="40,130 57,120 57,100 40,110" fill="url(#i37a)" opacity="0.7"/>
+
+  <!-- Row 3 -->
+  <polygon points="40,110 57,100 74,110 57,120" fill="url(#i37c)" opacity="0.9"/>
+  <polygon points="74,110 57,120 57,100" fill="url(#i37b)" opacity="0.8"/>
+  <polygon points="40,110 57,100 57,80 40,90" fill="url(#i37a)" opacity="0.8"/>
+
+  <!-- Row 4 -->
+  <polygon points="40,90 57,80 74,90 57,100" fill="url(#i37c)" opacity="1"/>
+  <polygon points="74,90 57,100 57,80" fill="url(#i37b)" opacity="0.9"/>
+  <polygon points="40,90 57,80 57,60 40,70" fill="url(#i37a)" opacity="0.9"/>
+
+  <!-- Row 5 (top) -->
+  <polygon points="40,70 57,60 74,70 57,80" fill="url(#i37c)" opacity="1"/>
+  <polygon points="74,70 57,80 57,60" fill="url(#i37b)" opacity="1"/>
+  <polygon points="40,70 57,60 57,40 40,50" fill="url(#i37a)" opacity="1"/>
+
+  <!-- ── Top arm (extending right from top of stem) ── -->
+
+  <!-- Arm row A -->
+  <polygon points="74,70 91,60 108,70 91,80" fill="url(#i37c)" opacity="0.9"/>
+  <polygon points="108,70 91,80 91,60" fill="url(#i37b)" opacity="0.8"/>
+  <polygon points="74,70 91,60 91,40 74,50" fill="url(#i37a)" opacity="0.8"/>
+
+  <polygon points="91,70 108,60 125,70 108,80" fill="url(#i37c)" opacity="0.8"/>
+  <polygon points="125,70 108,80 108,60" fill="url(#i37b)" opacity="0.7"/>
+  <polygon points="91,70 108,60 108,40 91,50" fill="url(#i37a)" opacity="0.7"/>
+
+  <polygon points="108,70 125,60 142,70 125,80" fill="url(#i37c)" opacity="0.7"/>
+  <polygon points="142,70 125,80 125,60" fill="url(#i37b)" opacity="0.6"/>
+  <polygon points="108,70 125,60 125,40 108,50" fill="url(#i37a)" opacity="0.6"/>
+
+  <polygon points="125,70 142,60 159,70 142,80" fill="url(#i37c)" opacity="0.6"/>
+  <polygon points="159,70 142,80 142,60" fill="url(#i37b)" opacity="0.5"/>
+  <polygon points="125,70 142,60 142,40 125,50" fill="url(#i37a)" opacity="0.5"/>
+
+  <!-- ── Middle arm (extending right from mid-stem) ── -->
+
+  <polygon points="57,100 74,90 91,100 74,110" fill="url(#i37c)" opacity="0.9"/>
+  <polygon points="91,100 74,110 74,90" fill="url(#i37b)" opacity="0.8"/>
+  <polygon points="57,100 74,90 74,70 57,80" fill="url(#i37a)" opacity="0.8"/>
+
+  <polygon points="74,100 91,90 108,100 91,110" fill="url(#i37c)" opacity="0.8"/>
+  <polygon points="108,100 91,110 91,90" fill="url(#i37b)" opacity="0.7"/>
+  <polygon points="74,100 91,90 91,70 74,80" fill="url(#i37a)" opacity="0.7"/>
+
+  <polygon points="91,100 108,90 125,100 108,110" fill="url(#i37c)" opacity="0.7"/>
+  <polygon points="125,100 108,110 108,90" fill="url(#i37b)" opacity="0.6"/>
+  <polygon points="91,100 108,90 108,70 91,80" fill="url(#i37a)" opacity="0.6"/>
+
+  <!-- Hard edge highlights — gives it that CAD model feel -->
+  <line x1="57" y1="60" x2="57" y2="180" stroke="#f59e0b" stroke-width="0.8" opacity="0.3"/>
+  <line x1="57" y1="60" x2="142" y2="60" stroke="#f59e0b" stroke-width="0.8" opacity="0.3"/>
+  <line x1="57" y1="90" x2="125" y2="90" stroke="#f59e0b" stroke-width="0.8" opacity="0.25"/>
+</svg>

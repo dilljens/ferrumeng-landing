@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: IRON BRIDGE
+       Two vertical pillars (hardware / firmware — grounded, structural).
+       A diagonal bridge (intelligence / software — dynamic, connecting).
+       The negative space between them naturally forms an "F" shape.
+       This directly embodies the tagline "intersection of hardware and intelligence."
+       Scalable to favicon. Works in B&W. -->
+
+  <defs>
+    <linearGradient id="gb1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Left pillar (hardware) — tall, grounded -->
+  <rect x="48" y="40" width="22" height="130" rx="6" fill="url(#gb1)"/>
+
+  <!-- Right pillar (intelligence) — slightly shorter, begins lower -->
+  <rect x="130" y="60" width="22" height="110" rx="6" fill="url(#gb1)"/>
+
+  <!-- Bridge — diagonal connection sweeping from left-pillar top to right-pillar midsection -->
+  <!-- This single diagonal line is the key: it represents the "intersection" -->
+  <path d="M70 45 L135 85" stroke="url(#gb1)" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- The negative space reads as "F":
+       - Left pillar = vertical stroke of F
+       - Bridge = top bar of F
+       - Negative space between bridge and right pillar base = middle bar zone -->
+
+  <!-- Accent at the bridge start — the exact intersection point -->
+  <circle cx="70" cy="45" r="5" fill="#f59e0b"/>
+</svg>

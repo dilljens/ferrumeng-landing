@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- TRIANGLE MESH — Organic Delaunay-style triangulation of the F
+       Irregular triangles of varying sizes fill the F letterform.
+       Like a low-poly 3D model flattened to 2D.
+       Each triangle has a different copper shade based on its position.
+       The triangles have tiny 0.5px gaps between them (the wireframe),
+       giving it a faceted crystal appearance. -->
+
+  <defs>
+    <linearGradient id="m47a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="m47b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="m47c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="m47d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- ── VERTICAL STEM — irregular triangles forming the left column ── -->
+
+  <g stroke="#0c0c0e" stroke-width="0.8">
+
+    <!-- Top of vertical -->
+    <polygon points="55,10 30,30 60,45" fill="url(#m47a)" opacity="0.95"/>
+    <polygon points="30,30 55,10 25,20" fill="url(#m47b)" opacity="0.9"/>
+    <polygon points="25,20 55,10 20,5" fill="url(#m47a)" opacity="0.95"/>
+
+    <!-- Upper vertical -->
+    <polygon points="30,30 60,45 65,65" fill="url(#m47b)" opacity="0.9"/>
+    <polygon points="30,30 65,65 35,55" fill="url(#m47c)" opacity="0.85"/>
+    <polygon points="35,55 65,65 50,80" fill="url(#m47b)" opacity="0.9"/>
+
+    <!-- Mid-upper -->
+    <polygon points="35,55 50,80 25,75" fill="url(#m47c)" opacity="0.85"/>
+    <polygon points="25,75 50,80 30,95" fill="url(#m47d)" opacity="0.8"/>
+    <polygon points="50,80 65,90 30,95" fill="url(#m47c)" opacity="0.85"/>
+
+    <!-- Center vertical -->
+    <polygon points="65,65 50,80 70,100" fill="url(#m47b)" opacity="0.9"/>
+    <polygon points="30,95 50,80 40,110" fill="url(#m47d)" opacity="0.8"/>
+    <polygon points="50,80 70,100 40,110" fill="url(#m47c)" opacity="0.85"/>
+
+    <!-- Mid-lower -->
+    <polygon points="70,100 40,110 55,130" fill="url(#m47c)" opacity="0.85"/>
+    <polygon points="40,110 55,130 35,140" fill="url(#m47d)" opacity="0.8"/>
+    <polygon points="70,100 55,130 75,145" fill="url(#m47b)" opacity="0.85"/>
+
+    <!-- Lower vertical -->
+    <polygon points="55,130 35,140 45,160" fill="url(#m47d)" opacity="0.75"/>
+    <polygon points="35,140 45,160 25,170" fill="url(#m47d)" opacity="0.7"/>
+    <polygon points="55,130 75,145 65,165" fill="url(#m47c)" opacity="0.8"/>
+
+    <!-- Bottom -->
+    <polygon points="75,145 65,165 80,180" fill="url(#m47c)" opacity="0.75"/>
+    <polygon points="65,165 45,160 55,185" fill="url(#m47d)" opacity="0.7"/>
+    <polygon points="65,165 80,180 55,185" fill="url(#m47d)" opacity="0.65"/>
+    <polygon points="45,160 55,185 30,190" fill="url(#m47d)" opacity="0.6"/>
+
+  </g>
+
+  <!-- ── TOP ARM — triangles branching right from the vertical ── -->
+
+  <g stroke="#0c0c0e" stroke-width="0.8">
+
+    <polygon points="55,10 85,8 75,30" fill="url(#m47a)" opacity="0.95"/>
+    <polygon points="55,10 75,30 60,45" fill="url(#m47a)" opacity="0.95"/>
+
+    <polygon points="85,8 110,15 90,35" fill="url(#m47a)" opacity="0.9"/>
+    <polygon points="85,8 75,30 90,35" fill="url(#m47b)" opacity="0.9"/>
+
+    <polygon points="110,15 135,10 115,38" fill="url(#m47a)" opacity="0.9"/>
+    <polygon points="110,15 90,35 115,38" fill="url(#m47b)" opacity="0.85"/>
+
+    <polygon points="135,10 155,18 130,40" fill="url(#m47b)" opacity="0.85"/>
+    <polygon points="135,10 115,38 130,40" fill="url(#m47b)" opacity="0.85"/>
+
+    <polygon points="155,18 170,15 148,42" fill="url(#m47b)" opacity="0.8"/>
+    <polygon points="155,18 130,40 148,42" fill="url(#m47c)" opacity="0.8"/>
+
+    <polygon points="170,15 175,30 160,50" fill="url(#m47b)" opacity="0.75"/>
+    <polygon points="170,15 148,42 160,50" fill="url(#m47c)" opacity="0.75"/>
+
+    <polygon points="130,40 148,42 160,50" fill="url(#m47c)" opacity="0.7"/>
+
+  </g>
+
+  <!-- ── MIDDLE ARM ── -->
+
+  <g stroke="#0c0c0e" stroke-width="0.8">
+
+    <polygon points="65,90 55,110 80,105" fill="url(#m47b)" opacity="0.9"/>
+    <polygon points="55,110 80,105 70,125" fill="url(#m47c)" opacity="0.85"/>
+
+    <polygon points="65,90 80,105 95,100" fill="url(#m47b)" opacity="0.85"/>
+    <polygon points="80,105 95,100 110,115" fill="url(#m47c)" opacity="0.85"/>
+
+    <polygon points="95,100 120,108 110,115" fill="url(#m47c)" opacity="0.8"/>
+    <polygon points="95,100 120,108 115,95" fill="url(#m47b)" opacity="0.85"/>
+
+    <polygon points="120,108 140,115 125,125" fill="url(#m47c)" opacity="0.75"/>
+    <polygon points="120,108 110,115 125,125" fill="url(#m47d)" opacity="0.75"/>
+
+    <polygon points="140,115 155,120 135,135" fill="url(#m47d)" opacity="0.7"/>
+    <polygon points="140,115 125,125 135,135" fill="url(#m47d)" opacity="0.7"/>
+
+  </g>
+
+  <!-- ── Connection triangles (fill the F's corners) ── -->
+
+  <g stroke="#0c0c0e" stroke-width="0.8">
+    <!-- Corner where top arm meets vertical -->
+    <polygon points="55,10 65,65 60,45" fill="url(#m47a)" opacity="0.9"/>
+    <polygon points="65,65 75,30 60,45" fill="url(#m47b)" opacity="0.85"/>
+
+    <!-- Corner where middle arm meets vertical -->
+    <polygon points="65,90 65,65 50,80" fill="url(#m47c)" opacity="0.85"/>
+    <polygon points="65,90 70,100 55,110" fill="url(#m47c)" opacity="0.8"/>
+  </g>
+</svg>

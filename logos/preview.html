@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferrum Engineering — Logo Concepts</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0c0c0e;
+    color: #f5f5f4;
+    font-family: 'Inter', sans-serif;
+    padding: 60px 40px;
+  }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; }
+  .subtitle { color: #a8a29e; font-size: 14px; margin-bottom: 16px; max-width: 600px; line-height: 1.6; }
+  .cat-header { font-size: 16px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #d97706; margin: 48px 0 24px; padding-bottom: 8px; border-bottom: 1px solid #292524; }
+  .cat-header:first-of-type { margin-top: 32px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .card { background: #1c1917; border-radius: 14px; padding: 20px; border: 1px solid #292524; transition: border-color 0.2s; }
+  .card:hover { border-color: #d97706; }
+  .card h2 { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #d97706; margin-bottom: 2px; }
+  .card .name { font-size: 15px; font-weight: 700; margin-bottom: 10px; }
+  .logo-box { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
+  .logo-main { display: flex; align-items: center; gap: 16px; padding: 16px; background: #0c0c0e; border-radius: 10px; min-height: 100px; }
+  .logo-main img { width: 80px; height: 80px; flex-shrink: 0; border-radius: 4px; }
+  .scale-row { display: flex; align-items: center; gap: 8px; padding: 6px 12px; background: #0c0c0e; border-radius: 6px; }
+  .scale-row span { font-size: 9px; color: #57534e; font-family: 'JetBrains Mono', monospace; min-width: 16px; }
+  .scale-row img { height: 28px; border-radius: 3px; }
+  .scale-row img:last-child { height: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; }
+  .tag { font-size: 9px; padding: 2px 7px; border-radius: 20px; background: #292524; color: #a8a29e; font-family: 'JetBrains Mono', monospace; }
+  .tag.p { background: #422006; color: #fb923c; }
+  .tag.c { background: #3b1a1a; color: #f87171; }
+  .desc { font-size: 12px; color: #a8a29e; line-height: 1.5; }
+
+  .bw-section { margin-top: 60px; padding-top: 40px; border-top: 1px solid #292524; }
+  .bw-section h3 { font-size: 16px; font-weight: 600; margin-bottom: 20px; color: #d97706; }
+  .bw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 12px; }
+  .bw-card { background: #fff; border-radius: 8px; padding: 14px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .bw-card img { width: 48px; height: 48px; filter: grayscale(1) brightness(0.5); }
+  .bw-card .label { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #444; text-align: center; }
+
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 16px 0; }
+  .legend span { font-size: 11px; color: #78716c; font-family: 'JetBrains Mono', monospace; }
+  .legend .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; }
+  .dot-hw { background: #d97706; }
+  .dot-ai { background: #22d3ee; }
+  .dot-hy { background: #a855f7; }
+
+  .rec { background: linear-gradient(135deg,#78350f,#451a03); border-radius: 14px; padding: 24px; margin-top: 36px; border: 1px solid #d97706; }
+  .rec h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .rec p { color: #fdba74; font-size: 13px; line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<h1>Ferrum Engineering</h1>
+<p class="subtitle">
+  All 15 logo concepts — pure icon marks, no text. Grouped by theme.
+  Each shown at 80px, 32px, and 16px. B&amp;W comparison at bottom.
+</p>
+
+<div class="legend">
+  <span><span class="dot dot-hw"></span> Hardware</span>
+  <span><span class="dot dot-ai"></span> AI / Neural</span>
+  <span><span class="dot dot-hy"></span> Hybrid (Chip + Mind)</span>
+  <span><span class="dot" style="background:#78716c;"></span> General</span>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- HARDWARE -->
+<!-- ════════════════════════════════════════════ -->
+
+<div class="cat-header">🔩 Hardware</div>
+<div class="grid">
+  <div class="card">
+    <h2>H1</h2><div class="name">Circuit F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option5-circuit.svg" alt="Circuit F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option5-circuit.svg" alt="32px">
+          <img src="option5-circuit.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">PCB traces</span>
+      <span class="tag p">45° routing</span>
+      <span class="tag p">solder pads</span>
+      <span class="tag p">via</span>
+      <span class="tag c">fine detail at 16px</span>
+    </div>
+    <p class="desc">PCB trace pattern with 45° corners, circular pads, and a hollow via. Hardware engineers recognize the EDA language immediately.</p>
+  </div>
+
+  <div class="card">
+    <h2>H2</h2><div class="name">Gear F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option6-gear.svg" alt="Gear F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option6-gear.svg" alt="32px">
+          <img src="option6-gear.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">gear teeth</span>
+      <span class="tag p">mechanical</span>
+      <span class="tag p">negative-space F</span>
+      <span class="tag c">complex at 16px</span>
+    </div>
+    <p class="desc">8-tooth gear with F cut out of the face. Axle hole at center. The universal mechanical engineering symbol.</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- AI / NEURAL -->
+<!-- ════════════════════════════════════════════ -->
+
+<div class="cat-header">🧠 AI / Neural</div>
+<div class="grid">
+
+  <div class="card">
+    <h2>N1</h2><div class="name">Neural F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option7-neural.svg" alt="Neural F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option7-neural.svg" alt="32px">
+          <img src="option7-neural.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">15 nodes</span>
+      <span class="tag p">synaptic connections</span>
+      <span class="tag p">asymmetric</span>
+    </div>
+    <p class="desc">Full neural network with cross-layer and recurrent connections. The original. Rich detail rewards closer inspection.</p>
+  </div>
+
+  <div class="card">
+    <h2>N2</h2><div class="name">Neural Minimal</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option10-neural-minimal.svg" alt="Neural Minimal">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option10-neural-minimal.svg" alt="32px">
+          <img src="option10-neural-minimal.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">8 nodes</span>
+      <span class="tag p">favicon-optimized</span>
+      <span class="tag p">cleanest F read</span>
+      <span class="tag p">B&W safe</span>
+    </div>
+    <p class="desc">Stripped-down neural net — 8 fat nodes, minimal connections. Trades detail for favicon readability. The most practical neural option.</p>
+  </div>
+
+  <div class="card">
+    <h2>N3</h2><div class="name">Neural Pulse</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option11-neural-pulse.svg" alt="Neural Pulse">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option11-neural-pulse.svg" alt="32px">
+          <img src="option11-neural-pulse.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">activation heatmap</span>
+      <span class="tag p">glowing nodes</span>
+      <span class="tag p">signal pulse</span>
+      <span class="tag p">dynamic feel</span>
+    </div>
+    <p class="desc">A signal traveling through the network. Nodes glow where the pulse is active — like a brain lit up on fMRI. The F emerges from which nodes are lit.</p>
+  </div>
+
+  <div class="card">
+    <h2>N4</h2><div class="name">Neural Deep</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option12-neural-deep.svg" alt="Neural Deep">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option12-neural-deep.svg" alt="32px">
+          <img src="option12-neural-deep.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">4 layers</span>
+      <span class="tag p">fully connected</span>
+      <span class="tag p">ML engineer reference</span>
+      <span class="tag p">F = layer widths</span>
+    </div>
+    <p class="desc">A literal deep neural net architecture: 5→3→2→1 neurons. The F emerges from layer widths. ML engineers will immediately recognize the structure.</p>
+  </div>
+
+  <div class="card">
+    <h2>N5</h2><div class="name">Neural Traceline</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option16-neural-traceline.svg" alt="Neural Traceline">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option16-neural-traceline.svg" alt="32px">
+          <img src="option16-neural-traceline.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">zero circles</span>
+      <span class="tag p">parallel signal bundle</span>
+      <span class="tag p">line opacity = depth</span>
+      <span class="tag p">B&W safe</span>
+    </div>
+    <p class="desc">No circles. Pure connection lines bundled into a bus of neural signals. Four parallel paths per F arm, varying opacities suggest depth. At favicon size they merge solid.</p>
+  </div>
+
+  <div class="card">
+    <h2>N6</h2><div class="name">Neural Dendrite</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option17-neural-dendrite.svg" alt="Neural Dendrite">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option17-neural-dendrite.svg" alt="32px">
+          <img src="option17-neural-dendrite.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">zero floating circles</span>
+      <span class="tag p">biologically accurate</span>
+      <span class="tag p">tree-like branching</span>
+      <span class="tag p">pyramidal neuron</span>
+    </div>
+    <p class="desc">A single pyramidal neuron where dendrite branches naturally form the F. Apical dendrite = vertical stem. Basal tufts = the arms. Only the soma (cell body) is a circle — and it's essential biology, not decoration.</p>
+  </div>
+
+  <div class="card">
+    <h2>N7</h2><div class="name">Neural Weave</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option18-neural-weave.svg" alt="Neural Weave">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option18-neural-weave.svg" alt="32px">
+          <img src="option18-neural-weave.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">two interwoven threads</span>
+      <span class="tag p">continuous lines</span>
+      <span class="tag p">signal + structure</span>
+      <span class="tag p">zero circles</span>
+    </div>
+    <p class="desc">Two continuous neural threads weaving over-and-under like a braided cable. One thread = signal (bright copper), other = structure (dark). They cross at junction points (no circles). The F emerges from their interplay.</p>
+  </div>
+
+  <div class="card">
+    <h2>N8</h2><div class="name">Neural Grid</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option19-neural-grid.svg" alt="Neural Grid">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option19-neural-grid.svg" alt="32px">
+          <img src="option19-neural-grid.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">rectangular mesh fabric</span>
+      <span class="tag p">active routing = F</span>
+      <span class="tag p">compute fabric feel</span>
+      <span class="tag p">zero circles</span>
+    </div>
+    <p class="desc">A neural routing mesh where most paths are dim (inactive) and the F is lit (active). Like watching a network router's heatmap. Grid crossings use tiny X-marks instead of circles. Structured, ordered, architectural.</p>
+  </div>
+
+  <div class="card">
+    <h2>N9</h2><div class="name">Neural Pulse Line</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option20-neural-pulseline.svg" alt="Neural Pulse Line">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option20-neural-pulseline.svg" alt="32px">
+          <img src="option20-neural-pulseline.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">single continuous line</span>
+      <span class="tag p">EEG-style trace</span>
+      <span class="tag p">varying thickness</span>
+      <span class="tag p">zero circles</span>
+      <span class="tag p">organic flow</span>
+    </div>
+    <p class="desc">One uninterrupted flowing line that traces the F like a real-time neural activation. Enters bottom, loops through the vertical, sweeps the arms, exits. Varying line thickness suggests signal strength. No circles, no nodes.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX1</h2><div class="name">Hex Outline</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option26-hexpath-outline.svg" alt="Hex Outline">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option26-hexpath-outline.svg" alt="32px">
+          <img src="option26-hexpath-outline.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">hexagons trace F outline</span>
+      <span class="tag p">mosaic tiles</span>
+      <span class="tag p">no grid noise</span>
+    </div>
+    <p class="desc">Hexagons placed specifically to outline the F — like a mosaic made of hexagonal tiles. Only enough hexagons to read as F, no excess, no grid background.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX2</h2><div class="name">Hex Solid</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option27-hexpath-solid.svg" alt="Hex Solid">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option27-hexpath-solid.svg" alt="32px">
+          <img src="option27-hexpath-solid.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">hex pixel art F</span>
+      <span class="tag p">tightly packed</span>
+      <span class="tag p">solid at 16px</span>
+    </div>
+    <p class="desc">A solid block of tightly packed hexagons forming the F. Like hexagonal pixel art. At favicon size it looks like a solid F. At large size you see the individual cells.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX3</h2><div class="name">Hex Border</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option28-hexpath-border.svg" alt="Hex Border">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option28-hexpath-border.svg" alt="32px">
+          <img src="option28-hexpath-border.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">hollow F</span>
+      <span class="tag p">perimeter only</span>
+      <span class="tag p">least dense</span>
+    </div>
+    <p class="desc">Hexagons trace ONLY the outer border of the F. The interior is empty. Like a honeycomb cut into the shape of an F outline. Most air, most elegant.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX5</h2><div class="name">Hex Stack</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option30-hex-stack.svg" alt="Hex Stack">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option30-hex-stack.svg" alt="32px">
+          <img src="option30-hex-stack.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">solid filled</span>
+      <span class="tag p">overlapping like shingles</span>
+      <span class="tag p">scaly texture</span>
+      <span class="tag p">double-width column</span>
+    </div>
+    <p class="desc">Solid overlapping hexagons stacked like shingles along the F. Scaled up 120% so each hex overlaps its neighbors. A double-width column creates a solid F stem with rich overlap texture.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX6</h2><div class="name">Hex Cascade</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option31-hex-cascade.svg" alt="Hex Cascade">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option31-hex-cascade.svg" alt="32px">
+          <img src="option31-hex-cascade.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">solid filled</span>
+      <span class="tag p">waterfall flow</span>
+      <span class="tag p">gradient opacity</span>
+      <span class="tag p">spillover edges</span>
+    </div>
+    <p class="desc">Overlapping hexagons cascading like a waterfall — down the vertical, then across each arm. Opacity varies for directional flow. Spillover hexes at the edges create a soft boundary.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX7</h2><div class="name">Hex Mosaic</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option32-hex-mosaic.svg" alt="Hex Mosaic">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option32-hex-mosaic.svg" alt="32px">
+          <img src="option32-hex-mosaic.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">solid filled</span>
+      <span class="tag p">3 size tiers</span>
+      <span class="tag p">chaotic overlap</span>
+      <span class="tag p">forged iron feel</span>
+    </div>
+    <p class="desc">Three tiers of hexagons — large (core), medium (overlap), small (edge) — creating a chaotic mosaic that forms the F. Like forged iron scales pressed into place.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX8</h2><div class="name">Hex Layers</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option33-hex-layers.svg" alt="Hex Layers">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option33-hex-layers.svg" alt="32px">
+          <img src="option33-hex-layers.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">solid filled</span>
+      <span class="tag p">3 depth layers</span>
+      <span class="tag p">3D forged metal</span>
+      <span class="tag p">dark → bright gradient</span>
+    </div>
+    <p class="desc">Three layers of hexagons at different depths: dark foundation (bottom) → medium fill (middle) → bright highlights (top). Each overlaps the one below, creating a 3D forged-metal appearance.</p>
+  </div>
+
+  <div class="card">
+    <h2>HX4</h2><div class="name">Hex Swarm</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option29-hexpath-swarm.svg" alt="Hex Swarm">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option29-hexpath-swarm.svg" alt="32px">
+          <img src="option29-hexpath-swarm.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">density gradient</span>
+      <span class="tag p">swarm clustering</span>
+      <span class="tag p">hexes shrink at edges</span>
+    </div>
+    <p class="desc">Hexagons clustered along the F path like a swarm. Dense in the center of each stroke, sparse at edges. A density gradient heatmap made of hex cells.</p>
+  </div>
+
+  <div class="card">
+    <h2>N10</h2><div class="name">Neural Hex Path</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option21-neural-hexpath.svg" alt="Neural Hex Path">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option21-neural-hexpath.svg" alt="32px">
+          <img src="option21-neural-hexpath.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">hexagonal tessellation</span>
+      <span class="tag p">tissue grid</span>
+      <span class="tag p">wave of activation</span>
+      <span class="tag p">zero circles</span>
+    </div>
+    <p class="desc">A hexagon-tiled neural tissue grid. Most cells are dim outlines; the cells along the F path are filled and "firing." Like watching a wave of depolarization travel across a brain slice. The F emerges from which cells are active.</p>
+  </div>
+
+  <div class="card">
+    <h2>N11</h2><div class="name">Dot Matrix</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option22-neural-dotmatrix.svg" alt="Dot Matrix">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option22-neural-dotmatrix.svg" alt="32px">
+          <img src="option22-neural-dotmatrix.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">circles only on F</span>
+      <span class="tag p">grid matrix</span>
+      <span class="tag p">neural firing pattern</span>
+    </div>
+    <p class="desc">A potential grid of dots. Only the F path fires — like a neural array lighting up. Circles appear ONLY along the F letterform. Every dot has a purpose.</p>
+  </div>
+
+  <div class="card">
+    <h2>N12</h2><div class="name">F Trace</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option23-neural-ftrace.svg" alt="F Trace">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option23-neural-ftrace.svg" alt="32px">
+          <img src="option23-neural-ftrace.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">circles only on F</span>
+      <span class="tag p">dotted letterform</span>
+      <span class="tag p">subtle connection lines</span>
+    </div>
+    <p class="desc">Circles precisely placed to trace the F letterform. Varying sizes — larger at junctions, smaller along straights. Like a dotted outline of a capital F. Zero off-path circles.</p>
+  </div>
+
+  <div class="card">
+    <h2>N13</h2><div class="name">Connected Dots</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option24-neural-connected.svg" alt="Connected Dots">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option24-neural-connected.svg" alt="32px">
+          <img src="option24-neural-connected.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">circles only at junctions</span>
+      <span class="tag p">straight connections</span>
+      <span class="tag p">node graph</span>
+    </div>
+    <p class="desc">A node graph where circles exist only at junctions and endpoints along the F. Clean lines between them. No standalone circles — every node is structurally necessary.</p>
+  </div>
+
+  <div class="card">
+    <h2>N14</h2><div class="name">Constellation</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option25-neural-constellation.svg" alt="Constellation">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option25-neural-constellation.svg" alt="32px">
+          <img src="option25-neural-constellation.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">10 circles total</span>
+      <span class="tag p">absolute minimum</span>
+      <span class="tag p">star constellation</span>
+      <span class="tag p">circles only on F</span>
+    </div>
+    <p class="desc">The fewest possible circles that still read as F. Only 10. Like a star constellation — sparse, elegant, unmistakable. Every star is on the F. Nothing else exists.</p>
+  </div>
+
+  <div class="card">
+    <h2>N5 (original)</h2><div class="name">Wave F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option8-wave.svg" alt="Wave F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option8-wave.svg" alt="32px">
+          <img src="option8-wave.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">oscilloscope</span>
+      <span class="tag p">3 signal channels</span>
+      <span class="tag p">flow + motion</span>
+      <span class="tag c">reading F takes a moment</span>
+    </div>
+    <p class="desc">Three signal waveforms stacked like scope channels. Different frequencies = different intelligence domains. Grid lines like a real oscilloscope.</p>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- HYBRID (CHIP + MIND) -->
+<!-- ════════════════════════════════════════════ -->
+
+<div class="cat-header">⚡ Hybrid — Chip + Mind</div>
+<div class="grid">
+
+  <div class="card">
+    <h2>C1</h2><div class="name">Chip + Mind</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option9-chip.svg" alt="Chip + Mind">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option9-chip.svg" alt="32px">
+          <img src="option9-chip.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">IC package + pins</span>
+      <span class="tag p">neural traces inside</span>
+      <span class="tag p">orient notch</span>
+      <span class="tag p">the original hybrid</span>
+    </div>
+    <p class="desc">IC body with 14 pins, neural F-traces etched into the die. The outer package says hardware. The copper core says intelligence. Both things at once.</p>
+  </div>
+
+  <div class="card">
+    <h2>C2</h2><div class="name">Chip Simple</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option13-chip-simple.svg" alt="Chip Simple">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option13-chip-simple.svg" alt="32px">
+          <img src="option13-chip-simple.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">6 pins only</span>
+      <span class="tag p">favicon-optimized</span>
+      <span class="tag p">organic curved traces</span>
+      <span class="tag p">bio-neural feel</span>
+    </div>
+    <p class="desc">Stripped-down chip with only 6 pins. Inside, the F is drawn with organic curved paths — not rigid PCB traces but biological neural pathways. The "mind" half is more visible at small sizes.</p>
+  </div>
+
+  <div class="card">
+    <h2>C3</h2><div class="name">Chip Die Shot</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option14-chip-dieshot.svg" alt="Chip Die Shot">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option14-chip-dieshot.svg" alt="32px">
+          <img src="option14-chip-dieshot.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">bond pads</span>
+      <span class="tag p">bond wires</span>
+      <span class="tag p">gate-array texture</span>
+      <span class="tag p">SRAM filler cells</span>
+      <span class="tag c">busiest of the group</span>
+    </div>
+    <p class="desc">Inspired by real chip die photography (like the Intel 4004). I/O bond pads, sweeping bond wires, concentric functional rings, and repeating gate-array cells. The F is built from dense logic gates at the core.</p>
+  </div>
+
+  <div class="card">
+    <h2>C4</h2><div class="name">Chip Stack</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option15-chip-stack.svg" alt="Chip Stack">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option15-chip-stack.svg" alt="32px">
+          <img src="option15-chip-stack.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">3D chip stacking</span>
+      <span class="tag p">neural + memory + logic</span>
+      <span class="tag p">TSV vias</span>
+      <span class="tag p">solder balls</span>
+      <span class="tag p">most unique silhouette</span>
+    </div>
+    <p class="desc">Three stacked dies like HBM memory: neural accelerator (top) + cache (middle) + logic (bottom). The F is formed by through-silicon vias punching through all layers. A 3D chip architecture in 2D.</p>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ISOMETRIC -->
+<!-- ════════════════════════════════════════════ -->
+
+<div class="cat-header">🧊 Isometric F</div>
+<div class="grid">
+
+  <div class="card">
+    <h2>I1</h2><div class="name">Iso Solid</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option41-iso-solid.svg" alt="Iso Solid">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option41-iso-solid.svg" alt="32px">
+          <img src="option41-iso-solid.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">solid blocks</span>
+      <span class="tag p">clear gap between arms</span>
+      <span class="tag p">3-face shading</span>
+    </div>
+    <p class="desc">Solid isometric blocks with generous gap between top arm and middle arm. Three visible faces per block with distinct shading. Deep extrusion gives it weight.</p>
+  </div>
+
+  <div class="card">
+    <h2>I2</h2><div class="name">Iso Wireframe</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option42-iso-wireframe.svg" alt="Iso Wireframe">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option42-iso-wireframe.svg" alt="32px">
+          <img src="option42-iso-wireframe.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">CAD wireframe</span>
+      <span class="tag p">edges only</span>
+      <span class="tag p">blueprint style</span>
+    </div>
+    <p class="desc">Edges only — like a CAD wireframe. No filled faces. Bright copper highlights trace the F's outer contour. Technical, blueprint aesthetic.</p>
+  </div>
+
+  <div class="card">
+    <h2>I3</h2><div class="name">Iso Hollow</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option43-iso-hollow.svg" alt="Iso Hollow">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option43-iso-hollow.svg" alt="32px">
+          <img src="option43-iso-hollow.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">visible faces only</span>
+      <span class="tag p">architectural model</span>
+      <span class="tag p">lightweight</span>
+    </div>
+    <p class="desc">Only the visible outer surfaces — like an architectural study model. No back faces or hidden lines. Clean, lightweight, modern.</p>
+  </div>
+
+  <div class="card">
+    <h2>I4</h2><div class="name">Iso Exploded</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option44-iso-exploded.svg" alt="Iso Exploded">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option44-iso-exploded.svg" alt="32px">
+          <img src="option44-iso-exploded.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">exploded diagram</span>
+      <span class="tag p">blocks pulled apart</span>
+      <span class="tag p">service manual feel</span>
+    </div>
+    <p class="desc">Each block pulled apart with visible gaps — like an exploded parts diagram. Extra-wide separation between top arm and middle arm makes the F unmistakable.</p>
+  </div>
+
+  <div class="card">
+    <h2>I5</h2><div class="name">Iso Gradient</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option45-iso-gradient.svg" alt="Iso Gradient">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option45-iso-gradient.svg" alt="32px">
+          <img src="option45-iso-gradient.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">3 color sections</span>
+      <span class="tag p">deep bronze vertical</span>
+      <span class="tag p">gold top arm</span>
+      <span class="tag p">amber middle arm</span>
+    </div>
+    <p class="desc">Three copper tones per section: deep bronze (stem), bright gold (top arm), medium amber (middle arm). Color separation emphasizes the gap between arms.</p>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- TRIANGLE F -->
+<!-- ════════════════════════════════════════════ -->
+
+<div class="cat-header">△ Triangulated F</div>
+<div class="grid">
+
+  <div class="card">
+    <h2>T1</h2><div class="name">Tri Pixel</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option46-tri-pixel.svg" alt="Tri Pixel">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option46-tri-pixel.svg" alt="32px">
+          <img src="option46-tri-pixel.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">grid of right triangles</span>
+      <span class="tag p">half-square pixels</span>
+      <span class="tag p">4 copper tones</span>
+      <span class="tag p">lighter at top</span>
+    </div>
+    <p class="desc">Each square grid cell split diagonally into two triangles. Every triangle has its own copper tone — light gold at top, deep bronze at bottom. Like pixel art rendered in triangles. Clear gap between arms.</p>
+  </div>
+
+  <div class="card">
+    <h2>T2</h2><div class="name">Tri Mesh</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option47-tri-mesh.svg" alt="Tri Mesh">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option47-tri-mesh.svg" alt="32px">
+          <img src="option47-tri-mesh.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">Delaunay triangulation</span>
+      <span class="tag p">irregular triangles</span>
+      <span class="tag p">low-poly style</span>
+      <span class="tag p">crystal facets</span>
+    </div>
+    <p class="desc">Irregular Delaunay-style triangles filling the F. Like a low-poly 3D model. Tiny gaps between triangles create a faceted crystal appearance. Organic, natural-feeling geometry.</p>
+  </div>
+
+  <div class="card">
+    <h2>T3</h2><div class="name">Tri Strips</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option48-tri-strips.svg" alt="Tri Strips">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option48-tri-strips.svg" alt="32px">
+          <img src="option48-tri-strips.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">long thin triangles</span>
+      <span class="tag p">zigzag chevron pattern</span>
+      <span class="tag p">striped texture</span>
+      <span class="tag p">alternating tones</span>
+    </div>
+    <p class="desc">Long thin triangles arranged in strips along the F. Alternating light/dark copper creates a zigzag chevron pattern. Like a faceted ribbon folded into an F.</p>
+  </div>
+
+  <div class="card">
+    <h2>T4</h2><div class="name">Tri Spark</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option49-tri-spark.svg" alt="Tri Spark">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option49-tri-spark.svg" alt="32px">
+          <img src="option49-tri-spark.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">radiating shards</span>
+      <span class="tag p">crystal shatter</span>
+      <span class="tag p">energetic</span>
+      <span class="tag p">dense clustering</span>
+    </div>
+    <p class="desc">Sharp triangular shards radiating outward from the F's centerlines. Like a crystal shattering into shards that happen to spell F. Dense clustering defines the letterform. Aggressive, energetic.</p>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- NEW DIRECTIONS -->
+<!-- ════════════════════════════════════════════ -->
+
+<div class="cat-header">🌀 New Directions</div>
+<div class="grid">
+
+  <div class="card">
+    <h2>ND1</h2><div class="name">Truss F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option34-truss.svg" alt="Truss F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option34-truss.svg" alt="32px">
+          <img src="option34-truss.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">structural truss</span>
+      <span class="tag p">triangulated beams</span>
+      <span class="tag p">rivet joints</span>
+      <span class="tag p">radio tower</span>
+    </div>
+    <p class="desc">A steel truss framework forming the letter F. Triangulated cross-bracing, parallel chords, rivet/bolt markers at every joint. Engineering precision at its most literal — like a radio tower or bridge truss.</p>
+  </div>
+
+  <div class="card">
+    <h2>ND2</h2><div class="name">Knot F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option35-knot.svg" alt="Knot F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option35-knot.svg" alt="32px">
+          <img src="option35-knot.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">continuous ribbon</span>
+      <span class="tag p">over/under crossings</span>
+      <span class="tag p">3D tube effect</span>
+      <span class="tag p">mathematical knot</span>
+    </div>
+    <p class="desc">A single continuous ribbon that loops and knots into an F. The three crossings naturally form the three bars. Over/under shading creates depth. Like a Möbius strip or mathematical knot.</p>
+  </div>
+
+  <div class="card">
+    <h2>ND3</h2><div class="name">Aperture F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option36-aperture.svg" alt="Aperture F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option36-aperture.svg" alt="32px">
+          <img src="option36-aperture.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">camera iris</span>
+      <span class="tag p">6 blades</span>
+      <span class="tag p">precision optics</span>
+      <span class="tag p">F is the opening</span>
+    </div>
+    <p class="desc">A camera aperture with six blades overlapping. The central opening forms the F shape — the light enters through the F. Precision optics metaphor: focus, clarity, the intersection point.</p>
+  </div>
+
+  <div class="card">
+    <h2>ND4</h2><div class="name">Isometric F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option37-isometric.svg" alt="Isometric F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option37-isometric.svg" alt="32px">
+          <img src="option37-isometric.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">3D isometric blocks</span>
+      <span class="tag p">architectural model</span>
+      <span class="tag p">voxel structure</span>
+      <span class="tag p">3 visible faces per block</span>
+    </div>
+    <p class="desc">An isometric voxel/block F like an architectural massing model. Three visible faces per cube with different shading. Suggests CAD, structural engineering, 3D modeling, precision construction.</p>
+  </div>
+
+  <div class="card">
+    <h2>ND5</h2><div class="name">Radar F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option38-radar.svg" alt="Radar F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option38-radar.svg" alt="32px">
+          <img src="option38-radar.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">radar display</span>
+      <span class="tag p">oscilloscope sweep</span>
+      <span class="tag p">blip returns</span>
+      <span class="tag p">rotating beam</span>
+    </div>
+    <p class="desc">A circular radar display. The F is illuminated radar return blips — glowing dots tracing the letter. A rotating sweep beam and expanding pulse rings. Detection, monitoring, signals, systems.</p>
+  </div>
+
+  <div class="card">
+    <h2>ND6</h2><div class="name">Trilateration F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option39-trilateration.svg" alt="Trilateration F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option39-trilateration.svg" alt="32px">
+          <img src="option39-trilateration.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">GPS trilateration</span>
+      <span class="tag p">3 intersecting circles</span>
+      <span class="tag p">signal sources</span>
+      <span class="tag p">pulse rings</span>
+    </div>
+    <p class="desc">Three intersecting circles like GPS satellites. Each represents a domain (hardware, intelligence, systems). Where all three overlap, the F emerges. The intersection of signals creates the mark.</p>
+  </div>
+
+  <div class="card">
+    <h2>ND7</h2><div class="name">Origami F</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option40-origami.svg" alt="Origami F">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option40-origami.svg" alt="32px">
+          <img src="option40-origami.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">folded paper</span>
+      <span class="tag p">planar facets</span>
+      <span class="tag p">crease lines</span>
+      <span class="tag p">low-poly geometry</span>
+    </div>
+    <p class="desc">An origami/low-poly folded F. Each planar facet catches light at a different angle. Sharp crease lines separate the faces. Suggests transformation, creativity, precision engineering.</p>
+  </div>
+
+</div>
+
+<div class="cat-header">📐 General</div>
+<div class="grid">
+  <div class="card">
+    <h2>G1</h2><div class="name">Intersect</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option1-intersect.svg" alt="Intersect">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option1-intersect.svg" alt="32px">
+          <img src="option1-intersect.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">boldest at 16px</span>
+      <span class="tag p">B&W bulletproof</span>
+      <span class="tag c">least unique</span>
+    </div>
+    <p class="desc">Three pill-shaped bars. Asymmetric middle arm keeps it from looking like a font letter. Best favicon readability of all options.</p>
+  </div>
+
+  <div class="card">
+    <h2>G2</h2><div class="name">Ferrum Node</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option2-ferrum-node.svg" alt="Ferrum Node">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option2-ferrum-node.svg" alt="32px">
+          <img src="option2-ferrum-node.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">hexagon</span>
+      <span class="tag p">negative-space F</span>
+      <span class="tag p">most distinctive</span>
+      <span class="tag c">gappy at 16px</span>
+    </div>
+    <p class="desc">Hexagon with three diagonal cuts carving an F in negative space. The most abstract — rewards closer inspection.</p>
+  </div>
+
+  <div class="card">
+    <h2>G3</h2><div class="name">Iron Bridge</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option3-iron-bridge.svg" alt="Iron Bridge">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option3-iron-bridge.svg" alt="32px">
+          <img src="option3-iron-bridge.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">story in the shape</span>
+      <span class="tag p">B&W safe</span>
+      <span class="tag p">distinctive silhouette</span>
+    </div>
+    <p class="desc">Two pillars (hardware + intelligence) bridged by a diagonal. The F is the negative space between them. The shape is the tagline.</p>
+  </div>
+
+  <div class="card">
+    <h2>G4</h2><div class="name">Crystal</div>
+    <div class="logo-box">
+      <div class="logo-main">
+        <img src="option4-crystal.svg" alt="Crystal">
+        <div class="scale-row">
+          <span>16</span>
+          <img src="option4-crystal.svg" alt="32px">
+          <img src="option4-crystal.svg" alt="16px">
+        </div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag p">iron crystal lattice</span>
+      <span class="tag p">diamond facets</span>
+      <span class="tag p">deep meaning</span>
+    </div>
+    <p class="desc">Iron's BCC crystal structure with internal F facets and electron nodes. The center node is the nucleus where structure meets intelligence.</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- B&W COMPARISON -->
+<!-- ════════════════════════════════════════════ -->
+
+<div class="bw-section">
+  <h3>Monochrome Test — all 15 options on white</h3>
+  <p style="color:#78716c;font-size:13px;margin-bottom:20px;">If it doesn't work in black and white, it doesn't work.</p>
+  <div class="bw-grid">
+    <div class="bw-card"><img src="option1-intersect.svg" alt=""><div class="label">Intersect</div></div>
+    <div class="bw-card"><img src="option2-ferrum-node.svg" alt=""><div class="label">Ferrum Node</div></div>
+    <div class="bw-card"><img src="option3-iron-bridge.svg" alt=""><div class="label">Iron Bridge</div></div>
+    <div class="bw-card"><img src="option4-crystal.svg" alt=""><div class="label">Crystal</div></div>
+    <div class="bw-card"><img src="option5-circuit.svg" alt=""><div class="label">Circuit</div></div>
+    <div class="bw-card"><img src="option6-gear.svg" alt=""><div class="label">Gear</div></div>
+    <div class="bw-card"><img src="option7-neural.svg" alt=""><div class="label">Neural</div></div>
+    <div class="bw-card"><img src="option8-wave.svg" alt=""><div class="label">Wave</div></div>
+    <div class="bw-card"><img src="option16-neural-traceline.svg" alt=""><div class="label">Traceline</div></div>
+    <div class="bw-card"><img src="option17-neural-dendrite.svg" alt=""><div class="label">Dendrite</div></div>
+    <div class="bw-card"><img src="option18-neural-weave.svg" alt=""><div class="label">Weave</div></div>
+    <div class="bw-card"><img src="option19-neural-grid.svg" alt=""><div class="label">Grid</div></div>
+    <div class="bw-card"><img src="option20-neural-pulseline.svg" alt=""><div class="label">Pulse Line</div></div>
+    <div class="bw-card"><img src="option21-neural-hexpath.svg" alt=""><div class="label">Hex Path</div></div>
+    <div class="bw-card"><img src="option22-neural-dotmatrix.svg" alt=""><div class="label">Dot Matrix</div></div>
+    <div class="bw-card"><img src="option23-neural-ftrace.svg" alt=""><div class="label">F Trace</div></div>
+    <div class="bw-card"><img src="option24-neural-connected.svg" alt=""><div class="label">Connected</div></div>
+    <div class="bw-card"><img src="option25-neural-constellation.svg" alt=""><div class="label">Constel.</div></div>
+    <div class="bw-card"><img src="option26-hexpath-outline.svg" alt=""><div class="label">Hex Out</div></div>
+    <div class="bw-card"><img src="option27-hexpath-solid.svg" alt=""><div class="label">Hex Solid</div></div>
+    <div class="bw-card"><img src="option28-hexpath-border.svg" alt=""><div class="label">Hex Border</div></div>
+    <div class="bw-card"><img src="option29-hexpath-swarm.svg" alt=""><div class="label">Hex Swarm</div></div>
+    <div class="bw-card"><img src="option30-hex-stack.svg" alt=""><div class="label">Hex Stack</div></div>
+    <div class="bw-card"><img src="option31-hex-cascade.svg" alt=""><div class="label">Hex Casc</div></div>
+    <div class="bw-card"><img src="option32-hex-mosaic.svg" alt=""><div class="label">Mosaic</div></div>
+    <div class="bw-card"><img src="option33-hex-layers.svg" alt=""><div class="label">Layers</div></div>
+    <div class="bw-card"><img src="option34-truss.svg" alt=""><div class="label">Truss</div></div>
+    <div class="bw-card"><img src="option41-iso-solid.svg" alt=""><div class="label">Iso Solid</div></div>
+    <div class="bw-card"><img src="option46-tri-pixel.svg" alt=""><div class="label">Tri Pixel</div></div>
+    <div class="bw-card"><img src="option47-tri-mesh.svg" alt=""><div class="label">Tri Mesh</div></div>
+    <div class="bw-card"><img src="option48-tri-strips.svg" alt=""><div class="label">Tri Strip</div></div>
+    <div class="bw-card"><img src="option49-tri-spark.svg" alt=""><div class="label">Tri Spark</div></div>
+    <div class="bw-card"><img src="option42-iso-wireframe.svg" alt=""><div class="label">Iso Wire</div></div>
+    <div class="bw-card"><img src="option43-iso-hollow.svg" alt=""><div class="label">Iso Hollow</div></div>
+    <div class="bw-card"><img src="option44-iso-exploded.svg" alt=""><div class="label">Iso Expl</div></div>
+    <div class="bw-card"><img src="option45-iso-gradient.svg" alt=""><div class="label">Iso Grad</div></div>
+    <div class="bw-card"><img src="option35-knot.svg" alt=""><div class="label">Knot</div></div>
+    <div class="bw-card"><img src="option36-aperture.svg" alt=""><div class="label">Aperture</div></div>
+    <div class="bw-card"><img src="option37-isometric.svg" alt=""><div class="label">Isometric</div></div>
+    <div class="bw-card"><img src="option38-radar.svg" alt=""><div class="label">Radar</div></div>
+    <div class="bw-card"><img src="option39-trilateration.svg" alt=""><div class="label">Trilat.</div></div>
+    <div class="bw-card"><img src="option40-origami.svg" alt=""><div class="label">Origami</div></div>
+    <div class="bw-card"><img src="option9-chip.svg" alt=""><div class="label">Chip+Mind</div></div>
+    <div class="bw-card"><img src="option10-neural-minimal.svg" alt=""><div class="label">Neural Min</div></div>
+    <div class="bw-card"><img src="option11-neural-pulse.svg" alt=""><div class="label">Pulse</div></div>
+    <div class="bw-card"><img src="option12-neural-deep.svg" alt=""><div class="label">Deep</div></div>
+    <div class="bw-card"><img src="option13-chip-simple.svg" alt=""><div class="label">Chip Simple</div></div>
+    <div class="bw-card"><img src="option14-chip-dieshot.svg" alt=""><div class="label">Die Shot</div></div>
+    <div class="bw-card"><img src="option15-chip-stack.svg" alt=""><div class="label">Chip Stack</div></div>
+  </div>
+</div>
+
+<div class="rec">
+  <h3>Quick picks:</h3>
+  <p>
+    <strong>Most favicon-friendly (Neural):</strong> Neural Minimal or Neural Traceline — no circles, all bold lines<br>
+    <strong>Best storytelling (Neural):</strong> Neural Deep — ML engineers recognize the layer architecture; or Neural Dendrite — actual neuron morphology<br>
+    <strong>Most visually striking (Neural):</strong> Neural Pulse — glowing activation heatmap; or Neural Hex Path — firing wave through tissue<br>
+    <strong>Best no-circles pick:</strong> Neural Traceline (parallel bundles) or Neural Weave (two interwoven threads) or Neural Grid (mesh routing)<br>
+    <strong>Best circles-only-on-F:</strong> F Trace (dotted letterform) or Connected Dots (junction nodes) or Constellation (10 star points)<br>
+    <strong>Best hex-path:</strong> Hex Solid (reads as F at any size) or Hex Border (hollow, elegant) or Hex Swarm (density gradient)<br>
+    <strong>Best overlapping solid hex:</strong> Hex Layers (3D forged metal) or Hex Cascade (waterfall flow) or Hex Stack (shingle texture)<br>
+    <strong>Best completely new direction:</strong> Truss (structural engineering) or Aperture (precision optics) or Knot (mathematical elegance)<br>
+    <strong>Best storytelling:</strong> Trilateration (intersection of three domains, right in the name) or Radar (detection + signals)<br>
+    <strong>Best architectural feel:</strong> Isometric (CAD model) or Truss (bridge/tower structure) or Origami (folded planes)<br>
+    <strong>Most favicon-friendly (Chip):</strong> Chip Simple — 6 pins, organic F inside, reads well small<br>
+    <strong>Best storytelling (Chip):</strong> Chip Die Shot — feels like a real chip under a microscope<br>
+    <strong>Most unique silhouette (Chip):</strong> Chip Stack — nobody else has a 3D stacked-die logo<br>
+    <strong>Best hybrid statement:</strong> Chip Stack — the three layers literally show "hardware (bottom) running AI (top)"
+  </p>
+</div>
+
+</body>
+</html>

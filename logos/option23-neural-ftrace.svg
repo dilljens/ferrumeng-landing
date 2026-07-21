@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL SIMPLE — F Trace
+       Circles placed precisely to trace the F letterform.
+       Like a dotted outline of a capital F. Every circle is ON the F path.
+       No circles off the path. No circles not forming the F.
+       Varying sizes: larger at junctions, smaller along straight stretches.
+       This is the most literal "circles forming F" option. -->
+
+  <defs>
+    <radialGradient id="ft23" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Vertical stem dots (left column, top to bottom) -->
+  <circle cx="55" cy="27" r="8" fill="url(#ft23)"/>
+  <circle cx="55" cy="47" r="6" fill="url(#ft23)"/>
+  <circle cx="55" cy="67" r="5" fill="url(#ft23)"/>
+  <circle cx="55" cy="87" r="7" fill="url(#ft23)"/>
+  <circle cx="55" cy="107" r="5" fill="url(#ft23)"/>
+  <circle cx="55" cy="127" r="5" fill="url(#ft23)"/>
+  <circle cx="55" cy="147" r="4" fill="url(#ft23)"/>
+  <circle cx="55" cy="167" r="4" fill="url(#ft23)"/>
+
+  <!-- Top arm dots (right from top of stem) -->
+  <circle cx="75" cy="27" r="7" fill="url(#ft23)"/>
+  <circle cx="95" cy="27" r="6" fill="url(#ft23)"/>
+  <circle cx="115" cy="27" r="5" fill="url(#ft23)"/>
+  <circle cx="135" cy="27" r="5" fill="url(#ft23)"/>
+  <circle cx="155" cy="27" r="6" fill="url(#ft23)"/>
+
+  <!-- Middle arm dots (right from middle of stem) -->
+  <circle cx="75" cy="87" r="6" fill="url(#ft23)"/>
+  <circle cx="95" cy="87" r="5" fill="url(#ft23)"/>
+  <circle cx="115" cy="87" r="4" fill="url(#ft23)"/>
+  <circle cx="130" cy="87" r="5" fill="url(#ft23)"/>
+
+  <!-- Connection lines — subtle, between consecutive dots -->
+  <line x1="55" y1="27" x2="55" y2="47" stroke="#d97706" stroke-width="1.5" opacity="0.15"/>
+  <line x1="55" y1="47" x2="55" y2="67" stroke="#d97706" stroke-width="1.5" opacity="0.15"/>
+  <line x1="55" y1="67" x2="55" y2="87" stroke="#d97706" stroke-width="1.5" opacity="0.15"/>
+  <line x1="55" y1="87" x2="55" y2="107" stroke="#d97706" stroke-width="1.5" opacity="0.12"/>
+  <line x1="55" y1="107" x2="55" y2="127" stroke="#d97706" stroke-width="1.5" opacity="0.1"/>
+  <line x1="55" y1="127" x2="55" y2="147" stroke="#d97706" stroke-width="1.5" opacity="0.08"/>
+  <line x1="55" y1="147" x2="55" y2="167" stroke="#d97706" stroke-width="1.5" opacity="0.06"/>
+
+  <line x1="55" y1="27" x2="75" y2="27" stroke="#d97706" stroke-width="1.5" opacity="0.15"/>
+  <line x1="75" y1="27" x2="95" y2="27" stroke="#d97706" stroke-width="1.5" opacity="0.15"/>
+  <line x1="95" y1="27" x2="115" y2="27" stroke="#d97706" stroke-width="1.5" opacity="0.12"/>
+  <line x1="115" y1="27" x2="135" y2="27" stroke="#d97706" stroke-width="1.5" opacity="0.1"/>
+  <line x1="135" y1="27" x2="155" y2="27" stroke="#d97706" stroke-width="1.5" opacity="0.08"/>
+
+  <line x1="55" y1="87" x2="75" y2="87" stroke="#d97706" stroke-width="1.5" opacity="0.15"/>
+  <line x1="75" y1="87" x2="95" y2="87" stroke="#d97706" stroke-width="1.5" opacity="0.12"/>
+  <line x1="95" y1="87" x2="115" y2="87" stroke="#d97706" stroke-width="1.5" opacity="0.1"/>
+  <line x1="115" y1="87" x2="130" y2="87" stroke="#d97706" stroke-width="1.5" opacity="0.08"/>
+</svg>

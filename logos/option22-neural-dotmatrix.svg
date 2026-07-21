@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL SIMPLE — Dot Matrix
+       A rectangular grid of dots. Only the dots along the F path
+       are lit (bright copper). The rest are invisible.
+       The F is a clear signal path through a silent matrix.
+       Every visible circle is ON the F. No circles anywhere else.
+       At favicon size, the lit dots merge into a solid F silhouette. -->
+
+  <defs>
+    <radialGradient id="dm22" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- ── Grid dots (invisible - uncomment to see the full grid)
+  <g fill="#d97706" opacity="0.04">
+    <circle cx="30" cy="30" r="2"/><circle cx="55" cy="30" r="2"/><circle cx="80" cy="30" r="2"/>
+    ...etc
+  </g>
+  -->
+
+  <!-- ── Active dots — ONLY along the F path ── -->
+
+  <!-- Vertical stem — column at x=50, rows spanning top to bottom -->
+  <circle cx="50" cy="25" r="6" fill="url(#dm22)"/>
+  <circle cx="50" cy="50" r="6" fill="url(#dm22)"/>
+  <circle cx="50" cy="75" r="6" fill="url(#dm22)"/>
+  <circle cx="50" cy="100" r="6" fill="url(#dm22)"/>
+  <circle cx="50" cy="125" r="5" fill="url(#dm22)" opacity="0.8"/>
+  <circle cx="50" cy="150" r="4" fill="url(#dm22)" opacity="0.6"/>
+  <circle cx="50" cy="175" r="3" fill="url(#dm22)" opacity="0.4"/>
+
+  <!-- Top arm — row at y=30, going right from x=75 -->
+  <circle cx="75" cy="30" r="6" fill="url(#dm22)"/>
+  <circle cx="100" cy="30" r="6" fill="url(#dm22)"/>
+  <circle cx="125" cy="30" r="5" fill="url(#dm22)" opacity="0.8"/>
+  <circle cx="150" cy="30" r="5" fill="url(#dm22)" opacity="0.7"/>
+
+  <!-- Middle arm — row at y=90, going right from x=75 -->
+  <circle cx="75" cy="90" r="6" fill="url(#dm22)"/>
+  <circle cx="100" cy="90" r="5" fill="url(#dm22)" opacity="0.8"/>
+  <circle cx="125" cy="90" r="4" fill="url(#dm22)" opacity="0.6"/>
+
+  <!-- Faint connector dots between the main ones — like pixels filling in -->
+  <circle cx="50" cy="37" r="3" fill="url(#dm22)" opacity="0.3"/>
+  <circle cx="50" cy="62" r="3" fill="url(#dm22)" opacity="0.3"/>
+  <circle cx="50" cy="87" r="3" fill="url(#dm22)" opacity="0.3"/>
+  <circle cx="87" cy="30" r="3" fill="url(#dm22)" opacity="0.3"/>
+  <circle cx="112" cy="30" r="3" fill="url(#dm22)" opacity="0.3"/>
+  <circle cx="87" cy="90" r="3" fill="url(#dm22)" opacity="0.3"/>
+  <circle cx="112" cy="90" r="3" fill="url(#dm22)" opacity="0.3"/>
+
+  <!-- The concept: a matrix of possible positions. Only the F lights up.
+       At small sizes the dots blur into a solid F letterform.
+       At large sizes you see the discrete neural firing pattern. -->
+</svg>

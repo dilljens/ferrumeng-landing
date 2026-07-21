@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- HEX CASCADE — overlapping hexagons cascading down and across the F
+       Like a waterfall of hexagonal tiles.
+       Each hex overlaps the next, creating a directional flow.
+       The eye follows the cascade: down the vertical, then across each arm.
+       Hexes are solid filled with slight opacity variation for depth. -->
+
+  <defs>
+    <linearGradient id="hc31" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Hexagons at ~11-13 radius with overlap. Direction: top→bottom, then left→right -->
+
+  <!-- ── Vertical cascade (top to bottom) ── -->
+  <g fill="url(#hc31)" stroke="url(#hc31)" stroke-width="0.8">
+
+    <!-- Primary cascade line -->
+    <polygon points="43,5 57,14 57,33 43,42 29,33 29,14" opacity="0.9"/>
+    <polygon points="43,28 57,37 57,56 43,65 29,56 29,37" opacity="0.95"/>
+    <polygon points="43,51 57,60 57,79 43,88 29,79 29,60" opacity="1"/>
+    <polygon points="43,74 57,83 57,102 43,111 29,102 29,83" opacity="0.95"/>
+    <polygon points="43,97 57,106 57,125 43,134 29,125 29,106" opacity="0.9"/>
+    <polygon points="43,120 57,129 57,148 43,157 29,148 29,129" opacity="0.85"/>
+    <polygon points="43,143 57,152 57,171 43,180 29,171 29,152" opacity="0.8"/>
+    <polygon points="43,166 57,175 57,194 43,203 29,194 29,175" opacity="0.7"/>
+
+    <!-- Spillover (overlap on the right side of the cascade) -->
+    <polygon points="57,20 71,29 71,48 57,57 43,48 43,29" opacity="0.5"/>
+    <polygon points="57,43 71,52 71,71 57,80 43,71 43,52" opacity="0.55"/>
+    <polygon points="57,66 71,75 71,94 57,103 43,94 43,75" opacity="0.5"/>
+    <polygon points="57,89 71,98 71,117 57,126 43,117 43,98" opacity="0.45"/>
+    <polygon points="57,112 71,121 71,140 57,149 43,140 43,121" opacity="0.4"/>
+    <polygon points="57,135 71,144 71,163 57,172 43,163 43,144" opacity="0.35"/>
+    <polygon points="57,158 71,167 71,186 57,195 43,186 43,167" opacity="0.3"/>
+
+  </g>
+
+  <!-- ── Top arm cascade (left to right) ── -->
+  <g fill="url(#hc31)" stroke="url(#hc31)" stroke-width="0.8">
+
+    <polygon points="65,-3 79,6 79,25 65,34 51,25 51,6" opacity="0.95"/>
+    <polygon points="79,-3 93,6 93,25 79,34 65,25 65,-3" opacity="0.95"/>
+    <polygon points="93,-3 107,6 107,25 93,34 79,25 79,-3" opacity="0.9"/>
+    <polygon points="107,-3 121,6 121,25 107,34 93,25 93,-3" opacity="0.85"/>
+    <polygon points="121,-3 135,6 135,25 121,34 107,25 107,-3" opacity="0.8"/>
+    <polygon points="135,-3 149,6 149,25 135,34 121,25 121,-3" opacity="0.75"/>
+    <polygon points="149,-3 163,6 163,25 149,34 135,25 135,-3" opacity="0.7"/>
+    <polygon points="163,2 177,11 177,30 163,39 149,30 149,11" opacity="0.6"/>
+
+    <!-- Top arm spillover -->
+    <polygon points="79,12 93,21 93,40 79,49 65,40 65,21" opacity="0.4"/>
+    <polygon points="107,12 121,21 121,40 107,49 93,40 93,21" opacity="0.35"/>
+    <polygon points="135,12 149,21 149,40 135,49 121,40 121,21" opacity="0.3"/>
+
+  </g>
+
+  <!-- ── Middle arm cascade (left to right from mid-stem) ── -->
+  <g fill="url(#hc31)" stroke="url(#hc31)" stroke-width="0.8">
+
+    <polygon points="65,90 79,99 79,118 65,127 51,118 51,99" opacity="0.95"/>
+    <polygon points="79,90 93,99 93,118 79,127 65,118 65,90" opacity="0.9"/>
+    <polygon points="93,90 107,99 107,118 93,127 79,118 79,90" opacity="0.85"/>
+    <polygon points="107,90 121,99 121,118 107,127 93,118 93,90" opacity="0.8"/>
+    <polygon points="121,90 135,99 135,118 121,127 107,118 107,90" opacity="0.7"/>
+    <polygon points="135,95 149,104 149,123 135,132 121,123 121,95" opacity="0.6"/>
+
+    <!-- Middle arm spillover -->
+    <polygon points="79,105 93,114 93,133 79,142 65,133 65,105" opacity="0.35"/>
+    <polygon points="107,105 121,114 121,133 107,142 93,133 93,105" opacity="0.3"/>
+
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ORIGAMI F — A folded-paper/origami geometric letter F
+       Sharp creases and folded planes create the F from a single sheet.
+       Each facet is a polygon with its own shading angle.
+       The folds suggest transformation, creativity, precision.
+       No circles. Pure planar geometry. -->
+
+  <defs>
+    <linearGradient id="o40a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="o40b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="o40c" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- The origami F is built from planar polygons that share edges.
+       Like a low-poly 3D model flattened to 2D. -->
+
+  <!-- ── Vertical stem facets ── -->
+
+  <!-- Facet 1: left side of stem (darkest) -->
+  <polygon points="35,25 48,25 48,180 35,180" fill="url(#o40c)" opacity="0.8"/>
+
+  <!-- Facet 2: right side of stem (mid) -->
+  <polygon points="48,25 65,25 65,180 48,180" fill="url(#o40b)" opacity="0.8"/>
+
+  <!-- Facet 3: top edge of stem (highlight) -->
+  <polygon points="35,25 65,25 65,15 35,15" fill="url(#o40a)" opacity="0.7"/>
+
+  <!-- ── Top arm facets ── -->
+
+  <!-- Facet 4: top of arm (bright) -->
+  <polygon points="65,25 145,15 145,25 65,25" fill="url(#o40a)" opacity="0.8"/>
+
+  <!-- Facet 5: front of arm (mid) -->
+  <polygon points="65,25 145,25 145,42 65,42" fill="url(#o40b)" opacity="0.8"/>
+
+  <!-- Facet 6: bottom fold of arm (dark) -->
+  <polygon points="65,42 145,42 145,48 65,48" fill="url(#o40c)" opacity="0.7"/>
+
+  <!-- ── Middle arm facets ── -->
+
+  <!-- Facet 7: top of middle arm (bright) -->
+  <polygon points="65,95 125,88 125,95 65,95" fill="url(#o40a)" opacity="0.7"/>
+
+  <!-- Facet 8: front of middle arm (mid) -->
+  <polygon points="65,95 125,95 125,112 65,112" fill="url(#o40b)" opacity="0.7"/>
+
+  <!-- Facet 9: bottom fold (dark) -->
+  <polygon points="65,112 125,112 125,118 65,118" fill="url(#o40c)" opacity="0.6"/>
+
+  <!-- ── Crease lines (the folds themselves) ── -->
+
+  <!-- Vertical fold lines -->
+  <line x1="48" y1="15" x2="48" y2="180" stroke="#f59e0b" stroke-width="0.8" opacity="0.2"/>
+  <line x1="65" y1="15" x2="65" y2="180" stroke="#f59e0b" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Horizontal fold lines -->
+  <line x1="35" y1="25" x2="145" y2="25" stroke="#f59e0b" stroke-width="0.8" opacity="0.25"/>
+  <line x1="35" y1="42" x2="145" y2="42" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
+  <line x1="65" y1="95" x2="125" y2="95" stroke="#f59e0b" stroke-width="0.8" opacity="0.2"/>
+  <line x1="65" y1="112" x2="125" y2="112" stroke="#f59e0b" stroke-width="0.5" opacity="0.12"/>
+
+  <!-- The origami effect: each facet catches light at a different angle.
+       The F emerges from the contrast between folded planes.
+       At favicon size, the facets merge into a solid F. -->
+</svg>

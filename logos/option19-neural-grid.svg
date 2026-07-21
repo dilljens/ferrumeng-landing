@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL F — Grid
+       A rectangular mesh/grid of intersecting neural pathways.
+       Most paths are dim (inactive), but the paths that form the F
+       are lit (active) — like a heatmap of network routing.
+       The grid suggests structure, order, and compute fabric.
+       The F is the "active routing" through that fabric.
+       No floating elements. Everything is a grid intersection. -->
+
+  <defs>
+    <linearGradient id="g19" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Inactive grid lines (background fabric — very dim) -->
+  <!-- Vertical grid lines -->
+  <line x1="40" y1="30" x2="40" y2="170" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="60" y1="30" x2="60" y2="170" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="80" y1="30" x2="80" y2="170" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="100" y1="30" x2="100" y2="170" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="120" y1="30" x2="120" y2="170" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="140" y1="30" x2="140" y2="170" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="160" y1="30" x2="160" y2="170" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+
+  <!-- Horizontal grid lines -->
+  <line x1="30" y1="40" x2="170" y2="40" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="30" y1="60" x2="170" y2="60" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="30" y1="80" x2="170" y2="80" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="30" y1="100" x2="170" y2="100" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="30" y1="120" x2="170" y2="120" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="30" y1="140" x2="170" y2="140" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+  <line x1="30" y1="160" x2="170" y2="160" stroke="#d97706" stroke-width="1" opacity="0.06"/>
+
+  <!-- ── Active F-routing (the lit paths) ── -->
+
+  <!-- Vertical stem — active column at x=60, lit from top to bottom -->
+  <line x1="60" y1="30" x2="60" y2="170" stroke="url(#g19)" stroke-width="3.5" opacity="0.8"/>
+
+  <!-- Top arm — active row at y=40, lit from column 60 to column 160 -->
+  <line x1="60" y1="40" x2="160" y2="40" stroke="url(#g19)" stroke-width="3.5" opacity="0.8"/>
+
+  <!-- Middle arm — active row at y=100, lit from column 60 to column 130 -->
+  <line x1="60" y1="100" x2="130" y2="100" stroke="url(#g19)" stroke-width="3.5" opacity="0.8"/>
+
+  <!-- Active routing paths — diagonal connections through the grid (neural "shortcuts") -->
+  <line x1="80" y1="40" x2="60" y2="60" stroke="url(#g19)" stroke-width="2" opacity="0.35"/>
+  <line x1="100" y1="40" x2="80" y2="60" stroke="url(#g19)" stroke-width="2" opacity="0.25"/>
+  <line x1="60" y1="80" x2="80" y2="100" stroke="url(#g19)" stroke-width="2" opacity="0.3"/>
+  <line x1="100" y1="100" x2="80" y2="120" stroke="url(#g19)" stroke-width="2" opacity="0.2"/>
+  <line x1="130" y1="100" x2="110" y2="120" stroke="url(#g19)" stroke-width="2" opacity="0.2"/>
+
+  <!-- Dim activation at the edges — suggests the network is processing -->
+  <line x1="60" y1="60" x2="60" y2="80" stroke="url(#g19)" stroke-width="2" opacity="0.3"/>
+  <line x1="60" y1="120" x2="60" y2="170" stroke="url(#g19)" stroke-width="2.5" opacity="0.3"/>
+
+  <!-- At each grid intersection on the F, a tiny cross is visible —
+       these aren't floating circles, they're structural crossings -->
+  <line x1="57" y1="37" x2="63" y2="43" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="63" y1="37" x2="57" y2="43" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="57" y1="97" x2="63" y2="103" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="63" y1="97" x2="57" y2="103" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+</svg>

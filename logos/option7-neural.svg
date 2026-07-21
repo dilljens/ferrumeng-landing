@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: NEURAL F
+       A neural network node graph where the connections form an "F" pattern.
+       The nodes are neurons, the connections are synapses.
+       Asymmetric by design — real neural nets are never perfectly symmetrical.
+       The layout mirrors how the human eye reads an F: scan down the left,
+       then right across the top, then right across the middle.
+       B&W safe. Distinctive at favicon size. Favicon reads as "F" at a glance. -->
+
+  <defs>
+    <linearGradient id="g7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- ── Neural network connections ── -->
+
+  <!-- Vertical spine (left column, forms the F vertical) -->
+  <line x1="68" y1="32" x2="68" y2="168" stroke="url(#g7)" stroke-width="2.5" opacity="0.5"/>
+
+  <!-- Top horizontal row (forms top arm of F) -->
+  <line x1="68" y1="42" x2="148" y2="42" stroke="url(#g7)" stroke-width="2.5" opacity="0.5"/>
+  <line x1="68" y1="32" x2="148" y2="42" stroke="url(#g7)" stroke-width="2" opacity="0.3"/>
+
+  <!-- Middle horizontal row (forms middle arm of F) -->
+  <line x1="68" y1="95" x2="130" y2="95" stroke="url(#g7)" stroke-width="2.5" opacity="0.5"/>
+
+  <!-- Cross-layer connections (the "intelligence" — signals jumping between layers) -->
+  <line x1="105" y1="42" x2="68" y2="95" stroke="url(#g7)" stroke-width="1.5" opacity="0.25"/>
+  <line x1="130" y1="95" x2="68" y2="142" stroke="url(#g7)" stroke-width="1.5" opacity="0.2"/>
+  <line x1="148" y1="42" x2="130" y2="95" stroke="url(#g7)" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Recurrent connection -->
+  <path d="M130 95 Q155 95 148 42" stroke="url(#g7)" stroke-width="1.5" opacity="0.2" fill="none"/>
+
+  <!-- ── Neurons (nodes) ── -->
+
+  <!-- Column 1 (vertical stem) -->
+  <circle cx="68" cy="32" r="7" fill="url(#g7)"/>
+  <circle cx="68" cy="68" r="6" fill="url(#g7)"/>
+  <circle cx="68" cy="95" r="7" fill="url(#g7)"/>
+  <circle cx="68" cy="125" r="5" fill="url(#g7)" opacity="0.7"/>
+  <circle cx="68" cy="168" r="6" fill="url(#g7)"/>
+
+  <!-- Top row (top arm) -->
+  <circle cx="105" cy="42" r="5" fill="url(#g7)" opacity="0.8"/>
+  <circle cx="130" cy="42" r="6" fill="url(#g7)"/>
+  <circle cx="148" cy="42" r="5" fill="url(#g7)" opacity="0.7"/>
+
+  <!-- Middle row (middle arm) -->
+  <circle cx="100" cy="95" r="5" fill="url(#g7)" opacity="0.7"/>
+  <circle cx="115" cy="95" r="4" fill="url(#g7)" opacity="0.6"/>
+  <circle cx="130" cy="95" r="5" fill="url(#g7)" opacity="0.8"/>
+
+  <!-- Bottom cluster (some stray data points) -->
+  <circle cx="95" cy="142" r="4" fill="url(#g7)" opacity="0.4"/>
+  <circle cx="115" cy="158" r="3" fill="url(#g7)" opacity="0.3"/>
+  <circle cx="135" cy="148" r="3" fill="url(#g7)" opacity="0.25"/>
+
+  <!-- Highlight the two key nodes — the "intersection" points -->
+  <circle cx="68" cy="32" r="7" fill="#f59e0b"/>
+  <circle cx="68" cy="95" r="7" fill="#f59e0b"/>
+</svg>

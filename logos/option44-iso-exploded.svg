@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ISOMETRIC F — Exploded view
+       The blocks are pulled apart with visible gaps between them.
+       Like an exploded diagram from a service manual.
+       Each section (vertical, top arm, middle arm) is separated by
+       a larger gap, emphasizing the F's structure.
+       The gap between the two horizontal arms is extra-wide. -->
+
+  <defs>
+    <linearGradient id="e44a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="e44b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="e44c" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- ── VERTICAL STEM ── blocks with 3px gaps between them -->
+
+  <!-- V1 (bottom) -->
+  <polygon points="35,180 53,170 71,180 53,190" fill="url(#e44c)" opacity="0.9"/>
+  <polygon points="71,180 53,190 53,182" fill="url(#e44b)" opacity="0.8"/>
+  <polygon points="35,180 53,170 53,162 35,172" fill="url(#e44a)" opacity="0.8"/>
+  <polygon points="53,190 71,180 71,172 53,182" fill="url(#e44b)" opacity="0.7"/>
+
+  <!-- V2 -->
+  <polygon points="35,155 53,145 71,155 53,165" fill="url(#e44c)" opacity="0.95"/>
+  <polygon points="71,155 53,165 53,157 71,147" fill="url(#e44b)" opacity="0.85"/>
+  <polygon points="35,155 53,145 53,137 35,147" fill="url(#e44a)" opacity="0.85"/>
+  <polygon points="53,165 71,155 71,147 53,157" fill="url(#e44b)" opacity="0.75"/>
+
+  <!-- V3 -->
+  <polygon points="35,130 53,120 71,130 53,140" fill="url(#e44c)" opacity="1"/>
+  <polygon points="71,130 53,140 53,132 71,122" fill="url(#e44b)" opacity="0.9"/>
+  <polygon points="35,130 53,120 53,112 35,122" fill="url(#e44a)" opacity="0.9"/>
+  <polygon points="53,140 71,130 71,122 53,132" fill="url(#e44b)" opacity="0.8"/>
+
+  <!-- V4 -->
+  <polygon points="35,105 53,95 71,105 53,115" fill="url(#e44c)" opacity="1"/>
+  <polygon points="71,105 53,115 53,107 71,97" fill="url(#e44b)" opacity="0.95"/>
+  <polygon points="35,105 53,95 53,87 35,97" fill="url(#e44a)" opacity="0.95"/>
+  <polygon points="53,115 71,105 71,97 53,107" fill="url(#e44b)" opacity="0.85"/>
+
+  <!-- ── GAP ZONE — between middle arm and top arm, the vertical is visibly empty
+       V5 is shifted up to create the separation -->
+
+  <!-- V5 — stem block above middle arm (shifted up 5px to create gap from middle arm top) -->
+  <polygon points="35,75 53,65 71,75 53,85" fill="url(#e44c)" opacity="1"/>
+  <polygon points="71,75 53,85 53,77 71,67" fill="url(#e44b)" opacity="1"/>
+  <polygon points="35,75 53,65 53,57 35,67" fill="url(#e44a)" opacity="1"/>
+  <polygon points="53,85 71,75 71,67 53,77" fill="url(#e44b)" opacity="0.9"/>
+
+  <!-- V6 (top of stem) — shifted slightly up -->
+  <polygon points="35,48 53,38 71,48 53,58" fill="url(#e44c)" opacity="1"/>
+  <polygon points="71,48 53,58 53,50 71,40" fill="url(#e44b)" opacity="1"/>
+  <polygon points="35,48 53,38 53,30 35,40" fill="url(#e44a)" opacity="1"/>
+  <polygon points="53,58 71,48 71,40 53,50" fill="url(#e44b)" opacity="0.9"/>
+
+  <!-- V7 (top-most) -->
+  <polygon points="35,25 53,15 71,25 53,35" fill="url(#e44c)" opacity="1"/>
+  <polygon points="71,25 53,35 53,27 71,17" fill="url(#e44b)" opacity="1"/>
+  <polygon points="35,25 53,15 53,7 35,17" fill="url(#e44a)" opacity="1"/>
+  <polygon points="53,35 71,25 71,17 53,27" fill="url(#e44b)" opacity="0.9"/>
+
+  <!-- ── TOP ARM ── shifted up and right, slightly separated from stem -->
+
+  <!-- T1 — note gap between stem (right edge at ~71) and arm start -->
+  <polygon points="78,20 96,10 114,20 96,30" fill="url(#e44c)" opacity="1"/>
+  <polygon points="114,20 96,30 96,22 114,12" fill="url(#e44b)" opacity="0.9"/>
+  <polygon points="78,20 96,10 96,2 78,12" fill="url(#e44a)" opacity="0.9"/>
+  <polygon points="96,30 114,20 114,12 96,22" fill="url(#e44b)" opacity="0.8"/>
+
+  <!-- T2 -->
+  <polygon points="96,20 114,10 132,20 114,30" fill="url(#e44c)" opacity="0.95"/>
+  <polygon points="132,20 114,30 114,22 132,12" fill="url(#e44b)" opacity="0.85"/>
+  <polygon points="96,20 114,10 114,2 96,12" fill="url(#e44a)" opacity="0.85"/>
+  <polygon points="114,30 132,20 132,12 114,22" fill="url(#e44b)" opacity="0.75"/>
+
+  <!-- T3 -->
+  <polygon points="114,20 132,10 150,20 132,30" fill="url(#e44c)" opacity="0.9"/>
+  <polygon points="150,20 132,30 132,22 150,12" fill="url(#e44b)" opacity="0.8"/>
+  <polygon points="114,20 132,10 132,2 114,12" fill="url(#e44a)" opacity="0.8"/>
+  <polygon points="132,30 150,20 150,12 132,22" fill="url(#e44b)" opacity="0.7"/>
+
+  <!-- T4 -->
+  <polygon points="132,20 150,10 168,20 150,30" fill="url(#e44c)" opacity="0.85"/>
+  <polygon points="168,20 150,30 150,22 168,12" fill="url(#e44b)" opacity="0.75"/>
+  <polygon points="132,20 150,10 150,2 132,12" fill="url(#e44a)" opacity="0.75"/>
+  <polygon points="150,30 168,20 168,12 150,22" fill="url(#e44b)" opacity="0.65"/>
+
+  <!-- ── MIDDLE ARM ── shifted right and slightly down from stem -->
+
+  <!-- M1 — note gap from stem -->
+  <polygon points="78,100 96,90 114,100 96,110" fill="url(#e44c)" opacity="1"/>
+  <polygon points="114,100 96,110 96,102 114,92" fill="url(#e44b)" opacity="0.9"/>
+  <polygon points="78,100 96,90 96,82 78,92" fill="url(#e44a)" opacity="0.9"/>
+  <polygon points="96,110 114,100 114,92 96,102" fill="url(#e44b)" opacity="0.8"/>
+
+  <!-- M2 -->
+  <polygon points="96,100 114,90 132,100 114,110" fill="url(#e44c)" opacity="0.95"/>
+  <polygon points="132,100 114,110 114,102 132,92" fill="url(#e44b)" opacity="0.85"/>
+  <polygon points="96,100 114,90 114,82 96,92" fill="url(#e44a)" opacity="0.85"/>
+  <polygon points="114,110 132,100 132,92 114,102" fill="url(#e44b)" opacity="0.75"/>
+
+  <!-- M3 -->
+  <polygon points="114,100 132,90 150,100 132,110" fill="url(#e44c)" opacity="0.9"/>
+  <polygon points="150,100 132,110 132,102 150,92" fill="url(#e44b)" opacity="0.8"/>
+  <polygon points="114,100 132,90 132,82 114,92" fill="url(#e44a)" opacity="0.8"/>
+  <polygon points="132,110 150,100 150,92 132,102" fill="url(#e44b)" opacity="0.7"/>
+
+  <!-- The gap between top arm (bottom at y=30) and middle arm (top at y=82)
+       is 52px — clearly visible as empty vertical stem space.
+       The exploded gaps between blocks make each section distinct. -->
+</svg>

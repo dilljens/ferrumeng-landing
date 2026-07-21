@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ISOMETRIC F — Solid blocks with clear spacing between the two horizontal bars
+       The vertical bar and two horizontal bars are clearly separated.
+       Gap between top arm and middle arm is wide enough to read as two distinct bars.
+       Each block is shaded with 3 visible faces for depth.
+       Isometric projection: each unit is 18px wide, 10px tall (isometric z). -->
+
+  <defs>
+    <linearGradient id="s41a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="s41b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="s41c" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Isometric basis: each block has 3 faces.
+       Top face: polygon(A, B, C, D)  where dx=+18, dy=-10 for one step
+       Left face: polygon(A, D, D+z, A+z)
+       Right face: polygon(D, C, C+z, D+z)
+       z-offset for extrusion depth = 8px (vertical in 2D) -->
+
+  <!-- ── VERTICAL STEM (left column) ──
+       Stacked blocks from bottom (y=170) to top (y=20) -->
+
+  <!-- Block V1 (bottom) -->
+  <polygon points="35,175 53,165 71,175 53,185" fill="url(#s41c)" opacity="0.7"/>
+  <polygon points="71,175 53,185 53,178" fill="url(#s41b)" opacity="0.6"/>
+  <polygon points="35,175 53,165 53,158 35,168" fill="url(#s41a)" opacity="0.6"/>
+  <!-- Extrusion -->
+  <polygon points="53,185 71,175 71,168 53,178" fill="url(#s41b)" opacity="0.5"/>
+
+  <!-- Block V2 -->
+  <polygon points="35,155 53,145 71,155 53,165" fill="url(#s41c)" opacity="0.8"/>
+  <polygon points="71,155 53,165 53,158 71,148" fill="url(#s41b)" opacity="0.7"/>
+  <polygon points="35,155 53,145 53,138 35,148" fill="url(#s41a)" opacity="0.7"/>
+  <polygon points="53,165 71,155 71,148 53,158" fill="url(#s41b)" opacity="0.6"/>
+
+  <!-- Block V3 -->
+  <polygon points="35,135 53,125 71,135 53,145" fill="url(#s41c)" opacity="0.9"/>
+  <polygon points="71,135 53,145 53,138 71,128" fill="url(#s41b)" opacity="0.8"/>
+  <polygon points="35,135 53,125 53,118 35,128" fill="url(#s41a)" opacity="0.8"/>
+  <polygon points="53,145 71,135 71,128 53,138" fill="url(#s41b)" opacity="0.7"/>
+
+  <!-- Block V4 -->
+  <polygon points="35,115 53,105 71,115 53,125" fill="url(#s41c)" opacity="1"/>
+  <polygon points="71,115 53,125 53,118 71,108" fill="url(#s41b)" opacity="0.9"/>
+  <polygon points="35,115 53,105 53,98 35,108" fill="url(#s41a)" opacity="0.9"/>
+  <polygon points="53,125 71,115 71,108 53,118" fill="url(#s41b)" opacity="0.8"/>
+
+  <!-- Block V5 — between top and middle arm -->
+  <polygon points="35,95 53,85 71,95 53,105" fill="url(#s41c)" opacity="1"/>
+  <polygon points="71,95 53,105 53,98 71,88" fill="url(#s41b)" opacity="1"/>
+  <polygon points="35,95 53,85 53,78 35,88" fill="url(#s41a)" opacity="1"/>
+  <polygon points="53,105 71,95 71,88 53,98" fill="url(#s41b)" opacity="0.9"/>
+
+  <!-- Block V6 — above middle arm (the gap zone — clearly empty below this) -->
+  <polygon points="35,70 53,60 71,70 53,80" fill="url(#s41c)" opacity="1"/>
+  <polygon points="71,70 53,80 53,73 71,63" fill="url(#s41b)" opacity="1"/>
+  <polygon points="35,70 53,60 53,53 35,63" fill="url(#s41a)" opacity="1"/>
+  <polygon points="53,80 71,70 71,63 53,73" fill="url(#s41b)" opacity="0.9"/>
+
+  <!-- Block V7 (top) -->
+  <polygon points="35,45 53,35 71,45 53,55" fill="url(#s41c)" opacity="1"/>
+  <polygon points="71,45 53,55 53,48 71,38" fill="url(#s41b)" opacity="1"/>
+  <polygon points="35,45 53,35 53,28 35,38" fill="url(#s41a)" opacity="1"/>
+  <polygon points="53,55 71,45 71,38 53,48" fill="url(#s41b)" opacity="0.9"/>
+
+  <!-- Block V8 (top-most) -->
+  <polygon points="35,25 53,15 71,25 53,35" fill="url(#s41c)" opacity="1"/>
+  <polygon points="71,25 53,35 53,28 71,18" fill="url(#s41b)" opacity="1"/>
+  <polygon points="35,25 53,15 53,8 35,18" fill="url(#s41a)" opacity="1"/>
+  <polygon points="53,35 71,25 71,18 53,28" fill="url(#s41b)" opacity="0.9"/>
+
+  <!-- ── TOP ARM (extending right from top of stem, y=15 to y=35) ── -->
+
+  <!-- Block T1 -->
+  <polygon points="71,25 89,15 107,25 89,35" fill="url(#s41c)" opacity="1"/>
+  <polygon points="107,25 89,35 89,28 107,18" fill="url(#s41b)" opacity="0.9"/>
+  <polygon points="71,25 89,15 89,8 71,18" fill="url(#s41a)" opacity="0.9"/>
+  <polygon points="89,35 107,25 107,18 89,28" fill="url(#s41b)" opacity="0.8"/>
+
+  <!-- Block T2 -->
+  <polygon points="89,25 107,15 125,25 107,35" fill="url(#s41c)" opacity="0.95"/>
+  <polygon points="125,25 107,35 107,28 125,18" fill="url(#s41b)" opacity="0.85"/>
+  <polygon points="89,25 107,15 107,8 89,18" fill="url(#s41a)" opacity="0.85"/>
+  <polygon points="107,35 125,25 125,18 107,28" fill="url(#s41b)" opacity="0.75"/>
+
+  <!-- Block T3 -->
+  <polygon points="107,25 125,15 143,25 125,35" fill="url(#s41c)" opacity="0.9"/>
+  <polygon points="143,25 125,35 125,28 143,18" fill="url(#s41b)" opacity="0.8"/>
+  <polygon points="107,25 125,15 125,8 107,18" fill="url(#s41a)" opacity="0.8"/>
+  <polygon points="125,35 143,25 143,18 125,28" fill="url(#s41b)" opacity="0.7"/>
+
+  <!-- Block T4 -->
+  <polygon points="125,25 143,15 161,25 143,35" fill="url(#s41c)" opacity="0.85"/>
+  <polygon points="161,25 143,35 143,28 161,18" fill="url(#s41b)" opacity="0.75"/>
+  <polygon points="125,25 143,15 143,8 125,18" fill="url(#s41a)" opacity="0.75"/>
+  <polygon points="143,35 161,25 161,18 143,28" fill="url(#s41b)" opacity="0.65"/>
+
+  <!-- ── MIDDLE ARM (extending right from mid-stem, y=85 to y=105)
+       Clear gap above this arm and below the top arm (y=45 to y=70 is empty stem) ── -->
+
+  <!-- Block M1 -->
+  <polygon points="71,95 89,85 107,95 89,105" fill="url(#s41c)" opacity="1"/>
+  <polygon points="107,95 89,105 89,98 107,88" fill="url(#s41b)" opacity="0.9"/>
+  <polygon points="71,95 89,85 89,78 71,88" fill="url(#s41a)" opacity="0.9"/>
+  <polygon points="89,105 107,95 107,88 89,98" fill="url(#s41b)" opacity="0.8"/>
+
+  <!-- Block M2 -->
+  <polygon points="89,95 107,85 125,95 107,105" fill="url(#s41c)" opacity="0.95"/>
+  <polygon points="125,95 107,105 107,98 125,88" fill="url(#s41b)" opacity="0.85"/>
+  <polygon points="89,95 107,85 107,78 89,88" fill="url(#s41a)" opacity="0.85"/>
+  <polygon points="107,105 125,95 125,88 107,98" fill="url(#s41b)" opacity="0.75"/>
+
+  <!-- Block M3 -->
+  <polygon points="107,95 125,85 143,95 125,105" fill="url(#s41c)" opacity="0.9"/>
+  <polygon points="143,95 125,105 125,98 143,88" fill="url(#s41b)" opacity="0.8"/>
+  <polygon points="107,95 125,85 125,78 107,88" fill="url(#s41a)" opacity="0.8"/>
+  <polygon points="125,105 143,95 143,88 125,98" fill="url(#s41b)" opacity="0.7"/>
+
+  <!-- The gap between top arm (y~25) and middle arm (y~95) is ~50px of empty vertical.
+       This is clearly visible as open space between the two horizontal bars.
+       The F is unambiguous. -->
+
+  <!-- Hard edge highlights along the F's outer contour -->
+  <line x1="35" y1="18" x2="35" y2="185" stroke="#f59e0b" stroke-width="0.8" opacity="0.2"/>
+  <line x1="35" y1="18" x2="161" y2="18" stroke="#f59e0b" stroke-width="0.8" opacity="0.2"/>
+  <line x1="35" y1="88" x2="143" y2="88" stroke="#f59e0b" stroke-width="0.8" opacity="0.2"/>
+</svg>

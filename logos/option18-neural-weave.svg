@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL F — Weave
+       Two continuous neural threads weaving over and under each other
+       to form the F. One thread is the "signal" (brighter copper),
+       the other is the "structure" (darker copper).
+       They cross at nodes — but the nodes aren't circles, they're
+       just points where the threads cross. Like DNA but for a logo.
+       No floating elements. Every line is continuous. -->
+
+  <defs>
+    <linearGradient id="w18a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="w18b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Thread 1 (bright signal) — weaves through the F pattern -->
+  <!-- Starts at bottom, goes up the vertical -->
+  <path d="M72 180 L72 130 L68 120 L68 95 L72 85 L72 55 L68 45 L68 30"
+        stroke="url(#w18a)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Loops through top arm -->
+  <path d="M68 30 L80 28 L100 32 L120 28 L140 32 L156 36"
+        stroke="url(#w18a)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Weaves back through middle arm -->
+  <path d="M68 45 L80 48 L100 44 L120 48 L136 52"
+        stroke="url(#w18a)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Thread 2 (darker structure) — interleaves with thread 1 -->
+  <!-- Vertical, slightly offset -->
+  <path d="M80 180 L80 130 L76 120 L76 95 L80 85 L80 55 L76 45 L76 30"
+        stroke="url(#w18b)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Top arm offset -->
+  <path d="M76 30 L88 26 L108 30 L128 26 L144 30 L156 34"
+        stroke="url(#w18b)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Middle arm offset -->
+  <path d="M76 45 L88 42 L108 46 L124 42 L136 46"
+        stroke="url(#w18b)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Crossing accents — tiny marks at weave intersections
+       These suggest "over/under" without adding floating elements -->
+  <line x1="68" y1="47" x2="76" y2="43" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+  <line x1="68" y1="95" x2="76" y2="97" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+  <line x1="100" y1="32" x2="98" y2="44" stroke="#f59e0b" stroke-width="1.5" opacity="0.3"/>
+  <line x1="120" y1="28" x2="120" y2="48" stroke="#f59e0b" stroke-width="1.5" opacity="0.3"/>
+  <line x1="140" y1="32" x2="136" y2="48" stroke="#f59e0b" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Bottom convergence — both threads merge at the base -->
+  <path d="M72 180 Q76 185 80 180" stroke="url(#w18a)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- The concept: two neural signals intertwine like a braided cable.
+       One carries the data (bright), one provides the structure (dark).
+       Together they form the F -- neither could exist without the other. -->
+</svg>

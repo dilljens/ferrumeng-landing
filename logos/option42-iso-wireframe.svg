@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ISOMETRIC F — Wireframe / CAD model style
+       Just the edges of the isometric blocks, like a CAD wireframe.
+       No filled faces — only lines.
+       Clean, technical, blueprint-like.
+       The gap between the two horizontal bars is clearly visible as empty space. -->
+
+  <defs>
+    <linearGradient id="w42" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <g stroke="url(#w42)" stroke-width="1" fill="none">
+
+    <!-- ── VERTICAL STEM ── 8 blocks stacked --><!-- V1 --><polygon points="35,175 53,165 71,175 53,185"/><polygon points="35,175 53,165 53,158 35,168"/><polygon points="71,175 53,185 53,178 71,168"/>
+    <!-- V2 --><polygon points="35,155 53,145 71,155 53,165"/><polygon points="35,155 53,145 53,138 35,148"/><polygon points="71,155 53,165 53,158 71,148"/>
+    <!-- V3 --><polygon points="35,135 53,125 71,135 53,145"/><polygon points="35,135 53,125 53,118 35,128"/><polygon points="71,135 53,145 53,138 71,128"/>
+    <!-- V4 --><polygon points="35,115 53,105 71,115 53,125"/><polygon points="35,115 53,105 53,98 35,108"/><polygon points="71,115 53,125 53,118 71,108"/>
+    <!-- V5 --><polygon points="35,95 53,85 71,95 53,105"/><polygon points="35,95 53,85 53,78 35,88"/><polygon points="71,95 53,105 53,98 71,88"/>
+    <!-- V6 --><polygon points="35,70 53,60 71,70 53,80"/><polygon points="35,70 53,60 53,53 35,63"/><polygon points="71,70 53,80 53,73 71,63"/>
+    <!-- V7 --><polygon points="35,45 53,35 71,45 53,55"/><polygon points="35,45 53,35 53,28 35,38"/><polygon points="71,45 53,55 53,48 71,38"/>
+    <!-- V8 --><polygon points="35,25 53,15 71,25 53,35"/><polygon points="35,25 53,15 53,8 35,18"/><polygon points="71,25 53,35 53,28 71,18"/>
+
+    <!-- ── TOP ARM ── 4 blocks -->
+    <!-- T1 --><polygon points="71,25 89,15 107,25 89,35"/><polygon points="71,25 89,15 89,8 71,18"/><polygon points="107,25 89,35 89,28 107,18"/>
+    <!-- T2 --><polygon points="89,25 107,15 125,25 107,35"/><polygon points="89,25 107,15 107,8 89,18"/><polygon points="125,25 107,35 107,28 125,18"/>
+    <!-- T3 --><polygon points="107,25 125,15 143,25 125,35"/><polygon points="107,25 125,15 125,8 107,18"/><polygon points="143,25 125,35 125,28 143,18"/>
+    <!-- T4 --><polygon points="125,25 143,15 161,25 143,35"/><polygon points="125,25 143,15 143,8 125,18"/><polygon points="161,25 143,35 143,28 161,18"/>
+
+    <!-- ── MIDDLE ARM ── 3 blocks -->
+    <!-- M1 --><polygon points="71,95 89,85 107,95 89,105"/><polygon points="71,95 89,85 89,78 71,88"/><polygon points="107,95 89,105 89,98 107,88"/>
+    <!-- M2 --><polygon points="89,95 107,85 125,95 107,105"/><polygon points="89,95 107,85 107,78 89,88"/><polygon points="125,95 107,105 107,98 125,88"/>
+    <!-- M3 --><polygon points="107,95 125,85 143,95 125,105"/><polygon points="107,95 125,85 125,78 107,88"/><polygon points="143,95 125,105 125,98 143,88"/>
+
+  </g>
+
+  <!-- Highlight the F's outer contour with brighter lines -->
+  <g stroke="#f59e0b" stroke-width="1.5" opacity="0.6" fill="none">
+    <!-- Left edge of vertical -->
+    <line x1="35" y1="168" x2="35" y2="18"/>
+    <!-- Top edge of top arm -->
+    <line x1="35" y1="18" x2="161" y2="18"/>
+    <!-- Right tip of top arm -->
+    <line x1="161" y1="18" x2="161" y2="35"/>
+    <!-- Top edge of middle arm -->
+    <line x1="35" y1="88" x2="143" y2="88"/>
+    <!-- Right tip of middle arm -->
+    <line x1="143" y1="88" x2="143" y2="105"/>
+    <!-- Bottom of vertical -->
+    <line x1="35" y1="185" x2="71" y2="185"/>
+  </g>
+
+  <!-- The gap between y=45 (bottom of top arm) and y=70 (top of stem above middle arm)
+       is clearly visible as empty space with no horizontal lines crossing it. -->
+</svg>

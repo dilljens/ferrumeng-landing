@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- APERTURE F — Camera iris/aperture blades forming an F at the center
+       Six aperture blades are arranged in a circular iris.
+       Where the blades overlap, they create an opening in the shape of an F.
+       Precision optics — suggesting vision, focus, clarity, engineering.
+       The aperture is the intersection point where light enters —
+       a metaphor for the intersection of hardware and intelligence. -->
+
+  <defs>
+    <linearGradient id="a36" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Outer ring — the lens housing -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#a36)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="url(#a36)" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Six aperture blades arranged in a circle.
+       Each blade is a polygon that overlaps its neighbor.
+       The inner opening forms an F shape.
+       Blades rotate around center (100,100). -->
+
+  <g fill="url(#a36)" stroke="#451a03" stroke-width="0.5" opacity="0.85">
+
+    <!-- Blade 1 (top) — rotated 0° -->
+    <polygon points="100,15 100,50 40,60 40,30"/>
+
+    <!-- Blade 2 (top-right) — rotated 60° -->
+    <polygon points="167,60 140,82 100,50 140,35"/>
+
+    <!-- Blade 3 (bottom-right) — rotated 120° -->
+    <polygon points="160,135 125,130 100,50 145,100"/>
+
+    <!-- Blade 4 (bottom) — rotated 180° -->
+    <polygon points="100,185 100,140 150,130 155,165"/>
+
+    <!-- Blade 5 (bottom-left) — rotated 240° -->
+    <polygon points="40,140 65,120 100,140 60,165"/>
+
+    <!-- Blade 6 (top-left) — rotated 300° -->
+    <polygon points="45,65 75,72 100,140 55,105"/>
+
+  </g>
+
+  <!-- The aperture opening — negative space forms the F.
+       We highlight it by NOT drawing over it. The F is the empty
+       space at the center where the blades don't cover. -->
+
+  <!-- Inner glow — light coming through the aperture -->
+  <circle cx="100" cy="100" r="20" fill="#f59e0b" opacity="0.06"/>
+  <circle cx="100" cy="100" r="12" fill="#f59e0b" opacity="0.08"/>
+
+  <!-- Bright crosshairs at the center — precision targeting -->
+  <line x1="92" y1="100" x2="108" y2="100" stroke="#f59e0b" stroke-width="0.8" opacity="0.3"/>
+  <line x1="100" y1="92" x2="100" y2="108" stroke="#f59e0b" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Small lens flare dots -->
+  <circle cx="145" cy="55" r="2" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="60" cy="60" r="1.5" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="155" cy="150" r="1.5" fill="#f59e0b" opacity="0.15"/>
+</svg>

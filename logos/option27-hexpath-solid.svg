@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- HEX PATH — Solid
+       The F is a solid block of filled hexagons.
+       Like a hexagonal pixel-art letterform.
+       The hexagons are tightly packed — no gaps.
+       The shape reads as "F" immediately.
+       At favicon size it looks like a solid F.
+       At large size you see the individual hex cells. -->
+
+  <defs>
+    <linearGradient id="hs27" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Hexagon radius = 9. Pointy-top orientation.
+       Spacing: dx = 15 (horizontal), dy = 26 (vertical stagger) -->
+
+  <!-- ── Vertical stem (column 1, rows 1-7) ── -->
+  <g fill="url(#hs27)" opacity="0.85" stroke="url(#hs27)" stroke-width="1">
+
+    <!-- Col 1 (x=38) -->
+    <polygon points="38,12 50,19 50,35 38,42 26,35 26,19"/>
+    <polygon points="38,38 50,45 50,61 38,68 26,61 26,45"/>
+    <polygon points="38,64 50,71 50,87 38,94 26,87 26,71"/>
+    <polygon points="38,90 50,97 50,113 38,120 26,113 26,97"/>
+    <polygon points="38,116 50,123 50,139 38,146 26,139 26,123"/>
+    <polygon points="38,142 50,149 50,165 38,172 26,165 26,149"/>
+    <polygon points="38,168 50,175 50,191 38,198 26,191 26,175"/>
+
+    <!-- Col 2 (x=53) — offset down by half -->
+    <polygon points="53,25 65,32 65,48 53,55 41,48 41,32"/>
+    <polygon points="53,51 65,58 65,74 53,81 41,74 41,58"/>
+    <polygon points="53,77 65,84 65,100 53,107 41,100 41,84"/>
+    <polygon points="53,103 65,110 65,126 53,133 41,126 41,110"/>
+    <polygon points="53,129 65,136 65,152 53,159 41,152 41,136"/>
+    <polygon points="53,155 65,162 65,178 53,185 41,178 41,162"/>
+
+  </g>
+
+  <!-- ── Top arm (column 3-6, row 1) ── -->
+  <g fill="url(#hs27)" opacity="0.85" stroke="url(#hs27)" stroke-width="1">
+
+    <!-- Col 3 (x=68) -->
+    <polygon points="68,12 80,19 80,35 68,42 56,35 56,19"/>
+
+    <!-- Col 4 (x=83) — offset -->
+    <polygon points="83,25 95,32 95,48 83,55 71,48 71,32"/>
+
+    <!-- Col 5 (x=98) -->
+    <polygon points="98,12 110,19 110,35 98,42 86,35 86,19"/>
+
+    <!-- Col 6 (x=113) — offset -->
+    <polygon points="113,25 125,32 125,48 113,55 101,48 101,32"/>
+
+    <!-- Col 7 (x=128) -->
+    <polygon points="128,12 140,19 140,35 128,42 116,35 116,19"/>
+
+    <!-- Col 8 (x=143) — offset -->
+    <polygon points="143,25 155,32 155,48 143,55 131,48 131,32"/>
+
+  </g>
+
+  <!-- ── Middle arm (column 3-5, row 4) ── -->
+  <g fill="url(#hs27)" opacity="0.85" stroke="url(#hs27)" stroke-width="1">
+
+    <!-- Col 3 (x=68) -->
+    <polygon points="68,90 80,97 80,113 68,120 56,113 56,97"/>
+
+    <!-- Col 4 (x=83) — offset -->
+    <polygon points="83,103 95,110 95,126 83,133 71,126 71,110"/>
+
+    <!-- Col 5 (x=98) -->
+    <polygon points="98,90 110,97 110,113 98,120 86,113 86,97"/>
+
+    <!-- Col 6 (x=113) — offset -->
+    <polygon points="113,103 125,110 125,126 113,133 101,126 101,110"/>
+
+  </g>
+
+  <!-- ── Dim filler — a few hexagons at the bottom to taper ── -->
+  <g fill="url(#hs27)" opacity="0.4" stroke="url(#hs27)" stroke-width="1">
+    <polygon points="68,168 80,175 80,191 68,198 56,191 56,175"/>
+    <polygon points="83,181 95,188 95,204 83,211 71,204 71,188"/>
+  </g>
+</svg>

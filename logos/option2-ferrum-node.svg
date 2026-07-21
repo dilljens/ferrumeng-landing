@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: FERRUM NODE
+       A hexagonal node — universal engineering symbol — with a negative-space "f"
+       cut through it. The hexagon suggests precision, structure, and technology.
+       The negative-space "f" is carved by three diagonal cuts.
+       The offset diagonal line adds motion (intelligence = dynamic).
+       Works at favicon size. Works in B&W. -->
+
+  <defs>
+    <linearGradient id="gn1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Hexagon -->
+  <polygon points="100,28 162,64 162,136 100,172 38,136 38,64"
+           fill="none" stroke="url(#gn1)" stroke-width="3"/>
+
+  <!-- Three diagonal cuts creating "f" in negative space:
+       Left vertical suggestion + two horizontal arms -->
+  <line x1="78" y1="55" x2="78" y2="155" stroke="#0c0c0e" stroke-width="14" stroke-linecap="round"/>
+  <line x1="78" y1="55" x2="135" y2="82" stroke="#0c0c0e" stroke-width="14" stroke-linecap="round"/>
+  <line x1="78" y1="100" x2="120" y2="118" stroke="#0c0c0e" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- The "f" is carved out of the hexagon by overpainting with background color.
+       The diagonal cut lines follow the hexagon's geometry for harmony. -->
+
+  <!-- Accent node — the "intersection point" -->
+  <circle cx="78" cy="105" r="4" fill="#f59e0b" opacity="0.8"/>
+</svg>

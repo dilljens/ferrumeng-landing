@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: WAVE F
+       Three signal waveforms that trace an "F" — like three oscilloscope channels.
+       Each wave has different frequency/amplitude, representing different domains
+       (hardware signals, data streams, AI inference).
+       The continuous sweeps suggest flow, intelligence, real-time processing.
+       The peaks and troughs naturally form the F's vertical and horizontal bars.
+       B&W safe. Works at favicon. -->
+
+  <defs>
+    <linearGradient id="g8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Signal channel 1: top arm of "F" — fast, high-frequency wave
+       Sweeps from left edge, crests right, then drops into vertical -->
+  <path d="M30 65 Q50 50 65 55 Q80 60 95 50 Q110 40 125 50 Q140 60 160 55"
+        stroke="url(#g8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- The vertical drop (vertical stem of F) — all three channels merge here -->
+  <!-- Channel 1 continues down -->
+  <path d="M160 55 Q165 70 160 85"
+        stroke="url(#g8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Signal channel 2: middle arm of "F" — slower, deeper wave
+       Merges with channel 1 to reinforce the vertical -->
+  <path d="M30 100 Q50 85 65 92 Q80 100 95 88 Q110 76 125 90 Q135 100 148 95"
+        stroke="url(#g8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Channel 2 merges into vertical -->
+  <path d="M148 95 Q155 105 155 115"
+        stroke="url(#g8)" stroke-width="4" fill="none" stroke-linecap="round"
+        opacity="0.7"/>
+
+  <!-- Signal channel 3: bottom sweep — slow wave carrying through
+       Creates the full vertical stroke perception -->
+  <path d="M40 135 Q60 120 78 128 Q95 136 110 125 Q125 114 140 122"
+        stroke="url(#g8)" stroke-width="3.5" fill="none" stroke-linecap="round"
+        opacity="0.5"/>
+
+  <path d="M140 122 Q150 128 155 140 Q158 150 155 170"
+        stroke="url(#g8)" stroke-width="3.5" fill="none" stroke-linecap="round"
+        opacity="0.4"/>
+
+  <!-- Grid lines — like oscilloscope graticules (very subtle) -->
+  <line x1="30" y1="55" x2="170" y2="55" stroke="#d97706" stroke-width="0.5" opacity="0.15"/>
+  <line x1="30" y1="95" x2="170" y2="95" stroke="#d97706" stroke-width="0.5" opacity="0.15"/>
+  <line x1="30" y1="135" x2="170" y2="135" stroke="#d97706" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- The "F" reads from the three wave peaks clustering in the top-left forming
+       the top arm, the middle wave forming the middle arm, and all three waves
+       stacking vertically on the left forming the vertical stroke. -->
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL F — Minimal
+       Clean, favicon-optimized neural network.
+       Only 8 nodes, arranged to form an F with just the essential connections.
+       Fat nodes = readable at small sizes. Minimal connections = no visual clutter.
+       This is the "I want a neural net logo but it needs to work on a business card" option. -->
+
+  <defs>
+    <linearGradient id="n10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Spine connections (vertical of F) -->
+  <line x1="60" y1="30" x2="60" y2="170" stroke="url(#n10)" stroke-width="3" opacity="0.4"/>
+
+  <!-- Top arm connections -->
+  <line x1="60" y1="42" x2="148" y2="42" stroke="url(#n10)" stroke-width="3" opacity="0.4"/>
+
+  <!-- Middle arm connections -->
+  <line x1="60" y1="98" x2="130" y2="98" stroke="url(#n10)" stroke-width="3" opacity="0.4"/>
+
+  <!-- Cross connections — just two, for clarity -->
+  <line x1="105" y1="42" x2="60" y2="98" stroke="url(#n10)" stroke-width="2" opacity="0.25"/>
+  <line x1="130" y1="98" x2="60" y2="150" stroke="url(#n10)" stroke-width="2" opacity="0.2"/>
+
+  <!-- Vertical spine nodes -->
+  <circle cx="60" cy="30" r="8" fill="url(#n10)"/>
+  <circle cx="60" cy="68" r="5" fill="url(#n10)" opacity="0.7"/>
+  <circle cx="60" cy="98" r="8" fill="url(#n10)"/>
+  <circle cx="60" cy="150" r="6" fill="url(#n10)" opacity="0.6"/>
+  <circle cx="60" cy="170" r="5" fill="url(#n10)" opacity="0.5"/>
+
+  <!-- Top arm nodes -->
+  <circle cx="105" cy="42" r="6" fill="url(#n10)" opacity="0.8"/>
+  <circle cx="130" cy="42" r="5" fill="url(#n10)" opacity="0.6"/>
+  <circle cx="148" cy="42" r="7" fill="url(#n10)"/>
+
+  <!-- Middle arm nodes -->
+  <circle cx="100" cy="98" r="5" fill="url(#n10)" opacity="0.6"/>
+  <circle cx="115" cy="98" r="4" fill="url(#n10)" opacity="0.5"/>
+  <circle cx="130" cy="98" r="6" fill="url(#n10)" opacity="0.8"/>
+
+  <!-- Highlight the three key spine nodes — the "signal" -->
+  <circle cx="60" cy="30" r="4" fill="#f59e0b"/>
+  <circle cx="60" cy="98" r="4" fill="#f59e0b"/>
+  <circle cx="148" cy="42" r="3" fill="#f59e0b"/>
+</svg>

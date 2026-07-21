@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL F — Pulse Line
+       A single continuous line that traces the F in one flowing movement.
+       Like a real-time neural activation trace or an EEG readout.
+       The line has varying thickness — thicker where the "signal is strong"
+       (the F structure) and thinner where it transitions.
+       One uninterrupted path. No circles. No nodes. Just flow.
+       The line enters from bottom, traces the vertical,
+       loops through the top arm, crosses back through the middle arm,
+       and exits downward. -->
+
+  <defs>
+    <linearGradient id="p20" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- The single continuous path — enters bottom, traces the F, exits -->
+  <path d="M60 185
+           C60 170, 60 145, 60 130
+           C60 115, 60 100, 60 85
+           C60 70, 60 55, 60 40
+           C60 30, 65 28, 75 28
+           C90 28, 110 28, 125 28
+           C140 28, 150 30, 155 32
+           C160 34, 162 40, 160 45
+           C155 50, 140 48, 130 48
+           C115 48, 100 48, 90 48
+           C75 48, 65 48, 60 48
+           C55 48, 52 55, 55 65
+           C58 75, 65 85, 72 90
+           C80 95, 90 95, 100 92
+           C110 90, 120 88, 130 88
+           C140 88, 145 90, 148 92
+           C152 95, 150 100, 145 102
+           C138 105, 125 104, 115 104
+           C100 104, 85 104, 72 104
+           C62 104, 55 108, 55 120
+           C55 135, 55 150, 55 165
+           C55 175, 55 182, 58 185"
+        stroke="url(#p20)" stroke-width="4" fill="none" stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- The line varies in width naturally from the curve tension.
+       To enhance the F reading, add a subtle glow along the
+       straight sections (the F arms) that the eye picks up as "structure" -->
+  <path d="M60 40 L60 104"
+        stroke="url(#p20)" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M60 28 L155 32"
+        stroke="url(#p20)" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.15"/>
+  <path d="M60 88 L148 92"
+        stroke="url(#p20)" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.12"/>
+
+  <!-- Entry/exit markers — where the signal enters and leaves the logo
+       These are NOT floating circles, they're part of the path -->
+  <path d="M60 185 L60 190" stroke="url(#p20)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M58 185 L62 185" stroke="url(#p20)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- A small direction arrow at the entry point — suggests flow -->
+  <path d="M55 188 L60 195 L65 188" stroke="url(#p20)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.4"/>
+</svg>

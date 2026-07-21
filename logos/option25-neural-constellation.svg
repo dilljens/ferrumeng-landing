@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL SIMPLE — Constellation
+       The fewest possible circles that still clearly read as "F."
+       Like a star constellation — sparse, elegant, unmistakable.
+       Only 10 circles total. Every single one is essential.
+       Lines connecting them trace the F.
+       No extraneous dots. No noise. Just the signal. -->
+
+  <defs>
+    <radialGradient id="cn25" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </radialGradient>
+    <linearGradient id="cn25b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Constellation lines — the bare F skeleton -->
+  <line x1="55" y1="25" x2="55" y2="170" stroke="url(#cn25b)" stroke-width="2" opacity="0.25"/>
+  <line x1="55" y1="25" x2="155" y2="25" stroke="url(#cn25b)" stroke-width="2" opacity="0.25"/>
+  <line x1="55" y1="85" x2="130" y2="85" stroke="url(#cn25b)" stroke-width="2" opacity="0.25"/>
+
+  <!-- Constellation stars — the minimum viable F -->
+  <!-- Vertical stem: top, middle, bottom -->
+  <circle cx="55" cy="25" r="8" fill="url(#cn25)"/>
+  <circle cx="55" cy="85" r="8" fill="url(#cn25)"/>
+  <circle cx="55" cy="170" r="5" fill="url(#cn25)"/>
+
+  <!-- Top arm: nodes along the horizon -->
+  <circle cx="90" cy="25" r="5" fill="url(#cn25)"/>
+  <circle cx="125" cy="25" r="5" fill="url(#cn25)"/>
+  <circle cx="155" cy="25" r="6" fill="url(#cn25)"/>
+
+  <!-- Middle arm: shorter line -->
+  <circle cx="90" cy="85" r="5" fill="url(#cn25)"/>
+  <circle cx="115" cy="85" r="4" fill="url(#cn25)"/>
+  <circle cx="130" cy="85" r="5" fill="url(#cn25)"/>
+
+  <!-- A single cross-connection — like a shooting star in the constellation -->
+  <line x1="90" y1="25" x2="55" y2="55" stroke="url(#cn25b)" stroke-width="1.5" opacity="0.12"/>
+  <line x1="90" y1="85" x2="55" y2="115" stroke="url(#cn25b)" stroke-width="1.5" opacity="0.1"/>
+
+  <!-- Glow halos on the key stars — like bright stars in a constellation -->
+  <circle cx="55" cy="25" r="14" fill="#d97706" opacity="0.06"/>
+  <circle cx="55" cy="85" r="14" fill="#d97706" opacity="0.06"/>
+  <circle cx="155" cy="25" r="10" fill="#d97706" opacity="0.04"/>
+  <circle cx="130" cy="85" r="10" fill="#d97706" opacity="0.04"/>
+</svg>

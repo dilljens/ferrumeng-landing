@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- TRIANGLE STRIPS — The F built from long thin triangle strips
+       Each strip is a row of triangles along the F's contour.
+       Like a faceted ribbon folded into an F.
+       The strips alternate between light and dark copper tones,
+       creating a zigzag/chevron pattern along the letterform. -->
+
+  <defs>
+    <linearGradient id="s48a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="s48b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="s48c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="s48d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- ── VERTICAL STEM — strips of triangles running top to bottom ── -->
+
+  <g stroke="#0c0c0e" stroke-width="0.6">
+
+    <!-- Column of triangle strips, each row is a zigzag of 4 triangles -->
+
+    <!-- Row 0 -->
+    <polygon points="30,0 50,25 30,25" fill="url(#s48a)" opacity="0.95"/>
+    <polygon points="30,0 50,0 50,25" fill="url(#s48b)" opacity="0.95"/>
+    <polygon points="50,0 70,25 50,25" fill="url(#s48c)" opacity="0.9"/>
+    <polygon points="50,0 70,0 70,25" fill="url(#s48b)" opacity="0.95"/>
+
+    <!-- Row 1 -->
+    <polygon points="30,25 50,50 30,50" fill="url(#s48b)" opacity="0.9"/>
+    <polygon points="30,25 50,25 50,50" fill="url(#s48c)" opacity="0.9"/>
+    <polygon points="50,25 70,50 50,50" fill="url(#s48d)" opacity="0.85"/>
+    <polygon points="50,25 70,25 70,50" fill="url(#s48c)" opacity="0.9"/>
+
+    <!-- Row 2 -->
+    <polygon points="30,50 50,75 30,75" fill="url(#s48a)" opacity="0.85"/>
+    <polygon points="30,50 50,50 50,75" fill="url(#s48b)" opacity="0.85"/>
+    <polygon points="50,50 70,75 50,75" fill="url(#s48c)" opacity="0.85"/>
+    <polygon points="50,50 70,50 70,75" fill="url(#s48b)" opacity="0.85"/>
+
+    <!-- Row 3 -->
+    <polygon points="30,75 50,100 30,100" fill="url(#s48c)" opacity="0.85"/>
+    <polygon points="30,75 50,75 50,100" fill="url(#s48d)" opacity="0.8"/>
+    <polygon points="50,75 70,100 50,100" fill="url(#s48d)" opacity="0.85"/>
+    <polygon points="50,75 70,75 70,100" fill="url(#s48c)" opacity="0.85"/>
+
+    <!-- Row 4 -->
+    <polygon points="30,100 50,125 30,125" fill="url(#s48b)" opacity="0.85"/>
+    <polygon points="30,100 50,100 50,125" fill="url(#s48c)" opacity="0.8"/>
+    <polygon points="50,100 70,125 50,125" fill="url(#s48c)" opacity="0.8"/>
+    <polygon points="50,100 70,100 70,125" fill="url(#s48d)" opacity="0.8"/>
+
+    <!-- Row 5 -->
+    <polygon points="30,125 50,150 30,150" fill="url(#s48c)" opacity="0.8"/>
+    <polygon points="30,125 50,125 50,150" fill="url(#s48d)" opacity="0.75"/>
+    <polygon points="50,125 70,150 50,150" fill="url(#s48d)" opacity="0.75"/>
+    <polygon points="50,125 70,125 70,150" fill="url(#s48d)" opacity="0.75"/>
+
+    <!-- Row 6 -->
+    <polygon points="30,150 50,175 30,175" fill="url(#s48d)" opacity="0.75"/>
+    <polygon points="30,150 50,150 50,175" fill="url(#s48d)" opacity="0.7"/>
+    <polygon points="50,150 70,175 50,175" fill="url(#s48d)" opacity="0.7"/>
+    <polygon points="50,150 70,150 70,175" fill="url(#s48d)" opacity="0.7"/>
+
+    <!-- Row 7 -->
+    <polygon points="30,175 50,200 30,200" fill="url(#s48d)" opacity="0.65"/>
+    <polygon points="30,175 50,175 50,200" fill="url(#s48d)" opacity="0.6"/>
+    <polygon points="50,175 70,200 50,200" fill="url(#s48d)" opacity="0.6"/>
+    <polygon points="50,175 70,175 70,200" fill="url(#s48d)" opacity="0.6"/>
+
+  </g>
+
+  <!-- ── TOP ARM ── triangle strips going right -->
+
+  <g stroke="#0c0c0e" stroke-width="0.6">
+
+    <polygon points="70,0 95,25 70,25" fill="url(#s48a)" opacity="0.95"/>
+    <polygon points="70,0 95,0 95,25" fill="url(#s48b)" opacity="0.95"/>
+    <polygon points="95,0 120,25 95,25" fill="url(#s48a)" opacity="0.9"/>
+    <polygon points="95,0 120,0 120,25" fill="url(#s48c)" opacity="0.9"/>
+
+    <polygon points="120,0 145,25 120,25" fill="url(#s48b)" opacity="0.85"/>
+    <polygon points="120,0 145,0 145,25" fill="url(#s48a)" opacity="0.9"/>
+    <polygon points="145,0 170,25 145,25" fill="url(#s48b)" opacity="0.85"/>
+    <polygon points="145,0 170,0 170,25" fill="url(#s48c)" opacity="0.85"/>
+
+  </g>
+
+  <!-- ── MIDDLE ARM ── triangle strips going right from mid-stem -->
+
+  <g stroke="#0c0c0e" stroke-width="0.6">
+
+    <polygon points="70,100 95,125 70,125" fill="url(#s48b)" opacity="0.85"/>
+    <polygon points="70,100 95,100 95,125" fill="url(#s48c)" opacity="0.85"/>
+    <polygon points="95,100 120,125 95,125" fill="url(#s48c)" opacity="0.8"/>
+    <polygon points="95,100 120,100 120,125" fill="url(#s48d)" opacity="0.8"/>
+
+    <polygon points="120,100 145,125 120,125" fill="url(#s48d)" opacity="0.75"/>
+    <polygon points="120,100 145,100 145,125" fill="url(#s48c)" opacity="0.75"/>
+
+  </g>
+
+  <!-- The zigzag pattern of alternating copper tones creates a
+       chevron/stripe texture along the F. The gap between top arm
+       (row 0-1) and middle arm (row 3-5) is rows of empty vertical
+       stem — clearly visible as two separate horizontal bars. -->
+</svg>

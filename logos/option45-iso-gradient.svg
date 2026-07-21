@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ISOMETRIC F — Gradient blocks with distinct section colors
+       The three parts of the F are in different copper tones:
+         Vertical stem: deep copper-brown
+         Top arm: bright copper-gold
+         Middle arm: medium copper-amber
+       This color separation makes the F structure instantly readable.
+       The gap between the two horizontal arms is enhanced by the color shift. -->
+
+  <defs>
+    <!-- Vertical section colors -->
+    <linearGradient id="gv1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#92400e"/><stop offset="100%" stop-color="#78350f"/></linearGradient>
+    <linearGradient id="gv2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#78350f"/><stop offset="100%" stop-color="#5c2a07"/></linearGradient>
+    <linearGradient id="gv3" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#5c2a07"/><stop offset="100%" stop-color="#451a03"/></linearGradient>
+
+    <!-- Top arm colors -->
+    <linearGradient id="gt1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/></linearGradient>
+    <linearGradient id="gt2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d97706"/><stop offset="100%" stop-color="#b45309"/></linearGradient>
+    <linearGradient id="gt3" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#92400e"/></linearGradient>
+
+    <!-- Middle arm colors -->
+    <linearGradient id="gm1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#d97706"/><stop offset="100%" stop-color="#b45309"/></linearGradient>
+    <linearGradient id="gm2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#92400e"/></linearGradient>
+    <linearGradient id="gm3" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#92400e"/><stop offset="100%" stop-color="#78350f"/></linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- ── VERTICAL STEM (deep copper-brown) ── -->
+
+  <g stroke="#451a03" stroke-width="0.3">
+    <polygon points="35,175 53,165 71,175 53,185" fill="url(#gv3)" opacity="0.8"/><polygon points="71,175 53,185 53,178" fill="url(#gv2)" opacity="0.7"/><polygon points="35,175 53,165 53,158 35,168" fill="url(#gv1)" opacity="0.7"/>
+    <polygon points="35,155 53,145 71,155 53,165" fill="url(#gv3)" opacity="0.85"/><polygon points="71,155 53,165 53,158 71,148" fill="url(#gv2)" opacity="0.75"/><polygon points="35,155 53,145 53,138 35,148" fill="url(#gv1)" opacity="0.75"/>
+    <polygon points="35,135 53,125 71,135 53,145" fill="url(#gv3)" opacity="0.9"/><polygon points="71,135 53,145 53,138 71,128" fill="url(#gv2)" opacity="0.8"/><polygon points="35,135 53,125 53,118 35,128" fill="url(#gv1)" opacity="0.8"/>
+    <polygon points="35,115 53,105 71,115 53,125" fill="url(#gv3)" opacity="0.95"/><polygon points="71,115 53,125 53,118 71,108" fill="url(#gv2)" opacity="0.85"/><polygon points="35,115 53,105 53,98 35,108" fill="url(#gv1)" opacity="0.85"/>
+    <polygon points="35,95 53,85 71,95 53,105" fill="url(#gv3)" opacity="1"/><polygon points="71,95 53,105 53,98 71,88" fill="url(#gv2)" opacity="0.9"/><polygon points="35,95 53,85 53,78 35,88" fill="url(#gv1)" opacity="0.9"/>
+    <polygon points="35,70 53,60 71,70 53,80" fill="url(#gv3)" opacity="1"/><polygon points="71,70 53,80 53,73 71,63" fill="url(#gv2)" opacity="0.95"/><polygon points="35,70 53,60 53,53 35,63" fill="url(#gv1)" opacity="0.95"/>
+    <polygon points="35,45 53,35 71,45 53,55" fill="url(#gv3)" opacity="1"/><polygon points="71,45 53,55 53,48 71,38" fill="url(#gv2)" opacity="1"/><polygon points="35,45 53,35 53,28 35,38" fill="url(#gv1)" opacity="1"/>
+    <polygon points="35,25 53,15 71,25 53,35" fill="url(#gv3)" opacity="1"/><polygon points="71,25 53,35 53,28 71,18" fill="url(#gv2)" opacity="1"/><polygon points="35,25 53,15 53,8 35,18" fill="url(#gv1)" opacity="1"/>
+  </g>
+
+  <!-- ── TOP ARM (bright copper-gold) ── -->
+
+  <g stroke="#92400e" stroke-width="0.3">
+    <polygon points="71,25 89,15 107,25 89,35" fill="url(#gt3)" opacity="1"/><polygon points="107,25 89,35 89,28 107,18" fill="url(#gt2)" opacity="0.9"/><polygon points="71,25 89,15 89,8 71,18" fill="url(#gt1)" opacity="0.9"/>
+    <polygon points="89,25 107,15 125,25 107,35" fill="url(#gt3)" opacity="0.95"/><polygon points="125,25 107,35 107,28 125,18" fill="url(#gt2)" opacity="0.85"/><polygon points="89,25 107,15 107,8 89,18" fill="url(#gt1)" opacity="0.85"/>
+    <polygon points="107,25 125,15 143,25 125,35" fill="url(#gt3)" opacity="0.9"/><polygon points="143,25 125,35 125,28 143,18" fill="url(#gt2)" opacity="0.8"/><polygon points="107,25 125,15 125,8 107,18" fill="url(#gt1)" opacity="0.8"/>
+    <polygon points="125,25 143,15 161,25 143,35" fill="url(#gt3)" opacity="0.85"/><polygon points="161,25 143,35 143,28 161,18" fill="url(#gt2)" opacity="0.75"/><polygon points="125,25 143,15 143,8 125,18" fill="url(#gt1)" opacity="0.75"/>
+  </g>
+
+  <!-- ── MIDDLE ARM (medium copper-amber) ── -->
+
+  <g stroke="#78350f" stroke-width="0.3">
+    <polygon points="71,95 89,85 107,95 89,105" fill="url(#gm3)" opacity="1"/><polygon points="107,95 89,105 89,98 107,88" fill="url(#gm2)" opacity="0.9"/><polygon points="71,95 89,85 89,78 71,88" fill="url(#gm1)" opacity="0.9"/>
+    <polygon points="89,95 107,85 125,95 107,105" fill="url(#gm3)" opacity="0.95"/><polygon points="125,95 107,105 107,98 125,88" fill="url(#gm2)" opacity="0.85"/><polygon points="89,95 107,85 107,78 89,88" fill="url(#gm1)" opacity="0.85"/>
+    <polygon points="107,95 125,85 143,95 125,105" fill="url(#gm3)" opacity="0.9"/><polygon points="143,95 125,105 125,98 143,88" fill="url(#gm2)" opacity="0.8"/><polygon points="107,95 125,85 125,78 107,88" fill="url(#gm1)" opacity="0.8"/>
+  </g>
+
+  <!-- The three sections have distinct colors:
+       - Top arm: bright gold (catches light)
+       - Vertical: deep brown (structural foundation)
+       - Middle arm: medium amber (bridges the two)
+       The color separation emphasizes the gap between the arms.
+       Top arm bottom edge is at y=35. Middle arm top edge is at y=78.
+       43px of dark vertical stem clearly separates them. -->
+</svg>

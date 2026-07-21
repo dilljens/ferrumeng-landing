@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: CIRCUIT F
+       A PCB trace pattern forming an F — 45/90 degree angles with circular
+       solder pads at each junction. The traces route like a real circuit board.
+       The bottom trace turns into a via (circle with hole).
+       Hardware engineers will immediately recognize the language.
+       Favicon-safe: thick traces, large pads. B&W safe. -->
+
+  <defs>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Vertical trace (spine of F) — runs top to bottom with a 45° jog -->
+  <path d="M75 30 L75 170" stroke="url(#g5)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Top trace (top arm of F) — horizontal with 45° corners, routes right -->
+  <path d="M75 30 L95 30 L115 50 L115 75" stroke="url(#g5)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Middle trace (middle arm of F) — shorter, 45° jog down -->
+  <path d="M75 95 L100 95 L115 110" stroke="url(#g5)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Solder pads at every junction -->
+  <circle cx="75" cy="30" r="6" fill="url(#g5)"/>
+  <circle cx="75" cy="95" r="6" fill="url(#g5)"/>
+  <circle cx="75" cy="170" r="6" fill="url(#g5)"/>
+  <circle cx="115" cy="75" r="5" fill="url(#g5)"/>
+  <circle cx="115" cy="110" r="5" fill="url(#g5)"/>
+
+  <!-- Via at the bottom — hollow center like a real PCB via -->
+  <circle cx="75" cy="170" r="6" fill="#0c0c0e" stroke="url(#g5)" stroke-width="3"/>
+
+  <!-- Small test point dots on trace ends -->
+  <circle cx="115" cy="50" r="3" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="115" cy="75" r="2" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="115" cy="110" r="2" fill="#f59e0b" opacity="0.6"/>
+</svg>

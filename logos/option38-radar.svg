@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- RADAR F — A circular radar/oscilloscope sweep tracing the letter F
+       Like a radar display or vector oscilloscope.
+       A sweeping line rotates around the center, and the points
+       where it intersects the F are illuminated.
+       The radar lines form an F through their scan pattern.
+       Suggests detection, monitoring, signals, systems. -->
+
+  <defs>
+    <radialGradient id="r38" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </radialGradient>
+    <linearGradient id="r38b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Outer radar ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#r38b)" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="100" cy="100" r="70" fill="none" stroke="url(#r38b)" stroke-width="0.8" opacity="0.15"/>
+  <circle cx="100" cy="100" r="55" fill="none" stroke="url(#r38b)" stroke-width="0.8" opacity="0.12"/>
+  <circle cx="100" cy="100" r="40" fill="none" stroke="url(#r38b)" stroke-width="0.8" opacity="0.1"/>
+  <circle cx="100" cy="100" r="25" fill="none" stroke="url(#r38b)" stroke-width="0.8" opacity="0.08"/>
+
+  <!-- Crosshairs (radar graticule) -->
+  <line x1="15" y1="100" x2="185" y2="100" stroke="url(#r38b)" stroke-width="0.5" opacity="0.1"/>
+  <line x1="100" y1="15" x2="100" y2="185" stroke="url(#r38b)" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- ── The F is formed by illuminated radar return blips ── -->
+
+  <!-- Vertical stem blips (radar returns along the left side) -->
+  <g fill="#f59e0b">
+    <circle cx="55" cy="40" r="4" opacity="0.9"/>
+    <circle cx="55" cy="55" r="3.5" opacity="0.85"/>
+    <circle cx="55" cy="70" r="4" opacity="0.9"/>
+    <circle cx="55" cy="85" r="3" opacity="0.8"/>
+    <circle cx="55" cy="100" r="4.5" opacity="0.95"/>
+    <circle cx="55" cy="115" r="3.5" opacity="0.85"/>
+    <circle cx="55" cy="130" r="3" opacity="0.75"/>
+    <circle cx="55" cy="145" r="2.5" opacity="0.6"/>
+    <circle cx="55" cy="160" r="2" opacity="0.5"/>
+  </g>
+
+  <!-- Top arm blips -->
+  <g fill="#f59e0b">
+    <circle cx="75" cy="35" r="3.5" opacity="0.85"/>
+    <circle cx="95" cy="35" r="3" opacity="0.8"/>
+    <circle cx="115" cy="35" r="4" opacity="0.9"/>
+    <circle cx="135" cy="35" r="3.5" opacity="0.85"/>
+    <circle cx="155" cy="40" r="3" opacity="0.75"/>
+  </g>
+
+  <!-- Middle arm blips -->
+  <g fill="#f59e0b">
+    <circle cx="75" cy="100" r="3.5" opacity="0.85"/>
+    <circle cx="95" cy="100" r="3" opacity="0.8"/>
+    <circle cx="115" cy="100" r="3.5" opacity="0.85"/>
+    <circle cx="135" cy="100" r="3" opacity="0.75"/>
+  </g>
+
+  <!-- Radar sweep line — like the rotating beam of a radar dish
+       We show it as a faint wedge from center, sweeping clockwise -->
+  <path d="M100 100 L160 50 A75 75 0 0 1 170 100 Z"
+        fill="#d97706" opacity="0.04"/>
+
+  <!-- Sweep edge (the bright rotating line) -->
+  <line x1="100" y1="100" x2="158" y2="52" stroke="#f59e0b" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Radar pulse rings — expanding circles from center -->
+  <circle cx="100" cy="100" r="15" fill="none" stroke="#f59e0b" stroke-width="0.8" opacity="0.15"/>
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#f59e0b" stroke-width="0.6" opacity="0.08"/>
+
+  <!-- Center dot (the radar emitter) -->
+  <circle cx="100" cy="100" r="4" fill="url(#r38)"/>
+  <circle cx="100" cy="100" r="8" fill="#f59e0b" opacity="0.1"/>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ISOMETRIC F — Hollow shell
+       Only the outer surface of the isometric F is shown.
+       The interior is empty — just the visible faces of each block.
+       This gives it a lightweight, architectural model feel.
+       The gap between the two horizontal bars is clearly defined
+       by the bottom face of the top arm and top face of the middle arm. -->
+
+  <defs>
+    <linearGradient id="h43a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="h43b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="h43c" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Only the visible faces — no back faces, no hidden lines -->
+
+  <!-- ── VERTICAL STEM ── -->
+
+  <!-- Top face of each vertical block (the right-facing slope) -->
+  <g fill="url(#h43a)" opacity="0.5" stroke="url(#h43a)" stroke-width="0.5">
+    <polygon points="35,168 53,158 71,168 53,178"/>
+    <polygon points="35,148 53,138 71,148 53,158"/>
+    <polygon points="35,128 53,118 71,128 53,138"/>
+    <polygon points="35,108 53,98 71,108 53,118"/>
+    <polygon points="35,88 53,78 71,88 53,98"/>
+    <polygon points="35,63 53,53 71,63 53,73"/>
+    <polygon points="35,38 53,28 71,38 53,48"/>
+    <polygon points="35,18 53,8 71,18 53,28"/>
+  </g>
+
+  <!-- Left-facing face -->
+  <g fill="url(#h43c)" opacity="0.7" stroke="url(#h43c)" stroke-width="0.5">
+    <polygon points="35,175 53,165 53,178 35,185"/>
+    <polygon points="35,155 53,145 53,158 35,165"/>
+    <polygon points="35,135 53,125 53,138 35,145"/>
+    <polygon points="35,115 53,105 53,118 35,125"/>
+    <polygon points="35,95 53,85 53,98 35,105"/>
+    <polygon points="35,70 53,60 53,73 35,80"/>
+    <polygon points="35,45 53,35 53,48 35,55"/>
+    <polygon points="35,25 53,15 53,28 35,35"/>
+  </g>
+
+  <!-- Right-facing face (extrusion wall) -->
+  <g fill="url(#h43b)" opacity="0.6" stroke="url(#h43b)" stroke-width="0.5">
+    <polygon points="71,168 53,178 53,185 71,175"/>
+    <polygon points="71,148 53,158 53,165 71,155"/>
+    <polygon points="71,128 53,138 53,145 71,135"/>
+    <polygon points="71,108 53,118 53,125 71,115"/>
+    <polygon points="71,88 53,98 53,105 71,95"/>
+    <polygon points="71,63 53,73 53,80 71,70"/>
+    <polygon points="71,38 53,48 53,55 71,45"/>
+    <polygon points="71,18 53,28 53,35 71,25"/>
+  </g>
+
+  <!-- ── TOP ARM ── -->
+
+  <g fill="url(#h43a)" opacity="0.5" stroke="url(#h43a)" stroke-width="0.5">
+    <polygon points="71,18 89,8 107,18 89,28"/>
+    <polygon points="89,18 107,8 125,18 107,28"/>
+    <polygon points="107,18 125,8 143,18 125,28"/>
+    <polygon points="125,18 143,8 161,18 143,28"/>
+  </g>
+
+  <g fill="url(#h43c)" opacity="0.7" stroke="url(#h43c)" stroke-width="0.5">
+    <polygon points="71,25 89,15 89,28 71,35"/>
+    <polygon points="89,25 107,15 107,28 89,35"/>
+    <polygon points="107,25 125,15 125,28 107,35"/>
+    <polygon points="125,25 143,15 143,28 125,35"/>
+  </g>
+
+  <g fill="url(#h43b)" opacity="0.6" stroke="url(#h43b)" stroke-width="0.5">
+    <polygon points="107,18 89,28 89,35 107,25"/>
+    <polygon points="125,18 107,28 107,35 125,25"/>
+    <polygon points="143,18 125,28 125,35 143,25"/>
+    <polygon points="161,18 143,28 143,35 161,25"/>
+  </g>
+
+  <!-- ── MIDDLE ARM ── -->
+
+  <g fill="url(#h43a)" opacity="0.5" stroke="url(#h43a)" stroke-width="0.5">
+    <polygon points="71,88 89,78 107,88 89,98"/>
+    <polygon points="89,88 107,78 125,88 107,98"/>
+    <polygon points="107,88 125,78 143,88 125,98"/>
+  </g>
+
+  <g fill="url(#h43c)" opacity="0.7" stroke="url(#h43c)" stroke-width="0.5">
+    <polygon points="71,95 89,85 89,98 71,105"/>
+    <polygon points="89,95 107,85 107,98 89,105"/>
+    <polygon points="107,95 125,85 125,98 107,105"/>
+  </g>
+
+  <g fill="url(#h43b)" opacity="0.6" stroke="url(#h43b)" stroke-width="0.5">
+    <polygon points="107,88 89,98 89,105 107,95"/>
+    <polygon points="125,88 107,98 107,105 125,95"/>
+    <polygon points="143,88 125,98 125,105 143,95"/>
+  </g>
+
+  <!-- The gap between top arm (bottom at y=35) and middle arm (top at y=78)
+       is 43px of empty stem — clearly visible as two distinct horizontal bars. -->
+</svg>

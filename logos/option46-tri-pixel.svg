@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- TRIANGLE PIXEL — F built from a grid of right-angle triangles
+       Each square in the grid is split diagonally into two triangles.
+       Each triangle gets its own copper shade based on position.
+       Like pixel art rendered in triangles. -->
+
+  <defs>
+    <linearGradient id="t46a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="t46b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="t46c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="t46d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Grid of 8x8 squares, each split into 2 triangles.
+       Grid cell size = 20px (width) x 20px (height).
+       Total grid: 10 columns x 10 rows (200x200).
+       Triangle fills vary by position within the F.
+       Background triangles are invisible. -->
+
+  <!-- The F shape occupies these grid cells:
+       Vertical stem: col 0-1, rows 0-9
+       Top arm: col 2-7, row 0
+       Middle arm: col 2-5, row 4
+  -->
+
+  <!-- Each cell has two triangles: upper-left and lower-right.
+       Colors based on row (lighter at top, darker at bottom) -->
+
+  <!-- ── VERTICAL STEM (col 0-1, rows 0-9) ── -->
+
+  <!-- Row 0 -->
+  <polygon points="0,0 20,0 0,20" fill="#f59e0b" opacity="0.95" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,0 20,20 0,20" fill="#d97706" opacity="0.95" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,0 40,0 20,20" fill="#b45309" opacity="0.95" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,0 40,20 20,20" fill="#d97706" opacity="0.95" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 1 -->
+  <polygon points="0,20 20,20 0,40" fill="#f59e0b" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,20 20,40 0,40" fill="#d97706" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,20 40,20 20,40" fill="#b45309" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,20 40,40 20,40" fill="#92400e" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 2 -->
+  <polygon points="0,40 20,40 0,60" fill="#d97706" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,40 20,60 0,60" fill="#b45309" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,40 40,40 20,60" fill="#f59e0b" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,40 40,60 20,60" fill="#92400e" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 3 -->
+  <polygon points="0,60 20,60 0,80" fill="#b45309" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,60 20,80 0,80" fill="#92400e" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,60 40,60 20,80" fill="#d97706" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,60 40,80 20,80" fill="#78350f" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 4 -->
+  <polygon points="0,80 20,80 0,100" fill="#d97706" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,80 20,100 0,100" fill="#b45309" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,80 40,80 20,100" fill="#f59e0b" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,80 40,100 20,100" fill="#92400e" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 5 -->
+  <polygon points="0,100 20,100 0,120" fill="#b45309" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,100 20,120 0,120" fill="#d97706" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,100 40,100 20,120" fill="#92400e" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,100 40,120 20,120" fill="#78350f" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 6 -->
+  <polygon points="0,120 20,120 0,140" fill="#d97706" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,120 20,140 0,140" fill="#b45309" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,120 40,120 20,140" fill="#b45309" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,120 40,140 20,140" fill="#78350f" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 7 -->
+  <polygon points="0,140 20,140 0,160" fill="#b45309" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,140 20,160 0,160" fill="#92400e" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,140 40,140 20,160" fill="#d97706" opacity="0.75" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,140 40,160 20,160" fill="#78350f" opacity="0.75" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 8 -->
+  <polygon points="0,160 20,160 0,180" fill="#92400e" opacity="0.75" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,160 20,180 0,180" fill="#78350f" opacity="0.75" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,160 40,160 20,180" fill="#b45309" opacity="0.7" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,160 40,180 20,180" fill="#78350f" opacity="0.7" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- Row 9 -->
+  <polygon points="0,180 20,180 0,200" fill="#78350f" opacity="0.7" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,180 20,200 0,200" fill="#5c2a07" opacity="0.7" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="20,180 40,180 20,200" fill="#92400e" opacity="0.65" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="40,180 40,200 20,200" fill="#5c2a07" opacity="0.65" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- ── TOP ARM (col 2-7, row 0) ── -->
+
+  <!-- Col 2 -->
+  <polygon points="40,0 60,0 40,20" fill="#f59e0b" opacity="0.95" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="60,0 60,20 40,20" fill="#d97706" opacity="0.95" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 3 -->
+  <polygon points="60,0 80,0 60,20" fill="#f59e0b" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="80,0 80,20 60,20" fill="#b45309" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 4 -->
+  <polygon points="80,0 100,0 80,20" fill="#d97706" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="100,0 100,20 80,20" fill="#f59e0b" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 5 -->
+  <polygon points="100,0 120,0 100,20" fill="#f59e0b" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="120,0 120,20 100,20" fill="#d97706" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 6 -->
+  <polygon points="120,0 140,0 120,20" fill="#d97706" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="140,0 140,20 120,20" fill="#b45309" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 7 -->
+  <polygon points="140,0 160,0 140,20" fill="#b45309" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="160,0 160,20 140,20" fill="#92400e" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- ── MIDDLE ARM (col 2-5, row 4) ── -->
+
+  <!-- Col 2 -->
+  <polygon points="40,80 60,80 40,100" fill="#f59e0b" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="60,80 60,100 40,100" fill="#d97706" opacity="0.9" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 3 -->
+  <polygon points="60,80 80,80 60,100" fill="#d97706" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="80,80 80,100 60,100" fill="#b45309" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 4 -->
+  <polygon points="80,80 100,80 80,100" fill="#b45309" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="100,80 100,100 80,100" fill="#d97706" opacity="0.85" stroke="#0c0c0e" stroke-width="0.8"/>
+  <!-- Col 5 -->
+  <polygon points="100,80 120,80 100,100" fill="#d97706" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+  <polygon points="120,80 120,100 100,100" fill="#92400e" opacity="0.8" stroke="#0c0c0e" stroke-width="0.8"/>
+
+  <!-- The F is clearly visible as a block of triangulated pixels.
+       The gap between top arm (row 0) and middle arm (row 4) is
+       rows 1-3 of empty vertical stem — three grid rows of visible space. -->
+</svg>

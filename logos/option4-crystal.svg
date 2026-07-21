@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Concept: CRYSTAL
+       Inspired by iron's body-centered cubic (BCC) crystal structure.
+       Three overlapping diamond/lozenge shapes form both an "F" and
+       an atomic lattice node. The diamond references iron's strength
+       at the molecular level. The intersecting planes suggest
+       hardware (ordered structure) + intelligence (dynamic connections).
+       The most abstract option — rewards knowing the "ferrum = iron" connection.
+       Works at favicon size due to bold geometry. Works in B&W. -->
+
+  <defs>
+    <linearGradient id="gc1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="gc2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <!-- container -->
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Central diamond — the core crystal -->
+  <path d="M100 40 L155 100 L100 160 L45 100 Z"
+        fill="none" stroke="url(#gc1)" stroke-width="3"/>
+
+  <!-- Vertical plane — the "F" vertical stroke suggestion -->
+  <path d="M100 40 L100 160" stroke="url(#gc2)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Top horizontal plane — top arm of F, as a crystal facet -->
+  <path d="M100 55 L145 80" stroke="url(#gc2)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Middle horizontal plane — middle arm of F, shorter crystal facet -->
+  <path d="M100 100 L130 120" stroke="url(#gc2)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Outer lattice nodes — electron/proton reference points -->
+  <circle cx="100" cy="40" r="4" fill="#d97706"/>
+  <circle cx="155" cy="100" r="3" fill="#b45309" opacity="0.7"/>
+  <circle cx="100" cy="160" r="3" fill="#b45309" opacity="0.7"/>
+  <circle cx="45" cy="100" r="3" fill="#b45309" opacity="0.7"/>
+
+  <!-- A single bright node at the key intersection — the "mind" in the machine -->
+  <circle cx="100" cy="100" r="5" fill="#f59e0b"/>
+</svg>

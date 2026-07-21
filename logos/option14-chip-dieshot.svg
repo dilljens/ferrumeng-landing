@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- CHIP + MIND — Die Shot
+       Inspired by actual chip die photography (like the famous Intel 4004 die shot).
+       The chip is shown as a rectangular die with concentric functional zones:
+         Outer ring: I/O pads and bond wires
+         Middle ring: cache / memory blocks
+         Inner core: logic / neural engine — where the F lives
+       The F at the center is built from dense repeating gate-array patterns
+       (the actual texture of a real chip).
+       At large sizes, you see the gate detail. At favicon size, the F reads as solid. -->
+
+  <defs>
+    <linearGradient id="c14" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="c14b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Die outline — the chip boundary -->
+  <rect x="35" y="30" width="130" height="140" rx="4" fill="none" stroke="url(#c14)" stroke-width="2"/>
+
+  <!-- Bond pad ring — I/O pads around the perimeter (tiny rectangles like a real die) -->
+  <!-- Top pads -->
+  <rect x="50" y="22" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="68" y="22" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="86" y="22" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="104" y="22" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="122" y="22" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="140" y="22" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <!-- Bottom pads -->
+  <rect x="50" y="170" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="68" y="170" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="86" y="170" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="104" y="170" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="122" y="170" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="140" y="170" width="6" height="8" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <!-- Left pads -->
+  <rect x="27" y="48" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="27" y="70" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="27" y="92" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="27" y="114" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="27" y="136" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <!-- Right pads -->
+  <rect x="165" y="48" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="165" y="70" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="165" y="92" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="165" y="114" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+  <rect x="165" y="136" width="8" height="6" rx="1" fill="url(#c14)" opacity="0.5"/>
+
+  <!-- Bond wires — sweeping from pads to the die edge (signature die-shot look) -->
+  <path d="M53 30 Q53 38 60 42" stroke="url(#c14)" stroke-width="0.8" opacity="0.3" fill="none"/>
+  <path d="M89 30 Q89 40 95 44" stroke="url(#c14)" stroke-width="0.8" opacity="0.3" fill="none"/>
+  <path d="M125 30 Q125 40 120 44" stroke="url(#c14)" stroke-width="0.8" opacity="0.3" fill="none"/>
+  <path d="M53 170 Q53 162 60 158" stroke="url(#c14)" stroke-width="0.8" opacity="0.3" fill="none"/>
+  <path d="M89 170 Q89 160 95 156" stroke="url(#c14)" stroke-width="0.8" opacity="0.3" fill="none"/>
+  <path d="M125 170 Q125 160 120 156" stroke="url(#c14)" stroke-width="0.8" opacity="0.3" fill="none"/>
+
+  <!-- Outer functional ring — cache/memory -->
+  <rect x="48" y="42" width="104" height="116" rx="3" fill="none" stroke="url(#c14)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Inner functional ring — logic core -->
+  <rect x="60" y="52" width="80" height="96" rx="2" fill="none" stroke="url(#c14)" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Gate-array detail — tiny repeating lines that at scale form the F -->
+  <!-- These create the "texture" of a real chip die -->
+
+  <!-- Vertical gate lines (the spine of the F) — dense cluster on the left -->
+  <line x1="70" y1="60" x2="70" y2="140" stroke="url(#c14b)" stroke-width="2" opacity="0.6"/>
+  <line x1="74" y1="60" x2="74" y2="140" stroke="url(#c14b)" stroke-width="1.5" opacity="0.4"/>
+  <line x1="78" y1="60" x2="78" y2="140" stroke="url(#c14b)" stroke-width="1" opacity="0.3"/>
+
+  <!-- Top arm gate lines -->
+  <line x1="82" y1="65" x2="128" y2="65" stroke="url(#c14b)" stroke-width="2" opacity="0.5"/>
+  <line x1="82" y1="69" x2="128" y2="69" stroke="url(#c14b)" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Middle arm gate lines -->
+  <line x1="82" y1="96" x2="116" y2="96" stroke="url(#c14b)" stroke-width="2" opacity="0.5"/>
+  <line x1="82" y1="100" x2="116" y2="100" stroke="url(#c14b)" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- SRAM cell filler pattern — chip texture -->
+  <rect x="84" y="74" width="3" height="3" fill="url(#c14)" opacity="0.15"/>
+  <rect x="90" y="74" width="3" height="3" fill="url(#c14)" opacity="0.15"/>
+  <rect x="96" y="74" width="3" height="3" fill="url(#c14)" opacity="0.15"/>
+  <rect x="84" y="84" width="3" height="3" fill="url(#c14)" opacity="0.12"/>
+  <rect x="90" y="84" width="3" height="3" fill="url(#c14)" opacity="0.12"/>
+  <rect x="96" y="84" width="3" height="3" fill="url(#c14)" opacity="0.12"/>
+  <rect x="84" y="110" width="3" height="3" fill="url(#c14)" opacity="0.1"/>
+  <rect x="90" y="110" width="3" height="3" fill="url(#c14)" opacity="0.1"/>
+  <rect x="100" y="110" width="3" height="3" fill="url(#c14)" opacity="0.1"/>
+  <rect x="84" y="120" width="3" height="3" fill="url(#c14)" opacity="0.08"/>
+  <rect x="90" y="120" width="3" height="3" fill="url(#c14)" opacity="0.08"/>
+
+  <!-- Core highlight — the "neural engine" at the center -->
+  <rect x="70" y="62" width="58" height="78" rx="2" fill="url(#c14b)" opacity="0.04"/>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- TRILATERATION F — Three overlapping circles whose intersections form an F
+       Like GPS trilateration: three signal sources intersect at a point.
+       The three circles represent three domains (hardware, intelligence, systems).
+       Their overlap zone is shaped like the letter F.
+       No circles in the corners — every circle serves the intersection. -->
+
+  <defs>
+    <linearGradient id="tr39a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="tr39b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Three overlapping circles — each with a different center point.
+       Their intersection area naturally forms an F shape. -->
+
+  <!-- Circle 1 (left) — hardware domain. Radius ~75. -->
+  <circle cx="80" cy="110" r="75" fill="none" stroke="url(#tr39a)" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Circle 2 (top-right) — intelligence domain. Radius ~70. -->
+  <circle cx="130" cy="70" r="70" fill="none" stroke="url(#tr39a)" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Circle 3 (bottom-right) — systems domain. Radius ~65. -->
+  <circle cx="140" cy="140" r="65" fill="none" stroke="url(#tr39a)" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Fill the overlap zone — where all three intersect, the F lives -->
+  <!-- We achieve this by using the background color to carve out circles
+       from a filled F shape. The F is revealed where circles overlap. -->
+
+  <!-- The F region — highlighted overlap area -->
+  <rect x="0" y="0" width="200" height="200" fill="#0c0c0e"/>
+
+  <!-- Create F by three "signal" fills that are masked by intersections -->
+  <circle cx="85" cy="110" r="76" fill="url(#tr39b)" opacity="0.06"/>
+  <circle cx="135" cy="72" r="71" fill="url(#tr39b)" opacity="0.06"/>
+  <circle cx="145" cy="142" r="66" fill="url(#tr39b)" opacity="0.06"/>
+
+  <!-- Redraw circles as outlines -->
+  <circle cx="85" cy="110" r="76" fill="none" stroke="url(#tr39a)" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="135" cy="72" r="71" fill="none" stroke="url(#tr39a)" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="145" cy="142" r="66" fill="none" stroke="url(#tr39a)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Signal source markers (the three transmitters) -->
+  <circle cx="85" cy="110" r="4" fill="#d97706" opacity="0.6"/>
+  <circle cx="135" cy="72" r="4" fill="#d97706" opacity="0.6"/>
+  <circle cx="145" cy="142" r="4" fill="#d97706" opacity="0.6"/>
+
+  <!-- Pulse rings expanding from each source -->
+  <circle cx="85" cy="110" r="8" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="85" cy="110" r="14" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.08"/>
+
+  <circle cx="135" cy="72" r="8" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="135" cy="72" r="14" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.08"/>
+
+  <circle cx="145" cy="142" r="8" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="145" cy="142" r="14" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.08"/>
+
+  <!-- The F is the intersection zone of all three circles.
+       At their triple overlap, the F shape emerges naturally. -->
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- NEURAL F — Traceline
+       No circles. No nodes. Pure connection lines forming the F.
+       The network is built from a bundle of parallel signal paths
+       that together trace the F shape — like a bus of neural signals.
+       Each line has a different opacity, suggesting depth and
+       different signal strength. The overall shape reads as "F"
+       because the lines cluster together in the F pattern. -->
+
+  <defs>
+    <linearGradient id="t16" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Vertical bundle — 4 parallel lines forming the F stem -->
+  <line x1="56" y1="28" x2="56" y2="172" stroke="url(#t16)" stroke-width="2.5" opacity="0.3"/>
+  <line x1="64" y1="28" x2="64" y2="172" stroke="url(#t16)" stroke-width="3" opacity="0.5"/>
+  <line x1="72" y1="28" x2="72" y2="172" stroke="url(#t16)" stroke-width="3.5" opacity="0.7"/>
+  <line x1="80" y1="28" x2="80" y2="172" stroke="url(#t16)" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Top arm bundle — lines branching right -->
+  <line x1="56" y1="36" x2="140" y2="36" stroke="url(#t16)" stroke-width="2.5" opacity="0.3"/>
+  <line x1="64" y1="42" x2="148" y2="42" stroke="url(#t16)" stroke-width="3" opacity="0.5"/>
+  <line x1="72" y1="48" x2="156" y2="48" stroke="url(#t16)" stroke-width="3.5" opacity="0.7"/>
+  <line x1="80" y1="54" x2="148" y2="54" stroke="url(#t16)" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Middle arm bundle — shorter, branching right -->
+  <line x1="56" y1="92" x2="120" y2="92" stroke="url(#t16)" stroke-width="2.5" opacity="0.3"/>
+  <line x1="64" y1="98" x2="128" y2="98" stroke="url(#t16)" stroke-width="3" opacity="0.5"/>
+  <line x1="72" y1="104" x2="128" y2="104" stroke="url(#t16)" stroke-width="3.5" opacity="0.7"/>
+  <line x1="80" y1="110" x2="116" y2="110" stroke="url(#t16)" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Diagonal cross-connections — give it the neural net feel -->
+  <line x1="72" y1="48" x2="64" y2="98" stroke="url(#t16)" stroke-width="1.5" opacity="0.25"/>
+  <line x1="72" y1="104" x2="64" y2="140" stroke="url(#t16)" stroke-width="1.5" opacity="0.2"/>
+  <line x1="148" y1="42" x2="128" y2="98" stroke="url(#t16)" stroke-width="1.5" opacity="0.2"/>
+  <line x1="128" y1="98" x2="72" y2="140" stroke="url(#t16)" stroke-width="1.5" opacity="0.15"/>
+
+  <!-- Bottom taper — lines converging toward bottom -->
+  <line x1="56" y1="150" x2="56" y2="172" stroke="url(#t16)" stroke-width="2" opacity="0.2"/>
+  <line x1="64" y1="150" x2="64" y2="172" stroke="url(#t16)" stroke-width="2.5" opacity="0.35"/>
+  <line x1="72" y1="150" x2="72" y2="172" stroke="url(#t16)" stroke-width="3" opacity="0.5"/>
+  <line x1="80" y1="150" x2="80" y2="172" stroke="url(#t16)" stroke-width="2" opacity="0.3"/>
+
+  <!-- The concept: four parallel signal paths create the F through
+       density clustering, not through individual nodes.
+       At favicon size, the lines merge into a solid F shape.
+       At larger sizes, you see the individual neural pathways. -->
+</svg>

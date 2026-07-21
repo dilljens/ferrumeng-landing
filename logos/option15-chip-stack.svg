@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- CHIP + MIND — Stack
+       3D chip stacking (like HBM memory or modern 3D NAND).
+       Three die layers stacked vertically, staggered slightly.
+       The F is formed by through-silicon vias (TSVs) that punch through all layers.
+       Each layer has a different function:
+         Layer 1 (bottom): logic/processor (dense, wide)
+         Layer 2 (middle): memory/cache (smaller)
+         Layer 3 (top): neural accelerator (bright, active)
+       This reflects real 3D chip packaging used in AI accelerators. -->
+
+  <defs>
+    <linearGradient id="c15a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="c15b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" rx="28" fill="#0c0c0e"/>
+
+  <!-- Substrate (base) -->
+  <rect x="30" y="155" width="140" height="8" rx="2" fill="url(#c15a)" opacity="0.3"/>
+
+  <!-- Solder balls connecting layers -->
+  <circle cx="60" cy="150" r="3" fill="#d97706" opacity="0.4"/>
+  <circle cx="100" cy="148" r="3" fill="#d97706" opacity="0.4"/>
+  <circle cx="140" cy="150" r="3" fill="#d97706" opacity="0.4"/>
+
+  <!-- ── Layer 3 (bottom) — Logic/Processor ── -->
+  <rect x="38" y="110" width="124" height="38" rx="4" fill="none" stroke="url(#c15a)" stroke-width="2" opacity="0.6"/>
+  <!-- Processor layer detail (dense gate pattern) -->
+  <line x1="48" y1="122" x2="148" y2="122" stroke="url(#c15a)" stroke-width="1" opacity="0.2"/>
+  <line x1="48" y1="130" x2="148" y2="130" stroke="url(#c15a)" stroke-width="1" opacity="0.15"/>
+  <line x1="48" y1="138" x2="148" y2="138" stroke="url(#c15a)" stroke-width="1" opacity="0.12"/>
+
+  <!-- ── Layer 2 (middle) — Memory/Cache ── -->
+  <rect x="46" y="74" width="108" height="34" rx="3" fill="none" stroke="url(#c15a)" stroke-width="2" opacity="0.7"/>
+  <!-- Memory array pattern -->
+  <rect x="54" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="64" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="74" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="84" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="94" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="104" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="114" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="124" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="134" y="82" width="6" height="6" fill="url(#c15a)" opacity="0.2"/>
+  <rect x="54" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+  <rect x="64" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+  <rect x="74" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+  <rect x="84" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+  <rect x="94" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+  <rect x="104" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+  <rect x="114" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+  <rect x="124" y="92" width="6" height="6" fill="url(#c15a)" opacity="0.15"/>
+
+  <!-- ── Layer 1 (top) — Neural Accelerator ── -->
+  <rect x="55" y="40" width="90" height="32" rx="3" fill="none" stroke="url(#c15b)" stroke-width="2.5"/>
+  <!-- Neural engine glow -->
+  <rect x="58" y="43" width="84" height="26" rx="2" fill="url(#c15b)" opacity="0.06"/>
+
+  <!-- ── Through-Silicon Vias (TSVs) forming the F ──
+       These punch vertically through all three layers, visible as bold pillars -->
+
+  <!-- Vertical F stem — three TSV pillars -->
+  <rect x="72" y="42" width="7" height="108" rx="2" fill="url(#c15b)"/>
+
+  <!-- Top arm of F (in the neural layer) -->
+  <rect x="72" y="42" width="52" height="7" rx="2" fill="url(#c15b)"/>
+
+  <!-- Middle arm of F (bridges memory and neural layers) -->
+  <rect x="72" y="88" width="42" height="7" rx="2" fill="url(#c15b)"/>
+
+  <!-- TSV via caps — circles at each layer boundary -->
+  <circle cx="75" cy="42" r="5" fill="#f59e0b"/>
+  <circle cx="75" cy="74" r="4" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="75" cy="110" r="4" fill="#f59e0b" opacity="0.5"/>
+  <circle cx="75" cy="148" r="3" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="124" cy="45" r="3" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="114" cy="91" r="3" fill="#f59e0b" opacity="0.6"/>
+
+  <!-- Interconnect wiring between TSVs (like real 3D IC routing) -->
+  <line x1="75" y1="74" x2="75" y2="110" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+</svg>
