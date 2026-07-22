@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Ferrum Engineering</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0c0c0e;
+      color: #d4d4d8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      text-align: center;
+    }
+    .card { max-width: 480px; }
+    .code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6rem;
+      font-weight: 800;
+      color: #b45309;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fafafa;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #a1a1aa;
+      margin-bottom: 32px;
+      font-size: 1rem;
+    }
+    .links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    a.primary {
+      background: #b45309;
+      color: #fafafa;
+    }
+    a.primary:hover { background: #d97706; }
+    a.secondary {
+      background: transparent;
+      color: #d4d4d8;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    a.secondary:hover { border-color: rgba(255,255,255,0.3); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="code">404</div>
+    <h1>Page not found</h1>
+    <p>That page doesn't exist or has moved. Here are the pages that do:</p>
+    <div class="links">
+      <a href="/" class="primary">← Main site</a>
+      <a href="/dental/" class="secondary">Dental</a>
+      <a href="/sololedger/" class="secondary">SoloLedger</a>
+      <a href="/poolsplat/" class="secondary">PoolSplat</a>
+    </div>
+  </div>
+</body>
+</html>
