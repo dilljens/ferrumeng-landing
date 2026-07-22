@@ -1,0 +1,23 @@
+# Personal dotfiles
+.bash_profile
+.bashrc
+.gitconfig
+.profile
+.ripgreprc
+.zprofile
+.zshrc
+
+# IDE
+.idea
+.vscode
+
+# Config
+.claude/
+.mcp.json
+.gitmodules
+
+# Node
+node_modules/
+
+# OS
+.DS_Store

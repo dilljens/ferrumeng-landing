@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Automation — Ferrum Engineering</title>
+  <meta name="description" content="Dental practice automation for Sheridan, WY — insurance claim processing, treatment plan follow-up, and review generation. Built for independent practices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0c0c0e;
+      color: #d4d4d8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #a1a1aa;
+      margin-bottom: 12px;
+    }
+
+    /* Nav */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    nav .logo { font-weight: 700; color: #fff; font-size: 1.1rem; }
+    nav a { color: #a1a1aa; font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover { color: #fff; }
+
+    /* Hero */
+    .hero {
+      padding: 100px 0 60px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero h1 span.blue { color: #60a5fa; }
+    .hero p {
+      font-size: 1.15rem;
+      color: #a1a1aa;
+      max-width: 680px;
+      margin: 0 auto 32px;
+    }
+    .hero .local-badge {
+      display: inline-block;
+      background: rgba(96, 165, 250, 0.1);
+      border: 1px solid rgba(96, 165, 250, 0.2);
+      color: #60a5fa;
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    /* Sections */
+    section { padding: 70px 0; }
+    section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    section h2 + p { color: #a1a1aa; margin-bottom: 40px; font-size: 1.05rem; }
+
+    /* Product cards */
+    .product-grid { display: flex; flex-direction: column; gap: 24px; }
+    .product-card {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 12px;
+      padding: 32px;
+      transition: border-color 0.2s;
+    }
+    .product-card:hover { border-color: #60a5fa; }
+    .product-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .product-card .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin: 8px 0 12px;
+    }
+    .tag.blue { background: rgba(96, 165, 250, 0.15); color: #60a5fa; }
+    .tag.green { background: rgba(74, 222, 128, 0.15); color: #4ade80; }
+    .tag.amber { background: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+    .product-card p { color: #a1a1aa; font-size: 0.95rem; margin-bottom: 16px; }
+    .product-card .price {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.1rem;
+      color: #fff;
+      font-weight: 600;
+    }
+    .product-card .price span {
+      color: #a1a1aa;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    /* Bundle */
+    .bundle-card {
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.08), rgba(74, 222, 128, 0.08));
+      border: 1px solid rgba(96, 165, 250, 0.25);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+    .bundle-card h3 { font-size: 1.4rem; color: #fff; margin-bottom: 12px; }
+    .bundle-card .price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 16px 0;
+    }
+    .bundle-card .price span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #a1a1aa;
+    }
+    .bundle-card p { color: #a1a1aa; max-width: 500px; margin: 0 auto 20px; }
+
+    /* How it works */
+    .steps { display: flex; flex-direction: column; gap: 20px; }
+    .step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .step .num {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #60a5fa;
+      min-width: 40px;
+    }
+    .step h4 { color: #fff; font-weight: 600; margin-bottom: 4px; }
+    .step p { color: #a1a1aa; font-size: 0.95rem; }
+
+    /* Why */
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .why-item {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .why-item h4 { color: #fff; font-weight: 600; margin-bottom: 6px; font-size: 0.95rem; }
+    .why-item p { color: #a1a1aa; font-size: 0.85rem; }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      padding: 80px 0;
+      border-top: 1px solid #27272a;
+    }
+    .cta-section h2 { font-size: 2rem; margin-bottom: 16px; }
+    .cta-section p { color: #a1a1aa; max-width: 550px; margin: 0 auto 32px; }
+    .btn {
+      display: inline-block;
+      background: #60a5fa;
+      color: #000;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover { background: #93bbfc; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px;
+      border-top: 1px solid #27272a;
+      color: #52525b;
+      font-size: 0.85rem;
+    }
+    footer a { color: #a1a1aa; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .why-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="logo">Ferrum Engineering</span>
+  <a href="/">Main site</a>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="local-badge">Built in Sheridan, Wyoming</div>
+    <h1>Dental automation that<br>saves your staff <span class="blue">10+ hours a week</span></h1>
+    <p>Your front desk spends half their time on insurance paperwork. You have thousands in treatment plans that patients never schedule. We build simple tools that fix both — no contracts, no hidden fees, no jargon.</p>
+    <a href="#contact" class="btn">Let's talk</a>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Products</div>
+    <h2>What we build</h2>
+    <p>Each tool solves one specific problem. Together, they transform your front office.</p>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <h3>Insurance Claim Assistant</h3>
+        <span class="tag blue">Most popular</span>
+        <p>Paste the dentist's clinical note → AI extracts CDT codes, tooth numbers, surfaces, and diagnosis in 3 seconds → staff reviews and submits. Cuts claim processing time from 15 minutes to 3.</p>
+        <div class="price">$150 <span>/ month</span></div>
+      </div>
+
+      <div class="product-card">
+        <h3>Treatment Plan Follow-Up</h3>
+        <span class="tag green">Highest ROI</span>
+        <p>Patients who don't schedule treatment get a timed sequence of texts over 60 days — education, social proof, financing options, urgency. Most practices have $500K+ in unscheduled treatment. This recovers 15-25% of it.</p>
+        <div class="price">$250 <span>/ month</span></div>
+      </div>
+
+      <div class="product-card">
+        <h3>Review Automator</h3>
+        <span class="tag amber">Free with bundle</span>
+        <p>After each appointment, auto-send a text asking for a Google review. Practices with fewer than 15 reviews get 68% fewer new patient calls. Fixes it automatically.</p>
+        <div class="price">$50 <span>/ month / free with bundle</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="bundle-card">
+      <h3>Get all three for less than one</h3>
+      <div class="price">$350 <span>/ month</span></div>
+      <p>Insurance Claim Assistant ($150) + Treatment Follow-Up ($250) + Review Automator ($50) = $450 separately. <strong>$350 bundled.</strong> No contract. Cancel anytime.</p>
+      <a href="#contact" class="btn">Start a free trial</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">How it works</div>
+    <h2>You're running a practice, not a tech project</h2>
+    <p>No installation. No integration. No IT calls.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h4>We set it up in a day</h4>
+          <p>Give us your practice name, phone number, and email. We configure the system. That's it.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h4>Your staff uses it immediately</h4>
+          <p>Insurance claims: paste the note, get the claim. Follow-ups: paste patient names, texts go out automatically. Reviews: every patient gets asked. No training required.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h4>You save hours and recover revenue</h4>
+          <p>Front desk spends less time on insurance. Unscheduled treatment converts to booked appointments. Reviews bring in new patients. You see the difference in the first week.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Why Ferrum</div>
+    <h2>Why Sheridan practices choose us</h2>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <h4>Local, not remote</h4>
+        <p>Built in Sheridan. We show up at your practice. No support line to nowhere.</p>
+      </div>
+      <div class="why-item">
+        <h4>No contracts</h4>
+        <p>Month-to-month. Cancel when you want. No fine print, no hidden fees.</p>
+      </div>
+      <div class="why-item">
+        <h4>Your data stays yours</h4>
+        <p>Everything runs on secure infrastructure. We never sell or share patient data.</p>
+      </div>
+      <div class="why-item">
+        <h4>Built for independent practices</h4>
+        <p>Not enterprise software repackaged. Not a startup that'll raise prices next year. Just tools that work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">About</div>
+    <h2>Built by a Sheridan engineer</h2>
+    <p>I'm an AI and software engineer based in Sheridan. I build practical automation tools for local businesses — no hype, no jargon, no unnecessary complexity. This is my full-time focus.</p>
+    <p style="margin-top: 12px; color: #a1a1aa;">
+      Ferrum Engineering LLC · Sheridan, WY · Wyoming registered business
+    </p>
+  </div>
+</section>
+
+<section class="cta-section" id="contact">
+  <div class="container">
+    <h2>Ready to save 10 hours a week?</h2>
+    <p>I'll set up a free 30-minute demo using your actual clinical notes. No commitment, no sales pitch — just seeing the tool work with your practice.</p>
+    <p style="color: #60a5fa; font-family: 'JetBrains Mono', monospace; margin-bottom: 24px;">dillon@ferrumengineeringllc.com</p>
+    <a href="mailto:dillon@ferrumengineeringllc.com" class="btn">Email me to start</a>
+  </div>
+</section>
+
+<footer>
+  <p>Ferrum Engineering LLC — Sheridan, Wyoming</p>
+  <p style="margin-top: 8px;"><a href="/">Back to main site</a></p>
+</footer>
+
+</body>
+</html>
