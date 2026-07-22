@@ -17,6 +17,9 @@ ferrumeng.com/              Cloudflare Pages (static)
 sololedger.ferrumeng.com    VPS (Docker Compose)
                             FastAPI backend + SPA frontend
                             Serves SoloLedger web app + API
+poolsplat.ferrumeng.com     VPS (Docker Compose)
+                            Node.js server + 3D viewer
+                            Serves PoolSplat 3D scenes + AI editing
 ```
 
 ## Service Lines
