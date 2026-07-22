@@ -244,7 +244,7 @@
     <div class="badge">Hosted Cloud · Self-Hosted CLI</div>
     <h1>Accounting software for your<br>solo consulting <span>LLC</span></h1>
     <p>Invoicing, bank feeds, receipt OCR, tax estimates, time tracking, and dashboards — from your terminal or from the cloud. Built for solo operators who don't want QuickBooks.</p>
-    <a href="#pricing" class="btn">Try SoloLedger Cloud →</a>
+    <a href="https://sololedger.ferrumeng.com" class="btn">Launch SoloLedger Cloud →</a>
 
     <div class="terminal">
       <div><span class="prompt">$</span> llc status</div>
@@ -349,18 +349,12 @@
   </div>
 </section>
 
-<section class="cta-section" id="waitlist">
+<section class="cta-section">
   <div class="container">
     <h2>Ready to ditch QuickBooks?</h2>
-    <p>SoloLedger Cloud is launching soon. Leave your email and we'll notify you when it's ready — no spam, no sales calls.</p>
-    <form id="waitlist-form" style="max-width: 440px; margin: 0 auto 16px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-      <input type="email" id="waitlist-email" placeholder="you@yourllc.com" required
-        style="flex: 1; min-width: 220px; padding: 12px 16px; border-radius: 8px; border: 1px solid #27272a; background: #18181b; color: #d4d4d8; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; outline: none;">
-      <button type="submit" class="btn" style="border: none; cursor: pointer;">Get Early Access →</button>
-    </form>
-    <p id="waitlist-success" style="color: #4ade80; display: none; font-family: 'JetBrains Mono', monospace;">✓ You're on the list. We'll be in touch.</p>
-    <p id="waitlist-error" style="color: #ef4444; display: none; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;"></p>
-    <p style="color: #52525b; font-size: 0.8rem;">Self-host in the meantime: <a href="https://github.com/dilljens/sololedger" style="color: #60a5fa;">pip install sololedger</a></p>
+    <p>Create your account at sololedger.ferrumeng.com — no credit card required.</p>
+    <a href="https://sololedger.ferrumeng.com" class="btn" style="margin-bottom: 32px;">Go to SoloLedger Cloud →</a>
+    <p style="color: #52525b; font-size: 0.8rem;">Self-host: <a href="https://github.com/dilljens/sololedger" style="color: #60a5fa;">pip install sololedger</a> · <a href="https://github.com/dilljens/sololedger" style="color: #60a5fa;">GitHub</a></p>
   </div>
 </section>
 
@@ -369,27 +363,7 @@
   <p style="margin-top: 8px;"><a href="https://github.com/dilljens/sololedger">GitHub</a> · <a href="/">Main site</a> · <a href="/dental/">Dental</a> · <a href="/poolsplat/">PoolSplat</a></p>
 </footer>
 
-<script>
-document.getElementById('waitlist-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const email = document.getElementById('waitlist-email').value.trim();
-  const btn = this.querySelector('button');
-  const success = document.getElementById('waitlist-success');
-  const error = document.getElementById('waitlist-error');
 
-  // Store in localStorage
-  const stored = JSON.parse(localStorage.getItem('sl_waitlist') || '[]');
-  stored.push({ email, at: new Date().toISOString() });
-  localStorage.setItem('sl_waitlist', JSON.stringify(stored));
-
-  // Also open a mailto as a fallback capture
-  window.location.href = 'mailto:dillon@ferrumengineeringllc.com?subject=SoloLedger%20Early%20Access&body=' + encodeURIComponent(email + ' wants early access to SoloLedger Cloud');
-
-  success.style.display = 'block';
-  this.querySelector('input').value = '';
-  btn.textContent = 'Get Early Access →';
-});
-</script>
 
 </body>
 </html>
