@@ -1,51 +1,30 @@
-# Plan: Register ferrum-eng.com + Wyoming LLC
+# Plan: Register ferrumeng.com + Wyoming LLC
 
 ## Sheet Anchor
-- Domain: **ferrum-eng.com**
-- LLC name: **Ferrum Engineering LLC** (check availability at wyobiz.wy.gov)
+- Domain: **ferrumeng.com** ✅ registered
+- LLC name: **Ferrum Engineering LLC** ✅ (available, filing submitted)
 - Entity type: Wyoming Single-Member LLC (SMLLC)
-- Owner: Dillon
+- Owner: Dillon Jensen
 - Location: Sheridan, WY
-- Registered agent: Self (Dillon's Sheridan street address)
-- Bank accounts: Mercury (primary) + Cowboy State Bank (local backup)
+- Registered agent: Self (Sheridan address)
+- Bank accounts: Mercury (primary) + First Interstate Bank (local backup)
 
 ---
 
-## Phase 1: Domain + LLC Filing (Day 1)
+## Phase 1: Domain + LLC Filing (Day 1) ✅ Done
 
-### Step 1 — Register ferrum-eng.com
-- [ ] Register at Cloudflare Registrar (or Namecheap, whichever you use)
-- [ ] Owner: Ferrum Engineering LLC (use owner name if LLC not yet formed)
-- [ ] Nameservers: Cloudflare (if using Cloudflare for DNS/SSL)
-- [ ] Annual cost: ~$10-15/yr
+### Step 1 — Register ferrumeng.com
+- [x] Registered at Cloudflare/Namecheap — **ferrumeng.com** (~$10-15/yr)
 
 ### Step 2 — Check LLC name availability
-- [ ] Go to wyobiz.wy.gov
-- [ ] Use the Entity Name Search
-- [ ] Verify "Ferrum Engineering" is distinguishable from existing names
-- [ ] If taken, decide on alternative (Ferrum Eng LLC, Ferrum Engineering Solutions LLC, etc.)
+- [x] Checked on wyobiz.wy.gov — "Ferrum Engineering" is available
 
 ### Step 3 — File Articles of Organization (online, WyoBiz)
-- [ ] Go to wyobiz.wy.gov → New Business Entity Wizard
-- [ ] Entity type: Domestic Limited Liability Company
-- [ ] LLC Name: Ferrum Engineering LLC (or checked variant)
-- [ ] Registered Agent: Dillon [Your Full Name]
-- [ ] Reg Agent Street Address: [Your Sheridan street address] (NOT a PO box)
-- [ ] Reg Agent Mailing Address: [Your Sheridan address or PO box]
-- [ ] Principal Office Address: [Your Sheridan address]
-- [ ] Mailing Address: [Your Sheridan address]
-- [ ] Management: Member-Managed
-- [ ] Organizer Name: Dillon [Your Full Name]
-- [ ] Organizer Address: [Your Sheridan address]
-- [ ] Effective Date: Immediate (date of filing)
-- [ ] Duration: Perpetual
-- [ ] Pay $100 (+ CC convenience fee ~$2.40)
+- [x] Filed: Domestic LLC, Member-Managed, Perpetual
+- [x] Registered Agent: Self (Sheridan address)
+- [x] Organizer: Dillon Jensen
+- [x] Paid $100 (+ CC fee)
 - [ ] Download/save stamped Articles of Organization (PDF)
-
-### What you get back
-- Stamped Articles of Organization (proof of LLC existence)
-- SOS File Number (you'll need this for bank accounts)
-- Usually available for download same-day or within 3 business days
 
 ---
 
@@ -53,7 +32,7 @@
 
 ### Step 4 — Get EIN from IRS
 - [ ] Go to irs.gov/ein (online assistant)
-- [ ] Legal structure: "Single Member LLC" (or "LLC" → "Single Member")
+- [ ] Legal structure: "Single Member LLC"
 - [ ] Reason: "Started a new business"
 - [ ] LLC name: Ferrum Engineering LLC
 - [ ] Your SSN (as responsible party)
@@ -75,67 +54,44 @@
 
 ## Phase 3: Banking (Day 1-3)
 
-### Step 6 — Open Cowboy State Bank account (local, same-day)
-- [ ] Call first: 307.673.4456
-  - Confirm they accept blockchain/software consulting LLCs
-  - Confirm what documents they need
-  - Ask about Zelle availability for business accounts
-- [ ] Visit Sheridan branch with:
-  - Stamped Articles of Organization
-  - EIN confirmation (CP 575)
-  - Operating Agreement
-  - Photo ID
-  - $100 opening deposit
-- [ ] Open Small Business Checking ($0/mo, $0 minimum)
-- [ ] Set up online banking
-- [ ] Download/confirm OFX/QFX export works (for beancount)
-- [ ] Get debit card
-- [ ] Ask about Zelle setup
+### Step 6 — Open Mercury (online)
+- [ ] Apply at mercury.com as "Software / Technology Consulting"
+- [ ] Need: EIN, stamped Articles, Operating Agreement, ID
+- [ ] Set up API access for beancount
+- [ ] Request debit card + IO credit card (1.5% cashback)
 
-### Step 7 — Open Mercury account (online)
-- [ ] Go to mercury.com
-- [ ] Apply for business checking
-- [ ] Need: EIN, Articles of Organization, Operating Agreement, ID
-- [ ] Company type: Software / Technology Consulting (not "Crypto Business")
-- [ ] Describe: "Engineering consulting firm specializing in embedded systems, AI product development, and blockchain protocol development"
-- [ ] Link your Cowboy State Bank account for initial funding
-- [ ] Set up API access (for beancount automation)
-- [ ] Request debit card
+### Step 7 — Open First Interstate Bank (walk-in, Sheridan)
+- [ ] Visit Sheridan branch with: EIN, stamped Articles, OA, ID, $100 deposit
+- [ ] Open Classic Business Checking ($10/mo, waived at $500 balance)
+- [ ] Ask about Web Connect / QFX export for beancount
+- [ ] Set up online banking, ask about Zelle
+- [ ] Get instant-issue debit card
 
 ---
 
 ## Phase 4: Website + Email (Day 2-7)
 
-### Step 8 — Point ferrum-eng.com to the landing page
-- [ ] Update DNS for ferrum-eng.com to point to Cloudflare Pages (where current index.html lives)
-- [ ] Verify SSL works
-- [ ] Set up email forwarding (e.g., dillon@ferrum-eng.com → your personal email)
-  - Cloudflare Email Routing (free) or
-  - iCloud+ Custom Email Domain or
-  - Fastmail / MX Route
-
-### Step 9 — Deploy the prettified landing page to ferrum-eng.com
-- [ ] Update CNAME record for the new domain
-- [ ] Or deploy a fresh copy to ferrum-eng.com
-- [ ] Add email address to the Contact section
+### Step 8 — Point ferrumeng.com to the landing page
+- [ ] Deploy index.html to Cloudflare Pages
+- [ ] Point ferrumeng.com DNS to Cloudflare Pages
+- [ ] Set up email forwarding (dillon@ferrumeng.com → personal email)
+- [ ] Update Contact section with new email
 
 ---
 
-## Phase 5: Configure SoloLedger (Day 2-7)
+## Phase 5: Configure SoloLedger
 
-### Step 10 — Run `llc init`
-- [ ] `llc init` with your new LLC details
+### Step 9 — Run `llc init`
+- [ ] `llc init` with LLC details
 - [ ] Business name: Ferrum Engineering LLC
 - [ ] State: WY
 - [ ] EIN: [your new EIN]
-- [ ] Address: [your Sheridan address]
+- [ ] Address: Sheridan, WY
 
-### Step 11 — Connect bank accounts
-- [ ] Set up Plaid (if Mercury supports Plaid for the sync tool)
-  - Set `PLAID_CLIENT_ID`, `PLAID_SECRET`, `PLAID_ACCESS_TOKEN`, `PLAID_ENV`
-  - Set `plaid_enabled = true` in config.toml
-- [ ] Or set up manual CSV/OFX import from Cowboy State Bank
-- [ ] Create expense rules in config.toml for common categories
+### Step 10 — Connect bank accounts
+- [ ] Mercury: Set up API (Plaid client ID, secret, access token)
+- [ ] First Interstate: Set up QFX/OFX import path
+- [ ] Create expense rules in config.toml
 - [ ] Initial import: pull last 90 days of transactions
 
 ---
@@ -146,8 +102,6 @@
 - [ ] File annual report with WY SOS each year (anniversary month) — $60
 - [ ] No state income tax filing needed (WY has none)
 - [ ] File Schedule C with personal 1040 (SMLLC is a disregarded entity)
-- [ ] Keep Cowboy State Bank account active with occasional use (to avoid dormancy)
-- [ ] Monitor Mercury account for any verification requests (respond within deadline)
 - [ ] Pay estimated quarterly federal taxes (1040-ES)
 
 ---
@@ -156,12 +110,12 @@
 
 | Item | One-time | Annual |
 |------|----------|--------|
-| ferrum-eng.com domain | $10-15 | $10-15 |
+| ferrumeng.com domain | ~$10-15 | ~$10-15 |
 | WY SOS filing | $100 | — |
 | WY annual report | — | $60 |
 | Registered agent | $0 | $0 |
-| Mercury bank | $0 | $0 |
-| Cowboy State Bank | $100 deposit (refundable) | $0 |
+| Mercury | $0 | $0 |
+| First Interstate ($500 min to waive fee) | $100 deposit | $0 |
 | EIN | $0 | — |
 | Cloudflare Pages | $0 | $0 |
 | **Total** | **~$210** | **~$70-75** |

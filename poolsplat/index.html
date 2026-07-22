@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoolSplat — 3D Pool Design from a Phone Video</title>
+  <meta name="description" content="Film your backyard with your phone. AI creates a 3D scene. Design and visualize your dream pool in minutes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0c0c0e;
+      color: #d4d4d8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #a1a1aa;
+      margin-bottom: 12px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    nav .logo { font-weight: 700; color: #fff; font-size: 1.1rem; }
+    nav .logo span { color: #4fc3f7; }
+    nav .nav-links { display: flex; gap: 24px; }
+    nav a { color: #a1a1aa; font-size: 0.9rem; transition: color 0.2s; text-decoration: none; }
+    nav a:hover { color: #fff; }
+    @media (max-width: 640px) { nav .nav-links { display: none; } }
+
+    /* Hero */
+    .hero {
+      padding: 100px 0 60px;
+      text-align: center;
+      background: linear-gradient(180deg, #0c0c0e 0%, #111114 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(79,195,247,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.12;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 span { color: #4fc3f7; }
+    .hero p {
+      font-size: 1.1rem;
+      color: #a1a1aa;
+      max-width: 620px;
+      margin: 0 auto 32px;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(79,195,247,0.1);
+      border: 1px solid rgba(79,195,247,0.2);
+      color: #4fc3f7;
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .hero .demo-box {
+      max-width: 640px;
+      margin: 40px auto 0;
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 14px;
+      padding: 48px 32px;
+      position: relative;
+    }
+    .hero .demo-box .icon-3d {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+    .hero .demo-box p {
+      font-size: 0.9rem;
+      color: #71717a;
+      margin-bottom: 0;
+    }
+
+    section { padding: 80px 0; }
+    section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    section h2 + p { color: #a1a1aa; margin-bottom: 48px; font-size: 1.05rem; }
+
+    /* Steps */
+    .steps { display: flex; flex-direction: column; gap: 24px; max-width: 700px; margin: 0 auto; }
+    .step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 12px;
+      padding: 28px;
+      transition: border-color 0.2s;
+    }
+    .step:hover { border-color: #4fc3f7; }
+    .step .num {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #4fc3f7;
+      min-width: 40px;
+      line-height: 1.4;
+    }
+    .step h4 { color: #fff; font-weight: 600; margin-bottom: 4px; }
+    .step p { color: #a1a1aa; font-size: 0.95rem; }
+
+    /* Features */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 10px;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover { border-color: rgba(79,195,247,0.3); }
+    .feature-card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .feature-card h3 { color: #fff; font-weight: 600; font-size: 1rem; margin-bottom: 6px; }
+    .feature-card p { color: #a1a1aa; font-size: 0.85rem; line-height: 1.6; }
+
+    /* Feature detail */
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 640px) { .detail-grid { grid-template-columns: 1fr; } }
+    .detail-card {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .detail-card h4 { color: #fff; font-weight: 600; margin-bottom: 8px; font-size: 0.95rem; }
+    .detail-card p { color: #a1a1aa; font-size: 0.85rem; }
+    .detail-card .tech {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: #4fc3f7;
+      margin-top: 12px;
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      padding: 80px 0;
+      border-top: 1px solid #27272a;
+    }
+    .cta-section h2 { font-size: 2rem; margin-bottom: 12px; }
+    .cta-section p { color: #a1a1aa; max-width: 520px; margin: 0 auto 32px; }
+    .btn {
+      display: inline-block;
+      background: #4fc3f7;
+      color: #000;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover { background: #81d4fa; }
+    .btn-outline {
+      background: transparent;
+      color: #d4d4d8;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.04); }
+
+    footer {
+      text-align: center;
+      padding: 32px;
+      border-top: 1px solid #27272a;
+      color: #52525b;
+      font-size: 0.85rem;
+    }
+    footer a { color: #a1a1aa; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Pool<span>Splat</span></div>
+  <div class="nav-links">
+    <a href="/">Ferrum Engineering</a>
+    <a href="/dental/">Dental</a>
+    <a href="/sololedger/">SoloLedger</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/dilljens/poolsplat">GitHub</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="badge">3D Gaussian Splatting · AI-Powered</div>
+    <h1>Design your dream pool<br>from a <span>phone video</span></h1>
+    <p>Film your backyard for 30 seconds. AI builds a photorealistic 3D scene. Place pools, measure spaces, and see it before you dig — no CAD, no tape measure, no guesswork.</p>
+    <a href="#contact" class="btn">Get early access →</a>
+
+    <div class="demo-box">
+      <div class="icon-3d">🏊</div>
+      <p style="font-size: 0.95rem; color: #d4d4d8; font-weight: 500;">Phone video → 3D Gaussian splat scene → design your pool in real-time</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">How it works</div>
+    <h2>Four steps to your new pool</h2>
+    <p>No CAD experience needed. No site visit required.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h4>Film your backyard</h4>
+          <p>Walk around your yard for 30 seconds with your phone. Capture every angle — PoolSplat needs the full space to build an accurate 3D model.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h4>AI creates a 3D scene</h4>
+          <p>Gaussian splatting reconstructs your backyard as a photorealistic 3D point cloud. Every tree, fence, and slope is captured exactly as-is.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h4>Design your pool</h4>
+          <p>Place pools, spas, firepits, and patios directly in the 3D scene. Measure distances, check sightlines, and experiment with shapes and sizes in real time.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <div>
+          <h4>See before/after</h4>
+          <p>AI generates photorealistic after-images of your yard with the new pool installed. Share them with your family, contractor, or HOA before breaking ground.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: #111113;">
+  <div class="container">
+    <div class="section-label">Features</div>
+    <h2>What PoolSplat can do</h2>
+    <p>Built on state-of-the-art AI and 3D rendering.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">📱</div>
+        <h3>Phone-Only Capture</h3>
+        <p>No LiDAR, no special hardware needed. Any modern phone video is enough to build a high-quality 3D scene.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🧊</div>
+        <h3>Gaussian Splatting</h3>
+        <p>State-of-the-art 3D reconstruction from video. Captures detail that photogrammetry misses — reflections, transparency, fine geometry.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📏</div>
+        <h3>Real-Time Measurements</h3>
+        <p>Measure any distance in your 3D scene — pool length, setback from fence, patio width. Accurate to inches.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎨</div>
+        <h3>AI Photo Editing</h3>
+        <p>Generate photorealistic after-images with your pool, firepit, or patio. Powered by 4 AI models with automatic model selection.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🏊</div>
+        <h3>Pool Shape Library</h3>
+        <p>Rectangular, freeform, kidney, lap, sport — place any pool shape in your scene and adjust size, position, and orientation freely.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌳</div>
+        <h3>Landscape Integration</h3>
+        <p>Add firepits, patios, decking, planters, and ramadas. See how hardscape fits with existing trees, slopes, and structures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Technology</div>
+    <h2>Built on research-grade AI</h2>
+    <p>PoolSplat runs on the same Gaussian splatting technology used in autonomous driving and medical imaging.</p>
+
+    <div class="detail-grid">
+      <div class="detail-card">
+        <h4>Gaussian Splatting Pipeline</h4>
+        <p>Converts phone video into a 3D Gaussian splat scene. Each splat represents a colored particle in space — millions of them form a photorealistic 3D model you can fly through.</p>
+        <div class="tech">3DGS · COLMAP · Structure from Motion</div>
+      </div>
+      <div class="detail-card">
+        <h4>Multi-Model AI Editing</h4>
+        <p>Automatically routes edits to the best AI model: Nano Banana 2 for instruction-following, Seedream 5 for photorealism, GPT Image for complex scenes, FLUX for inpainting.</p>
+        <div class="tech">Nano Banana 2 · Seedream 5 · GPT Image 2 · FLUX</div>
+      </div>
+      <div class="detail-card">
+        <h4>Real-Time 3D Viewer</h4>
+        <p>Built on Three.js with WebGL Gaussian splat rendering. Orbit, pan, zoom through your scene. Toggle overlays for measurements, pool geometry, and point clouds.</p>
+        <div class="tech">Three.js · WebGL · Spark GS</div>
+      </div>
+      <div class="detail-card">
+        <h4>Scene Management</h4>
+        <p>Every capture becomes a persistent scene. Save designs, share with contractors, revisit later. Live SSE updates when measurements or pools change.</p>
+        <div class="tech">MCP Server · SSE · Scene Manager</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="contact">
+  <div class="container">
+    <h2>Ready to see your pool before you build it?</h2>
+    <p>PoolSplat is in active development. Get early access and we'll help you capture and design your backyard.</p>
+    <p style="color: #4fc3f7; font-family: 'JetBrains Mono', monospace; margin-bottom: 24px;">dillon@ferrumengineeringllc.com</p>
+    <a href="mailto:dillon@ferrumengineeringllc.com" class="btn">Get early access</a>
+    <a href="https://github.com/dilljens/poolsplat" class="btn btn-outline" style="margin-left: 12px;">View on GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <p>PoolSplat is a project of <a href="/">Ferrum Engineering LLC</a> — Sheridan, Wyoming</p>
+  <p style="margin-top: 4px;"><a href="/">Main site</a> · <a href="/dental/">Dental</a> · <a href="/sololedger/">SoloLedger</a></p>
+</footer>
+
+</body>
+</html>

@@ -5,28 +5,41 @@ Wyoming-based consulting — enterprise AI systems, local business automation, b
 ## Site Structure
 
 ```
-ferrum-eng-landing/
-├── index.html                  Main landing page
+ferrumeng.com/              Cloudflare Pages (static)
+├── index.html              Main landing page
 ├── dental/
-│   └── index.html              Dental practice automation ($350/mo bundle)
-├── accounting/
-│   └── index.html              SoloLedger bookkeeping services ($300/mo)
-└── plans/
-    ├── execution-plan.md       60-day plan to first paying client
-    ├── dental-review-automator.md
-    ├── dental-insurance-assistant.md
-    ├── dental-intake-digitizer.md
-    └── dental-treatment-followup.md
+│   └── index.html          Dental practice automation ($350/mo bundle)
+├── sololedger/
+│   └── index.html          SoloLedger — accounting for solo consulting LLCs
+└── poolsplat/
+    └── index.html          PoolSplat — 3D pool design from a phone video
+
+sololedger.ferrumeng.com    VPS (Docker Compose)
+                            FastAPI backend + SPA frontend
+                            Serves SoloLedger web app + API
 ```
 
 ## Service Lines
 
-| Track | Page | Price | Market |
-|-------|------|-------|--------|
+| Track | Location | Price | Market |
+|-------|----------|-------|--------|
 | Enterprise AI | Main site | $18K-$100K | Mid-size companies |
 | Dental Automation | `/dental/` | $350/mo | Sheridan dental practices |
-| SoloLedger Bookkeeping | `/accounting/` | $300/mo | Sheridan small businesses |
+| SoloLedger | `/sololedger/` + `sololedger.ferrumeng.com` | $15/mo (cloud) / $0 (self-host) | Solo consultants, freelancers |
+| PoolSplat | `/poolsplat/` | Early access | Homeowners, pool contractors |
+
+## SoloLedger Strategy
+
+SoloLedger is **MIT-licensed open-source** accounting software (CLI + API + SPA).
+- Self-host: `pip install sololedger` and run locally (free)
+- Cloud: hosted at `sololedger.ferrumeng.com` with bank feeds, receipt OCR, inline payments
+- The open-source repo is the funnel — users find it on GitHub, some pay for the hosted version
+- Deploy config for the VPS lives in `deploy/` of the main sololedger repo
 
 ## Deploy
 
-Cloudflare Pages — push to GitHub, zero build config.
+### Main site (Cloudflare Pages)
+Push to GitHub — zero build config. Static HTML only.
+
+### SoloLedger (VPS)
+See `deploy/DEPLOY.md` in the [sololedger](https://github.com/dilljens/sololedger) repo.
