@@ -265,9 +265,9 @@
 <section class="hero">
   <div class="container">
     <div class="oss-badge">MIT Licensed · Open Source</div>
-    <div class="badge">Hosted Cloud · Self-Hosted CLI</div>
+    <div class="badge">🧾 SMLLC & S-Corp · PWA Installable · Dark Mode</div>
     <h1>Accounting software for your<br>solo consulting <span>LLC</span></h1>
-    <p>Invoicing, bank feeds, receipt OCR, tax estimates, time tracking, and dashboards — from your terminal or from the cloud. Built for solo operators who don't want QuickBooks.</p>
+    <p>Invoicing, bank feeds, receipt OCR, tax estimates, time tracking, S-Corp payroll, and dashboards — from your terminal or from the cloud. Built for solo operators who don't want QuickBooks.</p>
     <a href="https://sololedger.ferrumeng.com" class="btn">Launch SoloLedger Cloud →</a>
 
     <div class="terminal">
@@ -308,9 +308,14 @@
         <p>Snap a receipt photo. Extract merchant, date, total, and line items. Auto-categorize and append to your ledger.</p>
       </div>
       <div class="feature-card">
+        <div class="icon">💵</div>
+        <h3>S-Corp Tax Engine</h3>
+        <p>SMLLC (Schedule SE) or S-Corp (1120-S) with FICA, officer salary, and ordinary income calculation. Multi-state tax calculator for 5 states.</p>
+      </div>
+      <div class="feature-card">
         <div class="icon">💰</div>
-        <h3>Tax Estimation</h3>
-        <p>Self-employment tax + income tax + state tax. Quarterly payment suggestions with safe harbor calculations.</p>
+        <h3>Payroll Import</h3>
+        <p>Import Gusto payroll CSVs. Creates journal entries for gross wages, FICA, withholdings, and net pay disbursement. Auto-computes employer taxes.</p>
       </div>
       <div class="feature-card">
         <div class="icon">⏱️</div>
@@ -318,9 +323,9 @@
         <p>Pull hours from Toggl or Clockify. Create invoice-ready summaries by client and project.</p>
       </div>
       <div class="feature-card">
-        <div class="icon">🔔</div>
-        <h3>Notifications</h3>
-        <p>Desktop and email alerts for tax deadlines, unpaid invoices, and ledger health. Runs daily from cron.</p>
+        <div class="icon">📱</div>
+        <h3>PWA + Dark Mode</h3>
+        <p>Installable as a mobile app. Dark mode with system detection and manual toggle. Keyboard shortcuts (g+d, g+t, ?). URL-based routing with back/forward.</p>
       </div>
     </div>
   </div>
@@ -337,9 +342,10 @@
         <h3>Self-Hosted</h3>
         <div class="price">$0<span>/mo</span></div>
         <ul>
-          <li>Full CLI toolset</li>
+          <li>Full CLI toolset (SMLLC + S-Corp)</li>
           <li>REST API server</li>
-          <li>Web dashboard (served by API)</li>
+          <li>PWA web app with dark mode</li>
+          <li>Gusto payroll CSV import</li>
           <li>Your own ledger files</li>
           <li>Docker compose setup</li>
           <li>MIT licensed</li>
@@ -352,11 +358,12 @@
         <div class="price">$15<span>/mo</span></div>
         <ul>
           <li>Everything in Self-Hosted</li>
-          <li>Hosted web app</li>
+          <li>Hosted web app with PWA + dark mode</li>
           <li>Automated bank feeds (Plaid)</li>
           <li>Receipt OCR</li>
           <li>Stripe payment links</li>
           <li>Email notifications</li>
+          <li>Keyboard shortcuts & URL routing</li>
         </ul>
         <a href="https://sololedger.ferrumeng.com" class="btn" style="display: block;">Get Started →</a>
       </div>
