@@ -1,0 +1,16 @@
+{
+  "name": "Ferrum Engineering",
+  "short_name": "FerrumEng",
+  "description": "Embedded systems, AI, blockchain, and PCB design consulting.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0c0c0e",
+  "background_color": "#0c0c0e",
+  "icons": [
+    {
+      "src": "/ferrum-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

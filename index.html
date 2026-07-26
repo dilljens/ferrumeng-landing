@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferrum Engineering – Embedded. AI. Blockchain.</title>
   <meta name="description" content="Ferrum Engineering is a Wyoming-based consulting firm specializing in embedded systems, AI product development, blockchain engineering, and PCB design.">
+  <meta name="theme-color" content="#0c0c0e">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="/ferrum-logo.png">
   <meta property="og:title" content="Ferrum Engineering – Embedded. AI. Blockchain.">
   <meta property="og:description" content="Wyoming-based consulting — embedded systems, AI products, blockchain engineering, and PCB design.">
   <meta property="og:image" content="https://ferrumeng.com/ferrum-logo.png">
@@ -15,15 +17,19 @@
   <meta name="twitter:title" content="Ferrum Engineering – Embedded. AI. Blockchain.">
   <meta name="twitter:description" content="Wyoming-based consulting — embedded systems, AI products, blockchain engineering, and PCB design.">
   <meta name="twitter:image" content="https://ferrumeng.com/ferrum-logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <script defer data-domain="ferrumeng.com" src="https://plausible.io/js/script.js"></script>
   <link rel="canonical" href="https://ferrumeng.com">
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "Ferrum Engineering LLC",
     "description": "Wyoming-based consulting firm specializing in embedded systems, AI product development, blockchain engineering, and PCB design.",
     "url": "https://ferrumeng.com",
     "logo": "https://ferrumeng.com/ferrum-logo.png",
+    "email": "dillon@ferrumeng.com",
+    "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Cheyenne",
@@ -32,23 +38,71 @@
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "email": "dillon@ferrumengineeringllc.com",
+      "email": "dillon@ferrumeng.com",
       "contactType": "primary"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "foundingDate": "2026",
+    "founder": {
+      "@type": "Person",
+      "name": "Dillon Jensen",
+      "jobTitle": "Founder & Engineer",
+      "knowsAbout": ["Embedded Systems", "Artificial Intelligence", "Blockchain", "PCB Design"]
+    },
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "minValue": 1,
+      "maxValue": 1
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Engineering Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Embedded Systems & Firmware", "description": "STM32, RP2040, Teensy — real-time control, sensor integration, wireless, bootloader development."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Product Development & Consulting", "description": "Agentic AI platforms, RAG knowledge search, LLM automation, and enterprise knowledge engines."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Blockchain & Cryptography", "description": "Trustless escrow, atomic swaps, time-locked vaults, covenant development on Kaspa BlockDAG."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "PCB Design & EDA Tooling", "description": "KiCad schematic capture, layout, BOM management, and prototype development."}}
+      ]
     },
     "sameAs": [
       "https://github.com/dilljens",
       "https://www.linkedin.com/company/ferrumengineeringllc",
       "https://twitter.com/ferrumeng"
     ]
-  }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ferrum Engineering",
+    "url": "https://ferrumeng.com"
+  }]
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap&display=swap" rel="stylesheet">
   <style>
     /* ── Reset & Base ──────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 8px;
+      z-index: 10000;
+      padding: 8px 16px;
+      background: #b45309;
+      color: #fafafa;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 0 0 8px 8px;
+      transition: top 0.15s;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background: #0c0c0e;
@@ -57,6 +111,7 @@
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration: none; }
+    *:focus-visible { outline: 2px solid #b45309; outline-offset: 2px; }
     img { max-width: 100%; display: block; }
 
     /* ── Utility ──────────────────────────────────────── */
@@ -473,6 +528,39 @@
     .project-row .tag.bc { background: rgba(34,197,94,0.15); color: #4ade80; }
     .project-row .tag.eda { background: rgba(168,85,247,0.15); color: #c084fc; }
 
+    /* ── Results / Stats ──────────────────────────────── */
+    .results {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fafafa;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-number em {
+      font-style: normal;
+      background: linear-gradient(135deg, #b45309, #d97706);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label {
+      font-size: 0.8125rem;
+      color: #a1a1aa;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
     /* ── Contact ───────────────────────────────────────── */
     .contact {
       padding: 100px 0;
@@ -509,6 +597,87 @@
       margin-top: 24px;
       font-size: 0.8125rem;
       color: #52525b;
+    }
+    .contact-form {
+      max-width: 480px;
+      margin: 32px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contact-form-row {
+      display: flex;
+      gap: 12px;
+    }
+    .contact-form-row input {
+      flex: 1;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      color: #d4d4d8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #b45309;
+      box-shadow: 0 0 0 2px rgba(180,83,9,0.15);
+    }
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #52525b;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 12px 28px;
+      background: #b45309;
+      color: #fafafa;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .contact-form button:hover {
+      background: #d97706;
+    }
+    .contact-form button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .contact-form .form-status {
+      font-size: 0.8125rem;
+      text-align: center;
+      min-height: 1.5em;
+    }
+    .contact-form .form-status.success { color: #4ade80; }
+    .contact-form .form-status.error { color: #f87171; }
+    .contact-or {
+      margin: 16px 0;
+      font-size: 0.8125rem;
+      color: #52525b;
+    }
+    .contact-or::before,
+    .contact-or::after {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+      vertical-align: middle;
+      margin: 0 12px;
     }
 
     /* ── Footer ────────────────────────────────────────── */
@@ -692,6 +861,7 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- ═══ Navigation ═══ -->
   <nav>
@@ -722,9 +892,9 @@
   </div>
 
   <!-- ═══ Hero ═══ -->
-  <section class="hero" id="home">
+  <section class="hero" id="main-content">
     <canvas id="hero-canvas"></canvas>
-    <div class="hero-logo-bg"><img src="ferrum-logo.png" alt=""></div>
+    <div class="hero-logo-bg"><img src="ferrum-logo.png" alt="" loading="lazy"></div>
     <div class="hero-neural-bg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
       <defs>
         <linearGradient id="neuro" x1="0" y1="0" x2="1" y2="1">
@@ -766,7 +936,7 @@
         and intelligence.
       </h1>
       <p>
-        Embedded firmware. AI products. Blockchain protocols. PCB design.
+        Embedded firmware. Agentic AI systems. Blockchain protocols. PCB design.
         We build the systems that bridge the physical and the digital.
       </p>
       <div class="hero-actions">
@@ -774,13 +944,7 @@
         <a href="#services" class="btn btn-outline">See capabilities</a>
       </div>
       <div class="hero-clients">
-        <p>Trusted by engineering teams at</p>
-        <div class="client-logos">
-          <span>Mechtro</span>
-          <span>AMZ-G2</span>
-          <span>Inst-Sys</span>
-          <span>X1-PTL</span>
-        </div>
+        <p>Four engineering disciplines, one integrated practice.</p>
       </div>
     </div>
   </section>
@@ -804,11 +968,11 @@
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="1.5"><path d="M12 2L20 12L12 22L4 12Z" stroke-linejoin="round"/><circle cx="12" cy="12" r="2" fill="#b45309"/></svg></div>
           <h3>AI Product Development &amp; Consulting</h3>
           <p>
-            We help businesses design and build custom AI tools — RAG search
-            over internal knowledge, LLM-powered automation, AI-assisted design
-            workflows. From strategy through implementation to shipped product.
-            Also building our own: Whisper video editing, 3D Gaussian splatting,
-            and enterprise knowledge engines.
+            We build custom AI systems — from enterprise knowledge engines and
+            agentic AI platforms that route questions to specialized agents, to
+            RAG search, LLM-powered automation, and AI-assisted design workflows.
+            For one client, we replaced a $400K+ vendor stack with a single
+            unified AI platform. From strategy through shipped product.
           </p>
         </div>
         <div class="service-card tilt-card reveal reveal-delay-3">
@@ -953,6 +1117,33 @@
           </div>
           <span class="tag ai">AI</span>
         </div>
+        <div class="project-row">
+          <div>
+            <div class="name">Enterprise Agentic AI Platform</div>
+            <div class="desc">One AI interface connecting knowledge search, compliance, support, and analytics. Replaced a $400K+ multi-vendor stack.</div>
+          </div>
+          <span class="tag ai">AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Results ═══ -->
+  <section class="results reveal" id="results">
+    <div class="container">
+      <div class="results-grid">
+        <div>
+          <div class="stat-number"><em>10+</em></div>
+          <div class="stat-label">Years engineering</div>
+        </div>
+        <div>
+          <div class="stat-number"><em>4</em></div>
+          <div class="stat-label">Engineering disciplines</div>
+        </div>
+        <div>
+          <div class="stat-number"><em>$400K+</em></div>
+          <div class="stat-label">Vendor costs replaced</div>
+        </div>
       </div>
     </div>
   </section>
@@ -966,9 +1157,19 @@
         Whether you need firmware for a prototype, an AI feature for your
         product, or a full-stack blockchain application — reach out.
       </p>
-      <a href="mailto:dillon@ferrumengineeringllc.com" class="contact-email">
-        dillon@ferrumengineeringllc.com →
+      <a href="mailto:dillon@ferrumeng.com" class="contact-email">
+        dillon@ferrumeng.com →
       </a>
+      <div class="contact-or">or</div>
+      <form class="contact-form" id="contact-form">
+        <div class="contact-form-row">
+          <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+          <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+        </div>
+        <textarea name="message" placeholder="What are you building?" required></textarea>
+        <button type="submit">Send message →</button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      </form>
       <div class="contact-location">
         Ferrum Engineering LLC · Cheyenne, Wyoming
       </div>
@@ -1342,6 +1543,47 @@
   });
 
   } // end if(!prefersReducedMotion)
+
+  // ═══ Contact Form ═══
+  const form = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
+  if (form && formStatus) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        message: form.message.value.trim(),
+      };
+      if (!data.name || !data.email || !data.message) return;
+      const btn = form.querySelector('button');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      formStatus.textContent = '';
+      formStatus.className = 'form-status';
+      try {
+        const res = await fetch('/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const json = await res.json();
+        if (res.ok && json.ok) {
+          formStatus.textContent = 'Message sent — I\'ll get back to you soon.';
+          formStatus.className = 'form-status success';
+          form.reset();
+        } else {
+          formStatus.textContent = 'Something went wrong. Email me directly instead.';
+          formStatus.className = 'form-status error';
+        }
+      } catch {
+        formStatus.textContent = 'Something went wrong. Email me directly instead.';
+        formStatus.className = 'form-status error';
+      }
+      btn.disabled = false;
+      btn.textContent = 'Send message →';
+    });
+  }
 
   // ═══ 3D Card Tilt ═══
   document.querySelectorAll('.tilt-card').forEach(card => {

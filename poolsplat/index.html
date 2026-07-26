@@ -13,6 +13,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="PoolSplat — 3D Pool Design from a Phone Video">
   <meta name="twitter:description" content="AI-powered 3D pool design. Film your yard, see your pool.">
+  <meta name="theme-color" content="#0c0c0e">
+  <link rel="apple-touch-icon" href="../ferrum-logo.png">
+  <link rel="manifest" href="../manifest.json">
   <link rel="canonical" href="https://ferrumeng.com/poolsplat/">
   <script type="application/ld+json">
   {
@@ -37,6 +40,7 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+    *:focus-visible { outline: 2px solid #b45309; outline-offset: 2px; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background: #0c0c0e;
@@ -414,7 +418,7 @@ document.getElementById('waitlist-form').addEventListener('submit', function(e) 
   stored.push({ email, at: new Date().toISOString() });
   localStorage.setItem('ps_waitlist', JSON.stringify(stored));
 
-  window.location.href = 'mailto:dillon@ferrumengineeringllc.com?subject=PoolSplat%20Early%20Access&body=' + encodeURIComponent(email + ' wants early access to PoolSplat');
+  window.location.href = 'mailto:dillon@ferrumeng.com?subject=PoolSplat%20Early%20Access&body=' + encodeURIComponent(email + ' wants early access to PoolSplat');
 
   success.style.display = 'block';
   this.querySelector('input').value = '';
