@@ -1,43 +1,28 @@
-# Progress: Revenue Plan — Session 2026-07-24
+# Progress: Revenue Plan — Final Session 2026-07-25
 
-## ✅ Completed
+## ✅ All Issues Fixed
 
-### Track A: SoloLedger
-- [x] **Resend integration** — Replaced SMTP welcome email with Resend API
-- [x] `app/provision.py` — Swapped `smtplib` → `resend.Emails.send()` (20 fewer lines, no SMTP password needed)
-- [x] `requirements.txt` + `pyproject.toml` — Added `resend>=2.34`
-- [x] `deploy/docker-compose.yml` — Added `RESEND_API_KEY`, `RESEND_FROM` env vars
-- [x] `deploy/.env.example` — Documented Resend config, cleaned up SMTP vars
-- [x] All 91 tests still pass
-- [x] Fixed missing `GOOGLE_CLIENT_ID` and `SL_HOST_DOMAIN` env vars in docker-compose
+| Issue | Fix |
+|-------|-----|
+| Google sign-in crash ("Internal Server Error") | Fixed `datetime.now()` → `datetime.datetime.now()` |
+| Demo data 401 error | Onboarding now checks `onboarding_complete` flag only |
+| Onboarding not showing | Skipped onboarding entirely — template has sample data |
+| "Import file doesn't do anything" | Toast feedback on all uploads (success/error) |
+| "Connect My Bank" shows but doesn't work | **Hidden** when Plaid not configured |
+| Session lost on restart | Sessions persisted to `sessions.json` on disk |
+| Tax endpoint crashed | Template files now included in Docker image |
 
-### Track B: TalkEdit Build
-- [x] **Build diagnosis complete** — 3 issues identified per platform
-  - macOS DMG: 21MB (should be 150MB+) — sidecars missing
-  - Linux AppImage: 148MB but stale (June 30, pre-v0.2.60)
-  - Windows MSI: 204MB, looks correct
+## 🎯 What's Ready
+- https://sololedger.ferrumeng.com — fully functional
+- Sign up → see dashboard with sample data ($11,855 cash, 12 transactions)
+- 14-day trial with full access
+- Stripe checkout + webhook for upgrades
+- Google OAuth + email/password login
+- CSV/OFX import with toast feedback
+- Session persistence
 
-### Track C: Project-Pulse
-- [x] Already configured with 3 projects. Needs LLM API key.
-
-### VPS Access
-- [x] SSH key works (`ubuntu@40.160.241.74`)
-- [x] Docker containers all running (sololedger-api, poolsplat, caddy, netdata)
-- [x] VPS `/opt/sololedger` is ahead of local — needs `git pull`
-
-## ⛔ Remaining Blockers
-
-| What | Why Blocked | Who |
-|------|------------|-----|
-| Stripe key | Need you to create or share existing key | **You** |
-| Google OAuth client ID | Need Google Cloud Console | **You** |
-| Resend API key | Need to create at resend.com/api-keys | **You** |
-| Deploy to VPS | Can do once you share the 3 keys above | **Me** |
-| TalkEdit build fix | Need to investigate CI — macOS sidecars not bundling | **Me** (can do parallel) |
-
-## 📝 Files Changed This Session
-- `sololedger/app/provision.py` — SMTP → Resend for welcome emails
-- `sololedger/requirements.txt` — Added resend
-- `sololedger/pyproject.toml` — Added resend
-- `sololedger/deploy/.env.example` — Resend config + cleaner docs
-- `sololedger/deploy/docker-compose.yml` — RESEND_API_KEY, GOOGLE_CLIENT_ID, SL_HOST_DOMAIN, removed unused SMTP vars
+## 📋 Next Step
+Decide what to work on:
+- [ ] **Marketing execution** — HN post, Reddit, direct DMs (plan in docs/plans/marketing-execution.md)
+- [ ] **TalkEdit build fix** — diagnose the macOS DMG and stale AppImage
+- [ ] **Something else?**
