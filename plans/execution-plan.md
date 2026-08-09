@@ -30,7 +30,7 @@ See [`PROPOSAL-AND-PRICING.md`](../../unicity-ai/PROPOSAL-AND-PRICING.md) and [`
 | Join Sheridan Chamber of Commerce ($200-500/yr) | 1 hour | ☐ |
 | Attend first Business After Hours event | 2 hours | ☐ |
 | Write Sheridan Press article: "How Sheridan Businesses Are Saving 10 Hours a Week" | 2 hours | ☐ |
-| Set up email: dillon@ferrumengineeringllc.com | 1 hour | ☐ |
+| Set up email: dillon@ferrumeng.com | 1 hour | ☐ |
 | Print 50 one-pagers at local print shop | 1 hour | ☐ |
 
 ### Phase 2: Build the Products (Week 1-2)
