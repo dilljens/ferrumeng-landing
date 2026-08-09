@@ -42,7 +42,16 @@ SoloLedger is **MIT-licensed open-source** accounting software (CLI + API + SPA)
 ## Deploy
 
 ### Main site (Cloudflare Pages)
-Push to GitHub — zero build config. Static HTML only.
+Deploy manually from a local clone (the Pages project has no GitHub
+integration wired up — pushes to GitHub do NOT auto-deploy):
+
+```bash
+ai-secret exec cloudflare_api -- sh -c \
+  'export CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_KEY" CLOUDFLARE_ACCOUNT_ID="d9b6c3059be77c9f44b5ec7365fa50b8"; \
+   wrangler pages deploy . --project-name ferrumeng-landing --branch main'
+```
+
+Static HTML only — zero build config.
 
 ### SoloLedger (VPS)
 See `deploy/DEPLOY.md` in the [sololedger](https://github.com/dilljens/sololedger) repo.
